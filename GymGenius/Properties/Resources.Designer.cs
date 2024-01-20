@@ -59,5 +59,50 @@ namespace GymGenius.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Les abdominaux consistent en des mouvements tels que les &quot;crunches&quot; ou &quot;sit-ups&quot;, ciblant spécifiquement les muscles abdominaux pour renforcer la région centrale du corps. Ces exercices contribuent à améliorer la stabilité et la force du noyau..
+        /// </summary>
+        internal static string AbdominalDescription_FR {
+            get {
+                return ResourceManager.GetString("AbdominalDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Abdominaux.
+        /// </summary>
+        internal static string AbdominalName_FR {
+            get {
+                return ResourceManager.GetString("AbdominalName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Tapis de fitness.
+        /// </summary>
+        internal static string FitnessMatName_FR {
+            get {
+                return ResourceManager.GetString("FitnessMatName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Les pompes sont un exercice de musculation polyvalent dans le domaine sportif, renforçant les muscles du haut du corps, y compris les épaules, les triceps et le noyau abdominal. Cet exercice de planche, qui peut être adapté en fonction du niveau de fitness, contribue à améliorer la force fonctionnelle et la stabilité..
+        /// </summary>
+        internal static string PumpsDescription_FR {
+            get {
+                return ResourceManager.GetString("PumpsDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pompes.
+        /// </summary>
+        internal static string PumpsName_FR {
+            get {
+                return ResourceManager.GetString("PumpsName_FR", resourceCulture);
+            }
+        }
     }
 }

@@ -117,4 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AbdominalDescription_FR" xml:space="preserve">
+    <value>Les abdominaux consistent en des mouvements tels que les "crunches" ou "sit-ups", ciblant spécifiquement les muscles abdominaux pour renforcer la région centrale du corps. Ces exercices contribuent à améliorer la stabilité et la force du noyau.</value>
+  </data>
+  <data name="AbdominalName_FR" xml:space="preserve">
+    <value>Abdominaux</value>
+  </data>
+  <data name="FitnessMatName_FR" xml:space="preserve">
+    <value>Tapis de fitness</value>
+  </data>
+  <data name="PumpsDescription_FR" xml:space="preserve">
+    <value>Les pompes sont un exercice de musculation polyvalent dans le domaine sportif, renforçant les muscles du haut du corps, y compris les épaules, les triceps et le noyau abdominal. Cet exercice de planche, qui peut être adapté en fonction du niveau de fitness, contribue à améliorer la force fonctionnelle et la stabilité.</value>
+  </data>
+  <data name="PumpsName_FR" xml:space="preserve">
+    <value>Pompes</value>
+  </data>
 </root>
