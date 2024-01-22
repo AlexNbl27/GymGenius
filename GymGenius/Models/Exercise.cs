@@ -4,6 +4,7 @@ using System.Linq;
 using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using GymGenius.Controller;
 using GymGenius.Properties;
 
@@ -11,7 +12,7 @@ namespace GymGenius.Models
 {
     public abstract class AExercise
     {
-        public string name { get; protected set; }
+        protected string idname;
         public string translatedName { get; protected set; }
         public string description { get; protected set; }
         public int level { get; protected set; }
@@ -28,9 +29,9 @@ namespace GymGenius.Models
     {
         public Pumps()
         {
-            name = "Pumps";
-            translatedName = Utilities.Translate(name, "Name");
-            description = Utilities.Translate(name, "Description");
+            idname = "Pumps";
+            translatedName = Utilities.Translate(idname, "Name");
+            description = Utilities.Translate(idname, "Description");
             level = 1;
             duration = 0.5f;
             equipments = new List<AEquipment>();
@@ -41,9 +42,9 @@ namespace GymGenius.Models
     {
         public Abdominal()
         {
-            name = "Abdominal";
-            translatedName = Utilities.Translate(name, "Name");
-            description = Utilities.Translate(name, "Description");
+            idname = "Abdominal";
+            translatedName = Utilities.Translate(idname, "Name");
+            description = Utilities.Translate(idname, "Description");
             level = 1;
             duration = 0.5f;
             equipments = new List<AEquipment>();
