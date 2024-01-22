@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using GymGenius.Controller;
+using GymGenius.Controllers;
 using GymGenius.Properties;
 
 namespace GymGenius.Models
@@ -15,12 +16,12 @@ namespace GymGenius.Models
         protected string idname;
         public string translatedName { get; protected set; }
         public string description { get; protected set; }
-        public int level { get; protected set; }
-        public float duration { get; protected set; } 
+        public ValueController level { get; protected set; }
+        public TimeController duration { get; protected set; } 
         public List<AEquipment> equipments { get; protected set; }
         public struct Tags
         {
-            List<string> muscles;
+            List<AMuscles> muscles;
             bool isAtHome;
         }
     }
@@ -32,8 +33,8 @@ namespace GymGenius.Models
             idname = "Pumps";
             translatedName = Utilities.Translate(idname, "Name");
             description = Utilities.Translate(idname, "Description");
-            level = 1;
-            duration = 0.5f;
+            level.value = 1;
+            duration.setTime("00:00:30");
             equipments = new List<AEquipment>();
         }
     }
@@ -45,8 +46,8 @@ namespace GymGenius.Models
             idname = "Abdominal";
             translatedName = Utilities.Translate(idname, "Name");
             description = Utilities.Translate(idname, "Description");
-            level = 1;
-            duration = 0.5f;
+            level.value = 1;
+            duration.setTime(0,0,30);
             equipments = new List<AEquipment>();
             equipments.Add(new FitnessMat());
         }
