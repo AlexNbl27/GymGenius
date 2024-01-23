@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Resources;
 using System.Security.Cryptography.X509Certificates;
@@ -22,19 +23,27 @@ namespace GymGenius.Models
         public List<AEquipment> Equipments { get; protected set; }
 
         public AExerciseType Type { get; protected set; }
+
+        Tags tags = new Tags();
         public struct Tags
         {
             List<AMuscles> Muscles;
             bool isAtHome;
         }
+
+        public AExercise()
+        {
+            Level = new ValueController();
+            Duration = new TimeController(new DateTime());
+        }
     }
 
-    public interface ISerie
+    public interface ICountable
     {
         public int NbRepetitions { get; set; }
     }
 
-    public class PushUps : AExercise, ISerie
+    public class PushUps : AExercise, ICountable
     {
 
         public int NbRepetitions { get; set; }
@@ -56,13 +65,13 @@ namespace GymGenius.Models
         public Abdominal()
         {
             idname = "Abdominal";
-            translatedName = TranslateUtils.Translate(idname, "Name");
-            description = TranslateUtils.Translate(idname, "Description");
-            level.value = 1;
-            duration.setTime(0,0,30);
-            equipments = new List<AEquipment>();
-            equipments.Add(new FitnessMat());
-            type = new Strength();
+            Name = TranslateUtils.Translate(idname, "Name");
+            Description = TranslateUtils.Translate(idname, "Description");
+            Level.value = 1;
+            Duration.setTime(0,0,30);
+            Equipments = new List<AEquipment>();
+            Equipments.Add(new FitnessMat());
+            Type = new Strength();
         }
     }
 }

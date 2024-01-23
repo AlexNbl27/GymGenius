@@ -12,6 +12,13 @@ namespace GymGenius.Controllers
         float minute;
         float second;
 
+        public TimeController(DateTime time)
+        {
+            this.hour = time.Hour;
+            this.minute = time.Minute;
+            this.second = time.Second;
+        }
+
         public TimeController(float hour, float minute, float second)
         {
             this.hour = hour;
