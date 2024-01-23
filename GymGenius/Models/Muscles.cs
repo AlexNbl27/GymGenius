@@ -115,11 +115,11 @@ namespace GymGenius.Models
         }
     }
 
-    public class Claves : AMuscles
+    public class Calves : AMuscles
     {
-        public Claves()
+        public Calves()
         {
-            idname = "Claves";
+            idname = "Calves";
             Name = TranslateUtils.Translate(idname, "Name");
             bodyPart = new Trunk();
         }
@@ -132,6 +132,76 @@ namespace GymGenius.Models
             idname = "Abductors";
             Name = TranslateUtils.Translate(idname, "Name");
             bodyPart = new Legs();
+        }
+    }
+
+    public class LargeDorsals : AMuscles
+    {
+        public LargeDorsals()
+        {
+            idname = "Large Dorsals";
+            Name = TranslateUtils.Translate(idname, "Name");
+            bodyPart = new Back();
+        }
+    }
+
+    public class SmallDorsals : AMuscles
+    {
+        public SmallDorsals()
+        {
+            idname = "Small Dorsals";
+            Name = TranslateUtils.Translate(idname, "Name");
+            bodyPart = new Back();
+        }
+    }
+
+    public class Forearms : AMuscles
+    {
+        public Forearms()
+        {
+            idname = "Forearms";
+            Name = TranslateUtils.Translate(idname, "Name");
+            bodyPart = new Arms();
+        }
+    }
+
+    public class Neck : AMuscles
+    {
+        public Neck()
+        {
+            idname = "Neck";
+            Name = TranslateUtils.Translate(idname, "Name");
+            bodyPart = new Trunk();
+        }
+    }
+
+    public class PectoralisMajor : AMuscles
+    {
+        public PectoralisMajor()
+        {
+            idname = "Pectoralis Major";
+            Name = TranslateUtils.Translate(idname, "Name");
+            bodyPart = new Trunk();
+        }
+    }
+
+    public class PectoralisMinor : AMuscles
+    {
+        public PectoralisMinor()
+        {
+            idname = "Pectoralis Minor";
+            Name = TranslateUtils.Translate(idname, "Name");
+            bodyPart = new Trunk();
+        }
+    }
+
+    public class Transerves : AMuscles
+    {
+        public Transerves()
+        {
+            idname = "Transerves";
+            Name = TranslateUtils.Translate(idname, "Name");
+            bodyPart = new Trunk();
         }
     }
 }

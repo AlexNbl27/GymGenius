@@ -19,13 +19,13 @@ namespace GymGenius.Models
         public string Description { get; protected set; }
         public ValueController Level { get; protected set; }
         public TimeController Duration { get; protected set; } 
-        public List<AEquipment> Equipments { get; protected set; }
+        public List<AEquipment> Equipments { get; protected set; } = new List<AEquipment>();
 
         public AExerciseType Type { get; protected set; }
         public struct Tags
         {
-            List<AMuscles> Muscles;
-            bool isAtHome;
+            public List<AMuscles> Muscles;
+            public bool isAtHome;
         }
     }
 
@@ -34,35 +34,24 @@ namespace GymGenius.Models
         public int NbRepetitions { get; set; }
     }
 
-    public class PushUps : AExercise, ISerie
+    public class Dips : AExercise, ISerie
     {
-
         public int NbRepetitions { get; set; }
 
-        public PushUps()
+        public Dips()
         {
-            idname = "PushUps";
+            idname = "Squat";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 1;
-            Duration.setTime("00:00:30");
-            Equipments = new List<AEquipment>();
-            Type = new Strength();
-        }
-    }
-
-    public class Abdominal : AExercise
-    {
-        public Abdominal()
-        {
-            idname = "Abdominal";
-            translatedName = TranslateUtils.Translate(idname, "Name");
-            description = TranslateUtils.Translate(idname, "Description");
-            level.value = 1;
-            duration.setTime(0,0,30);
-            equipments = new List<AEquipment>();
-            equipments.Add(new FitnessMat());
-            type = new Strength();
+            Level.value = 3;
+            Duration.setTime("00:00:03");
+            Equipments.Add(new DoublesBars());
+            Equipments.Add(new MachineDips());
+            Type = new Muscular();
+            Tags tags = new Tags();
+            tags.Muscles = new List<AMuscles>();
+            tags.Muscles.Add(new Triceps());
+            tags.Muscles.Add();
         }
     }
 }
