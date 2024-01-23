@@ -59,5 +59,95 @@ namespace GymGenius.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Abdominal exercises, commonly known as core exercises, target the muscles in the abdomen, including the rectus abdominis, obliques, and transverse abdominis. These exercises help strengthen the core, improve posture, and enhance overall stability, contributing to better athletic performance and reduced risk of injury. Popular examples include crunches, planks, and leg raises..
+        /// </summary>
+        internal static string AbdominalsDescription_EN {
+            get {
+                return ResourceManager.GetString("AbdominalsDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Les abdominaux consistent en des mouvements tels que les &quot;crunches&quot; ou &quot;sit-ups&quot;, ciblant spécifiquement les muscles abdominaux pour renforcer la région centrale du corps. Ces exercices contribuent à améliorer la stabilité et la force du noyau..
+        /// </summary>
+        internal static string AbdominalsDescription_FR {
+            get {
+                return ResourceManager.GetString("AbdominalsDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Abdominals.
+        /// </summary>
+        internal static string AbdominalsName_EN {
+            get {
+                return ResourceManager.GetString("AbdominalsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Abdominaux.
+        /// </summary>
+        internal static string AbdominalsName_FR {
+            get {
+                return ResourceManager.GetString("AbdominalsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Fitness Mat.
+        /// </summary>
+        internal static string FitnessMatName_EN {
+            get {
+                return ResourceManager.GetString("FitnessMatName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Tapis de fitness.
+        /// </summary>
+        internal static string FitnessMatName_FR {
+            get {
+                return ResourceManager.GetString("FitnessMatName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Push-ups are a versatile strength training exercise in the sports domain, targeting upper body muscles including shoulders, triceps, and the core abdomen. This plank exercise, adaptable to different fitness levels, contributes to improving functional strength and stability..
+        /// </summary>
+        internal static string PushUpsDescription_EN {
+            get {
+                return ResourceManager.GetString("PushUpsDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Les pompes sont un exercice de musculation polyvalent dans le domaine sportif, renforçant les muscles du haut du corps, y compris les épaules, les triceps et le noyau abdominal. Cet exercice de planche, qui peut être adapté en fonction du niveau de fitness, contribue à améliorer la force fonctionnelle et la stabilité..
+        /// </summary>
+        internal static string PushUpsDescription_FR {
+            get {
+                return ResourceManager.GetString("PushUpsDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Push-ups.
+        /// </summary>
+        internal static string PushUpsName_EN {
+            get {
+                return ResourceManager.GetString("PushUpsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pompes.
+        /// </summary>
+        internal static string PushUpsName_FR {
+            get {
+                return ResourceManager.GetString("PushUpsName_FR", resourceCulture);
+            }
+        }
     }
 }
