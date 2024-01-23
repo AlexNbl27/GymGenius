@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace GymGenius.Controller
 {
 
-    public static class Utilities
+    public static class TranslateUtils
     {
         public static string Translate(string className, string key)
         {

@@ -33,5 +33,10 @@ namespace GymGenius.Controllers
             this.minute = float.Parse(timeArray[1]);
             this.second = float.Parse(timeArray[2]);
         }
+
+        public float getDurationInSecond()
+        {
+            return (this.hour * 3600) + (this.minute * 60) + this.second;
+        }
     }
 }

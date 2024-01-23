@@ -21,7 +21,7 @@ namespace GymGenius.Models
         public FitnessMat()
         {
             idname = "Fitness Mat";
-            Name = Utilities.Translate(idname, "Name");
+            Name = TranslateUtils.Translate(idname, "Name");
         }
     }
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Resources;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -14,28 +15,39 @@ namespace GymGenius.Models
     public abstract class AExercise
     {
         protected string idname;
-        public string translatedName { get; protected set; }
-        public string description { get; protected set; }
-        public ValueController level { get; protected set; }
-        public TimeController duration { get; protected set; } 
-        public List<AEquipment> equipments { get; protected set; }
+        public string Name { get; protected set; }
+        public string Description { get; protected set; }
+        public ValueController Level { get; protected set; }
+        public TimeController Duration { get; protected set; } 
+        public List<AEquipment> Equipments { get; protected set; }
+
+        public AExerciseType Type { get; protected set; }
         public struct Tags
         {
-            List<AMuscles> muscles;
+            List<AMuscles> Muscles;
             bool isAtHome;
         }
     }
 
-    public class Pumps : AExercise
+    public interface ISerie
     {
-        public Pumps()
+        public int NbRepetitions { get; set; }
+    }
+
+    public class PushUps : AExercise, ISerie
+    {
+
+        public int NbRepetitions { get; set; }
+
+        public PushUps()
         {
-            idname = "Pumps";
-            translatedName = Utilities.Translate(idname, "Name");
-            description = Utilities.Translate(idname, "Description");
-            level.value = 1;
-            duration.setTime("00:00:30");
-            equipments = new List<AEquipment>();
+            idname = "PushUps";
+            Name = TranslateUtils.Translate(idname, "Name");
+            Description = TranslateUtils.Translate(idname, "Description");
+            Level.value = 1;
+            Duration.setTime("00:00:30");
+            Equipments = new List<AEquipment>();
+            Type = new Strength();
         }
     }
 
@@ -44,12 +56,13 @@ namespace GymGenius.Models
         public Abdominal()
         {
             idname = "Abdominal";
-            translatedName = Utilities.Translate(idname, "Name");
-            description = Utilities.Translate(idname, "Description");
+            translatedName = TranslateUtils.Translate(idname, "Name");
+            description = TranslateUtils.Translate(idname, "Description");
             level.value = 1;
             duration.setTime(0,0,30);
             equipments = new List<AEquipment>();
             equipments.Add(new FitnessMat());
+            type = new Strength();
         }
     }
 }
