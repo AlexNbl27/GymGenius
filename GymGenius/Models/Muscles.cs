@@ -121,7 +121,7 @@ namespace GymGenius.Models
         {
             idname = "Calves";
             Name = TranslateUtils.Translate(idname, "Name");
-            bodyPart = new Trunk();
+            bodyPart = new Legs();
         }
     }
 
@@ -139,7 +139,7 @@ namespace GymGenius.Models
     {
         public LargeDorsals()
         {
-            idname = "Large Dorsals";
+            idname = "LargeDorsals";
             Name = TranslateUtils.Translate(idname, "Name");
             bodyPart = new Back();
         }
@@ -149,7 +149,7 @@ namespace GymGenius.Models
     {
         public SmallDorsals()
         {
-            idname = "Small Dorsals";
+            idname = "SmallDorsals";
             Name = TranslateUtils.Translate(idname, "Name");
             bodyPart = new Back();
         }
@@ -175,26 +175,6 @@ namespace GymGenius.Models
         }
     }
 
-    public class PectoralisMajor : AMuscles
-    {
-        public PectoralisMajor()
-        {
-            idname = "Pectoralis Major";
-            Name = TranslateUtils.Translate(idname, "Name");
-            bodyPart = new Trunk();
-        }
-    }
-
-    public class PectoralisMinor : AMuscles
-    {
-        public PectoralisMinor()
-        {
-            idname = "Pectoralis Minor";
-            Name = TranslateUtils.Translate(idname, "Name");
-            bodyPart = new Trunk();
-        }
-    }
-
     public class Transerves : AMuscles
     {
         public Transerves()
@@ -202,6 +182,26 @@ namespace GymGenius.Models
             idname = "Transerves";
             Name = TranslateUtils.Translate(idname, "Name");
             bodyPart = new Trunk();
+        }
+    }
+
+    public class RotatorCuff : AMuscles
+    {
+        public RotatorCuff()
+        {
+            idname = "RotatorCuff";
+            Name = TranslateUtils.Translate(idname, "Name");
+            bodyPart = new Shoulders();
+        }
+    }
+
+    public class Rhomboids : AMuscles
+    {
+        public Rhomboids()
+        {
+            idname = "Rhomboids";
+            Name = TranslateUtils.Translate(idname, "Name");
+            bodyPart = new Back();
         }
     }
 }

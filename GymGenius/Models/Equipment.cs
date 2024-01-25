@@ -22,7 +22,7 @@ namespace GymGenius.Models
     {
         public FitnessMat()
         {
-            idname = "Fitness Mat";
+            idname = "FitnessMat";
             Name = TranslateUtils.Translate(idname, "Name");
         }
     }
@@ -31,7 +31,7 @@ namespace GymGenius.Models
     {
         public DoublesBars()
         {
-            idname = "Doubles Bars";
+            idname = "DoublesBars";
             Name = TranslateUtils.Translate(idname, "Name");
         }
     }
@@ -40,7 +40,7 @@ namespace GymGenius.Models
     {
         public MachineDips()
         {
-            idname = "Machine Dips";
+            idname = "MachineDips";
             Name = TranslateUtils.Translate(idname, "Name");
         }
     }
@@ -49,7 +49,7 @@ namespace GymGenius.Models
     {
         public WeightBench()
         {
-            idname = "Weight Bench";
+            idname = "WeightBench";
             Name = TranslateUtils.Translate(idname, "Name");
         }
     }
@@ -67,7 +67,7 @@ namespace GymGenius.Models
     {
         public CurlBar()
         {
-            idname = "Curl Bar";
+            idname = "CurlBar";
             Name = TranslateUtils.Translate(idname, "Name");
         }
     }
@@ -76,7 +76,7 @@ namespace GymGenius.Models
     {
         public HighPulley()
         {
-            idname = "High Pulley";
+            idname = "HighPulley";
             Name = TranslateUtils.Translate(idname, "Name");
         }
     }
@@ -85,7 +85,7 @@ namespace GymGenius.Models
     {
         public LowPulley()
         {
-            idname = "Low Pulley";
+            idname = "LowPulley";
             Name = TranslateUtils.Translate(idname, "Name");
         }
     }
@@ -94,7 +94,7 @@ namespace GymGenius.Models
     {
         public DoublePulley()
         {
-            idname = "Double Pulley";
+            idname = "DoublePulley";
             Name = TranslateUtils.Translate(idname, "Name");
         }
     }
@@ -103,7 +103,7 @@ namespace GymGenius.Models
     {
         public MachinePecDeck()
         {
-            idname = "Machine Pec Deck";
+            idname = "MachinePecDeck";
             Name = TranslateUtils.Translate(idname, "Name");
         }
     }
@@ -121,7 +121,7 @@ namespace GymGenius.Models
     {
         public WeightBar()
         {
-            idname = "Weight Bar";
+            idname = "WeightBar";
             Name = TranslateUtils.Translate(idname, "Name");
         }
     }
@@ -130,7 +130,7 @@ namespace GymGenius.Models
     {
         public WeightDiscus()
         {
-            idname = "Weight Discus";
+            idname = "WeightDiscus";
             Name = TranslateUtils.Translate(idname, "Name");
         }
     }
@@ -157,7 +157,7 @@ namespace GymGenius.Models
     {
         public MachineLegExtension()
         {
-            idname = "Machine Leg Extension";
+            idname = "MachineLegExtension";
             Name = TranslateUtils.Translate(idname, "Name");
         }
     }
@@ -166,7 +166,7 @@ namespace GymGenius.Models
     {
         public MachineLegCurl()
         {
-            idname = "Machine Leg Curl";
+            idname = "MachineLegCurl";
             Name = TranslateUtils.Translate(idname, "Name");
         }
     }
@@ -175,7 +175,7 @@ namespace GymGenius.Models
     {
         public CalfPressMachine()
         {
-            idname = "Calf Press Machine";
+            idname = "CalfPressMachine";
             Name = TranslateUtils.Translate(idname, "Name");
         }
     }
@@ -184,16 +184,16 @@ namespace GymGenius.Models
     {
         public PullUpBar()
         {
-            idname = "Pull Up Bar";
+            idname = "PullUpBar";
             Name = TranslateUtils.Translate(idname, "Name");
         }
     }
 
-    public class  Treadmill : AEquipment
+    public class  TreadmillMachine : AEquipment
     {
-        public Treadmill()
+        public TreadmillMachine()
         {
-            idname = "Treadmill";
+            idname = "TreadmillMachine";
             Name = TranslateUtils.Translate(idname, "Name");
         }
     }
@@ -202,25 +202,25 @@ namespace GymGenius.Models
     {
         public RowingMachine()
         {
-            idname = "Rowing Machine";
+            idname = "RowingMachine";
             Name = TranslateUtils.Translate(idname, "Name");
         }
     }
 
-    public class  Stairs : AEquipment
+    public class  StairsMachne : AEquipment
     {
-        public Stairs()
+        public StairsMachine()
         {
-            idname = "Stairs";
+            idname = "StairsMachine";
             Name = TranslateUtils.Translate(idname, "Name");
         }
     }
 
-    public class  Elliptical : AEquipment
+    public class  EllipticalMachine : AEquipment
     {
-        public Elliptical()
+        public EllipticalMachine()
         {
-            idname = "Elliptical";
+            idname = "EllipticalMachine";
             Name = TranslateUtils.Translate(idname, "Name");
         }
     }
