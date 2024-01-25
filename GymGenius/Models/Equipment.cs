@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Media;
-using System.Xml.Linq;
-using GymGenius.Controller;
-using GymGenius.Properties;
+﻿using GymGenius.Controller;
 
 namespace GymGenius.Models
 {
@@ -189,7 +179,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class  TreadmillMachine : AEquipment
+    public class TreadmillMachine : AEquipment
     {
         public TreadmillMachine()
         {
@@ -207,7 +197,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class  StairsMachne : AEquipment
+    public class StairsMachne : AEquipment
     {
         public StairsMachine()
         {
@@ -216,7 +206,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class  EllipticalMachine : AEquipment
+    public class EllipticalMachine : AEquipment
     {
         public EllipticalMachine()
         {

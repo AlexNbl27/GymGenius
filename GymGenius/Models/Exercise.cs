@@ -1,15 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Resources;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
-using GymGenius.Controller;
+﻿using GymGenius.Controller;
 using GymGenius.Controllers;
-using GymGenius.Properties;
 
 namespace GymGenius.Models
 {

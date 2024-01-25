@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
+﻿using System.Globalization;
 using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GymGenius.Controller
 {
@@ -42,7 +37,7 @@ namespace GymGenius.Controller
                             string key = entry.Key.ToString();
                             string toBeRemoved = "Name_" + lang;
                             key = key.Replace(toBeRemoved, "").TrimEnd('_');
-                    
+
                             // Return the modified key if found
                             return key;
                         }

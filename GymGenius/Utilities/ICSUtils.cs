@@ -1,10 +1,9 @@
-﻿using System.DirectoryServices;
+﻿using GymGenius.Controller;
+using GymGenius.Models;
+using Microsoft.Win32;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
-using GymGenius.Controller;
-using GymGenius.Models;
-using Microsoft.Win32;
 
 namespace GymGenius.Utilities
 {
@@ -17,11 +16,11 @@ namespace GymGenius.Utilities
         private string location;
         private List<AExercise> allExercises;
 
-        public ICSUtils ()
+        public ICSUtils()
         {
         }
 
-        public ICSUtils (string summary, DateTime startTime, DateTime endTime, string location, List<AExercise> allExercises)
+        public ICSUtils(string summary, DateTime startTime, DateTime endTime, string location, List<AExercise> allExercises)
         {
             this.summary = summary;
             this.startTime = startTime.ToString("yyyyMMddTHHmmssZ");
@@ -30,7 +29,7 @@ namespace GymGenius.Utilities
             this.location = location;
         }
 
-        
+
         // Fonctions pour exporter un fichier .ics
         public void ExportICS()
         {
@@ -41,7 +40,7 @@ namespace GymGenius.Utilities
             {
                 index++;
                 this.description += " " + index + ") " + exercise.Name + "\\" + "n";
-        
+
                 // Check if it's not the last exercise
                 if (index < allExercises.Count)
                 {
@@ -130,7 +129,7 @@ namespace GymGenius.Utilities
 
                 // Read the content of the file
                 string icsContent = File.ReadAllText(selectedFilePath);
-                
+
                 string allExercises = ParseICSFile(icsContent);
                 Session session = CreateSession(allExercises);
                 return session;
@@ -168,7 +167,8 @@ namespace GymGenius.Utilities
                     {
                         summary = value;
                     }
-                } else if(insideDESCRIPTION)
+                }
+                else if (insideDESCRIPTION)
                 {
                     string value = pair[0];
                     allExercises += value + "\n";
