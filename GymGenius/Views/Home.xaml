@@ -21,10 +21,14 @@
                     <Image Source="{DynamicResource LogoHeader}" Height="90" Width="120" Margin="15, 0, 0, 0"/>
                 </Grid>
                 <Grid x:Name="Bar" Grid.Column="0">
-                    <TextBox x:Name="coucou" BorderBrush="#33443C" Width="550" Height="30" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" Padding="5, 6, 0, 0" />
+                <TextBox x:Name="coucou" 
+                         BorderBrush="#33443C" 
+                         Width="550" 
+                         Height="30"
+                         Padding="5, 6, 0, 0" />
                 </Grid>
                 <Grid x:Name="Search" Grid.Column="0" >
-                    <Button x:Name="myButton" Background="#33443C" Width="30" Height="30" Click="Button_Click" Cursor="Hand" Margin="600, 0, 0, 0">
+                    <Button x:Name="myButton" Background="#33443C" Width="30" Height="30" Cursor="Hand" Margin="600, 0, 0, 0">
                         <Image Source="{DynamicResource search}" Height="20" Width="20" />
                     </Button>
                 </Grid>
@@ -32,12 +36,14 @@
                 <Rectangle Height="1" HorizontalAlignment="Stretch" Stroke="Black" VerticalAlignment="Top" />
             </Grid>
         </Grid>
+
+        <Frame x:Name="MainContentFrame" Grid.Row="1"/> 
         <Grid x:Name="Orga">
             <Grid x:Name="Title">
                 <TextBlock Text="ORGANISER VOS SEANCES" Foreground="#607169" Margin="0, 0, 0, 515" FontSize="30"  VerticalAlignment="Center" HorizontalAlignment="Center" />
             </Grid>
             <Grid Height="200" Margin="50,0,50,150">
-                <Rectangle Fill="#33443C" HorizontalAlignment="Stretch"/>
+                <Rectangle RadiusX="15" RadiusY="15" Fill="#33443C" HorizontalAlignment="Stretch"/>
                 <Grid x:Name="quand" HorizontalAlignment="Left">
                     <TextBlock Text="Quand ?"
                            VerticalAlignment="Top"
@@ -89,8 +95,11 @@
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0, 0, 10, 10">
-                    <Image Source="{DynamicResource fleche}" Height="200" Width="200"/>
+                <Grid HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0, 0, 10, 20">
+                    <Button x:Name="buttonswitch" Background="#33443C" Click="Button_Click" 
+                            Cursor="Hand" >
+                        <Image Source="{DynamicResource fleche}" Height="20" Width="20"/>
+                    </Button>
                 </Grid>
             </Grid>
         </Grid>

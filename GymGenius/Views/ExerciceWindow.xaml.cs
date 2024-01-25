@@ -1,5 +1,8 @@
-﻿using GymGenius.Views;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -10,15 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace GymGenius
+namespace GymGenius.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Logique d'interaction pour ExerciceWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ExerciceWindow : Window
     {
-   
-        public MainWindow()
+        public ExerciceWindow()
         {
             InitializeComponent();
             InitializePlaceholder();
@@ -36,7 +38,7 @@ namespace GymGenius
 
         private void TextBox_LostFocus(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(coucou.Text))
+            if (string.IsNullOrWhiteSpace(searchbar.Text))
             {
                 ShowPlaceholder();
             }
@@ -44,30 +46,35 @@ namespace GymGenius
 
         private void ShowPlaceholder()
         {
-            coucou.Text = "Rechercher un exercice en particulier"; 
-            coucou.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#25322C"));
-            coucou.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#33443C"));
+            searchbar.Text = "Rechercher un exercice en particulier";
+            searchbar.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#25322C"));
+            searchbar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#33443C"));
         }
 
         private void HidePlaceholder()
         {
-            if (coucou.Text == "Rechercher un exercice en particulier")
+            if (searchbar.Text == "Rechercher un exercice en particulier")
             {
-                coucou.Text = string.Empty;
-                coucou.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#25322C"));
-                coucou.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#33443C"));
+                searchbar.Text = string.Empty;
+                searchbar.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#25322C"));
+                searchbar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#33443C"));
             }
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Show();
-            ExerciceWindow exerciceWindow = new();
-            exerciceWindow.Show();
+            // Gérer le clic du bouton
         }
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
             // La case à cocher a été cochée, exécutez votre logique ici
         }
+
+        internal static void Navigate(ExerciceWindow newPage)
+        {
+            throw new NotImplementedException();
+        }
+
     }
+
 }

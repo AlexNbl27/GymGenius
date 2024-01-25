@@ -8,5 +8,6 @@
         <BitmapImage x:Key="LogoHeader" UriSource="Assets/Logo.png" />
         <BitmapImage x:Key="switch" UriSource="Assets/SwitchOn.png" />
         <BitmapImage x:Key="fleche" UriSource="Assets/flecheadroite.png" />
+        <BitmapImage x:Key="imagesport" UriSource="Assets/imagesport.png" />
     </Application.Resources>
 </Application>
