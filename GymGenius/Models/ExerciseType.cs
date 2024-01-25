@@ -22,11 +22,11 @@ namespace GymGenius.Models
         }
     }
 
-    public class Strength : AExerciseType
+    public class Muscular : AExerciseType
     {
-        public Strength()
+        public Muscular()
         {
-            idname = "Strength";
+            idname = "Muscular";
             Name = TranslateUtils.Translate(idname, "Name");
         }
     }
