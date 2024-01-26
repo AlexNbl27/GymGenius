@@ -4,5 +4,10 @@
              StartupUri="Views/Home.xaml">
     <Application.Resources>
         <BitmapImage x:Key="Logo" UriSource="Assets/Logo.jpg" />
+        <BitmapImage x:Key="search" UriSource="Assets/search.png" />
+        <BitmapImage x:Key="LogoHeader" UriSource="Assets/Logo.png" />
+        <BitmapImage x:Key="switch" UriSource="Assets/SwitchOn.png" />
+        <BitmapImage x:Key="fleche" UriSource="Assets/flecheadroite.png" />
+        <BitmapImage x:Key="imagesport" UriSource="Assets/imagesport.png" />
     </Application.Resources>
 </Application>
