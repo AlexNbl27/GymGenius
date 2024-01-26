@@ -10,20 +10,20 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace GymGenius.Views
 {
     /// <summary>
-    /// Logique d'interaction pour ExerciceWindow.xaml
+    /// Logique d'interaction pour Seance.xaml
     /// </summary>
-    public partial class ExerciceWindow : Window
+    public partial class Seance : Window
     {
-        public ExerciceWindow()
+        public Seance()
         {
             InitializeComponent();
             InitializePlaceholder();
+            DataContext = this;
         }
 
         private void InitializePlaceholder()
@@ -65,13 +65,22 @@ namespace GymGenius.Views
         {
             // La case à cocher a été cochée, exécutez votre logique ici
         }
+        public int NumericalValue { get; set; }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void NumericTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            Show();
-            Seance seance = new();
-            seance.Show();
-        }
-    }
+            // Valider que la saisie est un chiffre
+            if (!Char.IsDigit(e.Text, 0))
+            {
+                e.Handled = true;
+            }
 
+            // Limiter la valeur maximale à 5
+            if (int.TryParse(numericTextBox.Text + e.Text, out int result) && result > 5)
+            {
+                e.Handled = true;
+            }
+        }
+
+    }
 }
