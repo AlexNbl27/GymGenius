@@ -17,9 +17,9 @@ namespace GymGenius.Models
         }
     }
 
-    public class DoublesBars : AEquipment
+    public class DoubleBars : AEquipment
     {
-        public DoublesBars()
+        public DoubleBars()
         {
             idname = "DoublesBars";
             Name = TranslateUtils.Translate(idname, "Name");
@@ -197,7 +197,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class StairsMachne : AEquipment
+    public class StairsMachine : AEquipment
     {
         public StairsMachine()
         {

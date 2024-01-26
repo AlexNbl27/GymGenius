@@ -1,5 +1,6 @@
 ﻿using GymGenius.Controller;
 using GymGenius.Controllers;
+using GymGenius.Models;
 
 namespace GymGenius.Models
 {
@@ -41,7 +42,7 @@ public class Dips : AExercise, ISerie
         Description = TranslateUtils.Translate(idname, "Description");
         Level.value = 3;
         Duration.setTime("00:00:03");
-        Equipments.Add(new DoublesBars());
+        Equipments.Add(new DoubleBars());
         Equipments.Add(new MachineDips());
         Type = new Muscular();
         Tags.Muscles = new List<AMuscles>();
@@ -545,7 +546,7 @@ public class LegFlexion : AExercise, ISerie
         Description = TranslateUtils.Translate(idname, "Description");
         Level.value = 2;
         Duration.setTime("00:00:03");
-        Equipments.Add(new MachineLegFlexion());
+        Equipments.Add(new MachineLegCurl());
         Type = new Muscular();
 
         Tags.Muscles = new List<AMuscles>();
@@ -683,7 +684,7 @@ public class Stairs : AExercise
         Description = TranslateUtils.Translate(idname, "Description");
         Level.value = 3;
         Duration.setTime("00:10:00");
-        Equipments.Add(new StairsMachne());
+        Equipments.Add(new StairsMachine());
         Type = new Muscular();
 
         Tags.Muscles = new List<AMuscles>();
