@@ -197,7 +197,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class StairsMachne : AEquipment
+    public class StairsMachine : AEquipment
     {
         public StairsMachine()
         {
