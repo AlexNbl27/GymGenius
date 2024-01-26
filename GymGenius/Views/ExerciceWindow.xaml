@@ -1,0 +1,100 @@
+﻿<Window x:Class="GymGenius.Views.ExerciceWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GymGenius.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ExerciceWindow">
+
+    <Grid x:Name="All" Background="#25322C">
+        <Grid x:Name="Header" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <!-- Première colonne pour le TextBox -->
+                <ColumnDefinition Width="Auto" />
+                <!-- Deuxième colonne pour le Button -->
+            </Grid.ColumnDefinitions>
+            <Grid x:Name="Logo" HorizontalAlignment="Left">
+                <Image Source="{DynamicResource LogoHeader}" Height="90" Width="120" Margin="15, 0, 0, 0"/>
+            </Grid>
+            <Grid x:Name="Bar" Grid.Column="0" >
+                <TextBox x:Name="searchbar" BorderBrush="#33443C" Width="550" Height="30" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" Padding="5, 6, 0, 0" />
+            </Grid>
+            <Grid x:Name="Search" Grid.Column="0" >
+                <Button x:Name="myButton" Background="#33443C" Width="30" Height="30" Click="Button_Click" Cursor="Hand" Margin="600, 0, 0, 0" >
+                    <Image Source="{DynamicResource search}" Height="20" Width="20" />
+                </Button>
+            </Grid>
+            <Grid x:Name="Line" Margin="0, 80, 0, 0">
+                <Rectangle Height="1" HorizontalAlignment="Stretch" Stroke="Black" VerticalAlignment="Top" />
+            </Grid>
+        </Grid>
+        <Grid x:Name="exercice">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Ajouter du contenu à la première colonne -->
+            <Border Grid.Column="0">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="Exercice 1" Foreground="#607169" FontSize="16" Margin="10, 0, 0, 0"/>
+                    <Grid>
+                        <Grid>
+                            <Rectangle Fill="#202B26" Width="400" Height="250" RadiusX="15" RadiusY="15"/>
+                            <Grid x:Name="texte" Margin="20,10,0,0">
+                                <Grid>
+                                    <TextBlock Text="NOM DE L'EXERCICE" 
+                                               FontSize="20"
+                                               FontWeight="Bold"/>
+                                </Grid>
+                                <Grid>
+                                    <Image Source="{DynamicResource imagesport}" 
+                                           Height="150" 
+                                           Width="150"
+                                           HorizontalAlignment="Left" 
+                                           VerticalAlignment="Top" 
+                                           Margin="0, 30, 0, 0"/>
+                                </Grid>
+                                <Grid Margin="0, 50, 60, 0" HorizontalAlignment="Right" VerticalAlignment="Top">
+                                    <Grid Margin="0, 20, 0, 0">
+                                        <TextBlock Text="Muscle(s) sollicité(s)" FontSize="18"/>
+                                    </Grid>
+                                    <Grid Margin="0, 45, 0, 0">
+                                        <TextBlock Text="Equipements" FontSize="18"/>
+                                    </Grid>
+                                    <Grid Margin="0, 70, 0, 0">
+                                        <TextBlock Text="Level" FontSize="18"/>
+                                    </Grid>
+                                </Grid>
+                                <Grid VerticalAlignment="Bottom" Margin="0, 0, 0, 40">
+                                    <TextBlock Text="Description : Lorem ipsum dolor amet, consectetur..."
+                                               FontSize="16" 
+                                               TextWrapping="Wrap"/>
+                                </Grid>
+                                <Grid HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0, 0, 10, 5">
+                                    <Button x:Name="buttonswitch" 
+                                            Background="#202B26" 
+                                            Click="Button_Click" 
+                                            Cursor="Hand" >
+                                        <Image Source="{DynamicResource fleche}" Height="20" Width="20"/>
+                                    </Button>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+
+                    </Grid>
+                </StackPanel>
+            </Border>
+
+
+            <!-- Ajouter du contenu à la deuxième colonne -->
+            <Border Grid.Column="1">
+                <!-- Votre contenu ici -->
+                <TextBlock Text="Partie 2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

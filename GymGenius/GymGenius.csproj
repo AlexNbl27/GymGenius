@@ -10,7 +10,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\flecheadroite.png" />
+    <None Remove="Assets\imagesport.png" />
     <None Remove="Assets\Logo.jpg" />
+    <None Remove="Assets\Logo.png" />
+    <None Remove="Assets\search.jpg" />
+    <None Remove="Assets\search.png" />
+    <None Remove="Assets\Switch.png" />
+    <None Remove="Assets\Switch2.png" />
+    <None Remove="Assets\Vector.jpg" />
+    <None Remove="Assets\Vector.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Views\Search.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,7 +31,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\flecheadroite.png" />
+    <Resource Include="Assets\imagesport.png" />
     <Resource Include="Assets\Logo.jpg" />
+    <Resource Include="Assets\Logo.png" />
+    <Resource Include="Assets\search.png" />
   </ItemGroup>
 
   <ItemGroup>
