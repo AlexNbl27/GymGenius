@@ -61,6 +61,24 @@ namespace GymGenius.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Abductors.
+        /// </summary>
+        internal static string AbductorsName_EN {
+            get {
+                return ResourceManager.GetString("AbductorsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Abducteurs.
+        /// </summary>
+        internal static string AbductorsName_FR {
+            get {
+                return ResourceManager.GetString("AbductorsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à The standing rotation curl is one of the most effective movements for building biceps muscle. It targets the biceps in their entirety: biceps brachii, brachialis anterior and brachioradialis..
         /// </summary>
         internal static string AlternatingDumbbellCurlDescription_EN {
@@ -97,6 +115,42 @@ namespace GymGenius.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Arms.
+        /// </summary>
+        internal static string ArmsName_EN {
+            get {
+                return ResourceManager.GetString("ArmsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Bras.
+        /// </summary>
+        internal static string ArmsName_FR {
+            get {
+                return ResourceManager.GetString("ArmsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Back.
+        /// </summary>
+        internal static string BackName_EN {
+            get {
+                return ResourceManager.GetString("BackName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Dos.
+        /// </summary>
+        internal static string BackName_FR {
+            get {
+                return ResourceManager.GetString("BackName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à The bench press is a poly-articular strength and muscle-building exercise performed on a weight bench in the supine position..
         /// </summary>
         internal static string BenchPressDescription_EN {
@@ -129,6 +183,24 @@ namespace GymGenius.Properties {
         internal static string BenchPressName_FR {
             get {
                 return ResourceManager.GetString("BenchPressName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Biceps.
+        /// </summary>
+        internal static string BicepsName_EN {
+            get {
+                return ResourceManager.GetString("BicepsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Biceps.
+        /// </summary>
+        internal static string BicepsName_FR {
+            get {
+                return ResourceManager.GetString("BicepsName_FR", resourceCulture);
             }
         }
         
@@ -223,6 +295,24 @@ namespace GymGenius.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Calf press machine.
+        /// </summary>
+        internal static string CalfPressMachineName_EN {
+            get {
+                return ResourceManager.GetString("CalfPressMachineName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Machine presse mollet.
+        /// </summary>
+        internal static string CalfPressMachineName_FR {
+            get {
+                return ResourceManager.GetString("CalfPressMachineName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Calf press.
         /// </summary>
         internal static string CalfPressName_EN {
@@ -237,6 +327,42 @@ namespace GymGenius.Properties {
         internal static string CalfPressName_FR {
             get {
                 return ResourceManager.GetString("CalfPressName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Calves.
+        /// </summary>
+        internal static string CalvesName_EN {
+            get {
+                return ResourceManager.GetString("CalvesName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Mollets.
+        /// </summary>
+        internal static string CalvesName_FR {
+            get {
+                return ResourceManager.GetString("CalvesName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Cardio.
+        /// </summary>
+        internal static string CardioName_EN {
+            get {
+                return ResourceManager.GetString("CardioName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Cardio.
+        /// </summary>
+        internal static string CardioName_FR {
+            get {
+                return ResourceManager.GetString("CardioName_FR", resourceCulture);
             }
         }
         
@@ -273,6 +399,24 @@ namespace GymGenius.Properties {
         internal static string CrunchName_FR {
             get {
                 return ResourceManager.GetString("CrunchName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Curl bar.
+        /// </summary>
+        internal static string CurlBarName_EN {
+            get {
+                return ResourceManager.GetString("CurlBarName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Barre de flexion.
+        /// </summary>
+        internal static string CurlBarName_FR {
+            get {
+                return ResourceManager.GetString("CurlBarName_FR", resourceCulture);
             }
         }
         
@@ -349,6 +493,24 @@ namespace GymGenius.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Deltoids.
+        /// </summary>
+        internal static string DeltoidsName_EN {
+            get {
+                return ResourceManager.GetString("DeltoidsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Deltoids.
+        /// </summary>
+        internal static string DeltoidsName_FR {
+            get {
+                return ResourceManager.GetString("DeltoidsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Dips, are a polyarticular muscle-building exercise designed primarily to develop strength and volume in the triceps, pectorals and shoulders (anterior deltoid)..
         /// </summary>
         internal static string DipsDescription_EN {
@@ -385,6 +547,60 @@ namespace GymGenius.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Double bars.
+        /// </summary>
+        internal static string DoubleBarsName_EN {
+            get {
+                return ResourceManager.GetString("DoubleBarsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Double bars.
+        /// </summary>
+        internal static string DoubleBarsName_FR {
+            get {
+                return ResourceManager.GetString("DoubleBarsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Double poulie.
+        /// </summary>
+        internal static string DoublePulleyName_EN {
+            get {
+                return ResourceManager.GetString("DoublePulleyName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Poulie double.
+        /// </summary>
+        internal static string DoublePulleyName_FR {
+            get {
+                return ResourceManager.GetString("DoublePulleyName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Dumbbells.
+        /// </summary>
+        internal static string DumbbellsName_EN {
+            get {
+                return ResourceManager.GetString("DumbbellsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Haltère.
+        /// </summary>
+        internal static string DumbbellsName_FR {
+            get {
+                return ResourceManager.GetString("DumbbellsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à An elliptical is a static exercise machine used to simulate running, climbing and walking without exposing joints to excessive pressure. Elliptical bikes offer a non-impact cardiovascular workout whose intensity can vary according to user-defined preferences..
         /// </summary>
         internal static string ElipticalBikeDescription_EN {
@@ -417,6 +633,24 @@ namespace GymGenius.Properties {
         internal static string ElipticalBikeName_FR {
             get {
                 return ResourceManager.GetString("ElipticalBikeName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Elliptical machine.
+        /// </summary>
+        internal static string EllipticalMachineName_EN {
+            get {
+                return ResourceManager.GetString("EllipticalMachineName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Machine elliptique.
+        /// </summary>
+        internal static string EllipticalMachineName_FR {
+            get {
+                return ResourceManager.GetString("EllipticalMachineName_FR", resourceCulture);
             }
         }
         
@@ -471,6 +705,24 @@ namespace GymGenius.Properties {
         internal static string FitnessMatName_FR {
             get {
                 return ResourceManager.GetString("FitnessMatName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Forearms.
+        /// </summary>
+        internal static string ForearmsName_EN {
+            get {
+                return ResourceManager.GetString("ForearmsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Avant-bras.
+        /// </summary>
+        internal static string ForearmsName_FR {
+            get {
+                return ResourceManager.GetString("ForearmsName_FR", resourceCulture);
             }
         }
         
@@ -543,6 +795,60 @@ namespace GymGenius.Properties {
         internal static string FrontalElevationName_FR {
             get {
                 return ResourceManager.GetString("FrontalElevationName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Glutes.
+        /// </summary>
+        internal static string GlutesName_EN {
+            get {
+                return ResourceManager.GetString("GlutesName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Fessier.
+        /// </summary>
+        internal static string GlutesName_FR {
+            get {
+                return ResourceManager.GetString("GlutesName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Hamstrings.
+        /// </summary>
+        internal static string HamstringsName_EN {
+            get {
+                return ResourceManager.GetString("HamstringsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ischio-jambiers.
+        /// </summary>
+        internal static string HamstringsName_FR {
+            get {
+                return ResourceManager.GetString("HamstringsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à High pulley.
+        /// </summary>
+        internal static string HighPulleyName_EN {
+            get {
+                return ResourceManager.GetString("HighPulleyName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Poulie haute.
+        /// </summary>
+        internal static string HighPulleyName_FR {
+            get {
+                return ResourceManager.GetString("HighPulleyName_FR", resourceCulture);
             }
         }
         
@@ -655,6 +961,24 @@ namespace GymGenius.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Large dorsals.
+        /// </summary>
+        internal static string LargeDorsalsName_EN {
+            get {
+                return ResourceManager.GetString("LargeDorsalsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Grand dorsaux.
+        /// </summary>
+        internal static string LargeDorsalsName_FR {
+            get {
+                return ResourceManager.GetString("LargeDorsalsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à The thigh press improves strength (with heavy loads), which is essential for deadlifts and squats. It&apos;s the perfect guided-load machine for building muscle in real comfort..
         /// </summary>
         internal static string LegPressDescription_EN {
@@ -763,6 +1087,114 @@ namespace GymGenius.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Legs.
+        /// </summary>
+        internal static string LegsName_EN {
+            get {
+                return ResourceManager.GetString("LegsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Jambes.
+        /// </summary>
+        internal static string LegsName_FR {
+            get {
+                return ResourceManager.GetString("LegsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Low pulley.
+        /// </summary>
+        internal static string LowPulleyName_EN {
+            get {
+                return ResourceManager.GetString("LowPulleyName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Poulie basse.
+        /// </summary>
+        internal static string LowPulleyName_FR {
+            get {
+                return ResourceManager.GetString("LowPulleyName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Dips machine.
+        /// </summary>
+        internal static string MachineDipsName_EN {
+            get {
+                return ResourceManager.GetString("MachineDipsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Machine dips.
+        /// </summary>
+        internal static string MachineDipsName_FR {
+            get {
+                return ResourceManager.GetString("MachineDipsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Leg curl machine.
+        /// </summary>
+        internal static string MachineLegCurlName_EN {
+            get {
+                return ResourceManager.GetString("MachineLegCurlName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Machine leg flexion.
+        /// </summary>
+        internal static string MachineLegCurlName_FR {
+            get {
+                return ResourceManager.GetString("MachineLegCurlName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Leg extension machine.
+        /// </summary>
+        internal static string MachineLegExtensionName_EN {
+            get {
+                return ResourceManager.GetString("MachineLegExtensionName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Machine leg extension.
+        /// </summary>
+        internal static string MachineLegExtensionName_FR {
+            get {
+                return ResourceManager.GetString("MachineLegExtensionName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pec deck machine.
+        /// </summary>
+        internal static string MachinePecDeckName_EN {
+            get {
+                return ResourceManager.GetString("MachinePecDeckName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Machine pec deck.
+        /// </summary>
+        internal static string MachinePecDeckName_FR {
+            get {
+                return ResourceManager.GetString("MachinePecDeckName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à The &quot;military&quot; bench press, also known as the front press, is an exercise designed to strengthen the shoulders. The shoulder is a complex joint made up of three main fascicles. These are the anterior deltoid, the lateral or middle deltoid and the posterior deltoid..
         /// </summary>
         internal static string MilitaryBenchPressDescription_EN {
@@ -795,6 +1227,96 @@ namespace GymGenius.Properties {
         internal static string MilitaryBenchPressName_FR {
             get {
                 return ResourceManager.GetString("MilitaryBenchPressName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Muscular.
+        /// </summary>
+        internal static string MuscularName_EN {
+            get {
+                return ResourceManager.GetString("MuscularName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Musculaire.
+        /// </summary>
+        internal static string MuscularName_FR {
+            get {
+                return ResourceManager.GetString("MuscularName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Neck.
+        /// </summary>
+        internal static string NeckName_EN {
+            get {
+                return ResourceManager.GetString("NeckName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Cou.
+        /// </summary>
+        internal static string NeckName_FR {
+            get {
+                return ResourceManager.GetString("NeckName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Obliques.
+        /// </summary>
+        internal static string ObliquesName_EN {
+            get {
+                return ResourceManager.GetString("ObliquesName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Obliques.
+        /// </summary>
+        internal static string ObliquesName_FR {
+            get {
+                return ResourceManager.GetString("ObliquesName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pectorals.
+        /// </summary>
+        internal static string PectoralsName_EN {
+            get {
+                return ResourceManager.GetString("PectoralsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pectoraux.
+        /// </summary>
+        internal static string PectoralsName_FR {
+            get {
+                return ResourceManager.GetString("PectoralsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Press.
+        /// </summary>
+        internal static string PressName_EN {
+            get {
+                return ResourceManager.GetString("PressName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Presse.
+        /// </summary>
+        internal static string PressName_FR {
+            get {
+                return ResourceManager.GetString("PressName_FR", resourceCulture);
             }
         }
         
@@ -835,6 +1357,24 @@ namespace GymGenius.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pulley.
+        /// </summary>
+        internal static string PulleyName_EN {
+            get {
+                return ResourceManager.GetString("PulleyName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Poulie.
+        /// </summary>
+        internal static string PulleyName_FR {
+            get {
+                return ResourceManager.GetString("PulleyName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à The high pulley triceps extension is a muscle-building exercise for developing the triceps. Although it is primarily an isolation exercise, it is no less effective than basic polyarticular exercises such as dips or bench presses..
         /// </summary>
         internal static string PulleyTricepsExtensionsDescription_EN {
@@ -867,6 +1407,24 @@ namespace GymGenius.Properties {
         internal static string PulleyTricepsExtensionsName_FR {
             get {
                 return ResourceManager.GetString("PulleyTricepsExtensionsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pull up bar.
+        /// </summary>
+        internal static string PullUpBarName_EN {
+            get {
+                return ResourceManager.GetString("PullUpBarName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Bar de traction.
+        /// </summary>
+        internal static string PullUpBarName_FR {
+            get {
+                return ResourceManager.GetString("PullUpBarName_FR", resourceCulture);
             }
         }
         
@@ -943,38 +1501,128 @@ namespace GymGenius.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Quadriceps.
+        /// </summary>
+        internal static string QuadricepsName_EN {
+            get {
+                return ResourceManager.GetString("QuadricepsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Quadriceps.
+        /// </summary>
+        internal static string QuadricepsName_FR {
+            get {
+                return ResourceManager.GetString("QuadricepsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Rhomboids.
+        /// </summary>
+        internal static string RhomboidsName_EN {
+            get {
+                return ResourceManager.GetString("RhomboidsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Rhomboids.
+        /// </summary>
+        internal static string RhomboidsName_FR {
+            get {
+                return ResourceManager.GetString("RhomboidsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Rotator cuff.
+        /// </summary>
+        internal static string RotatorCuffName_EN {
+            get {
+                return ResourceManager.GetString("RotatorCuffName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Coiffe des rotateurs.
+        /// </summary>
+        internal static string RotatorCuffName_FR {
+            get {
+                return ResourceManager.GetString("RotatorCuffName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à A rowing machine is a physical exercise machine that makes the user reproduce a movement that would make him move if he wasn&apos;t on the machine..
         /// </summary>
-        internal static string RowingMachineDescription_EN {
+        internal static string RowingDescription_EN {
             get {
-                return ResourceManager.GetString("RowingMachineDescription_EN", resourceCulture);
+                return ResourceManager.GetString("RowingDescription_EN", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Un rameur est une machine d&apos;exercice physique qui consiste à faire reproduire à l&apos;utilisateur un mouvement qui le ferait se déplacer s&apos;il n&apos;était pas sur la machine..
         /// </summary>
-        internal static string RowingMachineDescription_FR {
+        internal static string RowingDescription_FR {
             get {
-                return ResourceManager.GetString("RowingMachineDescription_FR", resourceCulture);
+                return ResourceManager.GetString("RowingDescription_FR", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Rowing machine.
         /// </summary>
-        internal static string RowingMachineName_EN {
+        internal static string RowingMachineName__EN {
             get {
-                return ResourceManager.GetString("RowingMachineName_EN", resourceCulture);
+                return ResourceManager.GetString("RowingMachineName_ EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Machine à ramer.
+        /// </summary>
+        internal static string RowingMachineName__FR {
+            get {
+                return ResourceManager.GetString("RowingMachineName_ FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Rowing machine.
+        /// </summary>
+        internal static string RowingName_EN {
+            get {
+                return ResourceManager.GetString("RowingName_EN", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Rameur.
         /// </summary>
-        internal static string RowingMachineName_FR {
+        internal static string RowingName_FR {
             get {
-                return ResourceManager.GetString("RowingMachineName_FR", resourceCulture);
+                return ResourceManager.GetString("RowingName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Shoulders.
+        /// </summary>
+        internal static string ShouldersName_EN {
+            get {
+                return ResourceManager.GetString("ShouldersName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Épaules.
+        /// </summary>
+        internal static string ShouldersName_FR {
+            get {
+                return ResourceManager.GetString("ShouldersName_FR", resourceCulture);
             }
         }
         
@@ -1051,6 +1699,24 @@ namespace GymGenius.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Small dorsals.
+        /// </summary>
+        internal static string SmallDorsalsName_EN {
+            get {
+                return ResourceManager.GetString("SmallDorsalsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Petit dorsaux.
+        /// </summary>
+        internal static string SmallDorsalsName_FR {
+            get {
+                return ResourceManager.GetString("SmallDorsalsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à The squat is a poly-articular strength and muscle-building exercise targeting the thigh muscles (mainly quadriceps, adductors and hamstrings) and glutes..
         /// </summary>
         internal static string SquatDescription_EN {
@@ -1105,6 +1771,24 @@ namespace GymGenius.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Stairs machine.
+        /// </summary>
+        internal static string StairsMachineName_EN {
+            get {
+                return ResourceManager.GetString("StairsMachineName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Machine escalier.
+        /// </summary>
+        internal static string StairsMachineName_FR {
+            get {
+                return ResourceManager.GetString("StairsMachineName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Stairs.
         /// </summary>
         internal static string StairsName_EN {
@@ -1119,6 +1803,60 @@ namespace GymGenius.Properties {
         internal static string StairsName_FR {
             get {
                 return ResourceManager.GetString("StairsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Stretching.
+        /// </summary>
+        internal static string StretchingName_EN {
+            get {
+                return ResourceManager.GetString("StretchingName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Étirement.
+        /// </summary>
+        internal static string StretchingName_FR {
+            get {
+                return ResourceManager.GetString("StretchingName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Transverses.
+        /// </summary>
+        internal static string TransversesName_EN {
+            get {
+                return ResourceManager.GetString("TransversesName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Transverses.
+        /// </summary>
+        internal static string TransversesName_FR {
+            get {
+                return ResourceManager.GetString("TransversesName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Trapezius.
+        /// </summary>
+        internal static string TrapeziusName_EN {
+            get {
+                return ResourceManager.GetString("TrapeziusName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Trapèze.
+        /// </summary>
+        internal static string TrapeziusName_FR {
+            get {
+                return ResourceManager.GetString("TrapeziusName_FR", resourceCulture);
             }
         }
         
@@ -1141,6 +1879,24 @@ namespace GymGenius.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Treadmill machine.
+        /// </summary>
+        internal static string TreadmillMachineName_EN {
+            get {
+                return ResourceManager.GetString("TreadmillMachineName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Machine tapis de course.
+        /// </summary>
+        internal static string TreadmillMachineName_FR {
+            get {
+                return ResourceManager.GetString("TreadmillMachineName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Treadmill.
         /// </summary>
         internal static string TreadmillName_EN {
@@ -1155,6 +1911,114 @@ namespace GymGenius.Properties {
         internal static string TreadmillName_FR {
             get {
                 return ResourceManager.GetString("TreadmillName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Triceps.
+        /// </summary>
+        internal static string TricepsName_EN {
+            get {
+                return ResourceManager.GetString("TricepsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Triceps.
+        /// </summary>
+        internal static string TricepsName_FR {
+            get {
+                return ResourceManager.GetString("TricepsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Trunc.
+        /// </summary>
+        internal static string TruncName_EN {
+            get {
+                return ResourceManager.GetString("TruncName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Tronc.
+        /// </summary>
+        internal static string TruncName_FR {
+            get {
+                return ResourceManager.GetString("TruncName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Weight bar.
+        /// </summary>
+        internal static string WeightBarName_EN {
+            get {
+                return ResourceManager.GetString("WeightBarName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Barre de musculation.
+        /// </summary>
+        internal static string WeightBarName_FR {
+            get {
+                return ResourceManager.GetString("WeightBarName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Weight bench.
+        /// </summary>
+        internal static string WeightBenchName_EN {
+            get {
+                return ResourceManager.GetString("WeightBenchName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Banc de musculation.
+        /// </summary>
+        internal static string WeightBenchName_FR {
+            get {
+                return ResourceManager.GetString("WeightBenchName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Weight discus.
+        /// </summary>
+        internal static string WeightDiscusName_EN {
+            get {
+                return ResourceManager.GetString("WeightDiscusName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Disque de poids.
+        /// </summary>
+        internal static string WeightDiscusName_FR {
+            get {
+                return ResourceManager.GetString("WeightDiscusName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Weight.
+        /// </summary>
+        internal static string WeightName_EN {
+            get {
+                return ResourceManager.GetString("WeightName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Poids.
+        /// </summary>
+        internal static string WeightName_FR {
+            get {
+                return ResourceManager.GetString("WeightName_FR", resourceCulture);
             }
         }
     }

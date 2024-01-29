@@ -117,12 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AbdominalsName_EN" xml:space="preserve">
-    <value>Abdominals</value>
-  </data>
-  <data name="AbdominalsName_FR" xml:space="preserve">
-    <value>Abdominaux</value>
-  </data>
   <data name="AbductorsName_EN" xml:space="preserve">
     <value>Abductors</value>
   </data>
@@ -621,10 +615,10 @@
   <data name="RotatorCuffName_FR" xml:space="preserve">
     <value>Coiffe des rotateurs</value>
   </data>
-  <data name="RowingMachineDescription_EN" xml:space="preserve">
+  <data name="RowingDescription_EN" xml:space="preserve">
     <value>A rowing machine is a physical exercise machine that makes the user reproduce a movement that would make him move if he wasn't on the machine.</value>
   </data>
-  <data name="RowingMachineDescription_FR" xml:space="preserve">
+  <data name="RowingDescription_FR" xml:space="preserve">
     <value>Un rameur est une machine d'exercice physique qui consiste à faire reproduire à l'utilisateur un mouvement qui le ferait se déplacer s'il n'était pas sur la machine.</value>
   </data>
   <data name="RowingMachineName_ EN" xml:space="preserve">
@@ -633,10 +627,10 @@
   <data name="RowingMachineName_ FR" xml:space="preserve">
     <value>Machine à ramer</value>
   </data>
-  <data name="RowingMachineName_EN" xml:space="preserve">
+  <data name="RowingName_EN" xml:space="preserve">
     <value>Rowing machine</value>
   </data>
-  <data name="RowingMachineName_FR" xml:space="preserve">
+  <data name="RowingName_FR" xml:space="preserve">
     <value>Rameur</value>
   </data>
   <data name="ShouldersName_EN" xml:space="preserve">

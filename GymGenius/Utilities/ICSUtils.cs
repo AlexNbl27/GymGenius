@@ -16,9 +16,7 @@ namespace GymGenius.Utilities
         private string location;
         private List<AExercise> allExercises;
 
-        public ICSUtils()
-        {
-        }
+        public ICSUtils() { }
 
         public ICSUtils(string summary, DateTime startTime, DateTime endTime, string location, List<AExercise> allExercises)
         {
@@ -220,13 +218,66 @@ namespace GymGenius.Utilities
             {
                 case "PushUps":
                     return new PushUps();
-                    break;
-                case "Abdominal":
+                case "Crunch":
                     return new Crunch();
-                    break;
+                case "Dips":
+                    return new Dips();
+                case "BenchPress":
+                    return new BenchPress();
+                case "InclineBenchPress":
+                    return new InclineBenchPress();
+                case "ForeheadBar":
+                    return new ForeheadBar();
+                case "PulleyTricepsExtensions":
+                    return new PulleyTricepsExtensions();
+                case "CableMiddleFly":
+                    return new CableMiddleFly();
+                case "SideElevation":
+                    return new SideElevation();
+                case "FrontalElevation":
+                    return new FrontalElevation();
+                case "BirdElevation":
+                    return new BirdElevation();
+                case "MilitaryPress":
+                    return new MilitaryPress();
+                case "InvertedPecDeck":
+                    return new InvertedPecDeck();
+                case "FacePull":
+                    return new FacePull();
+                case "HorizontalDraft":
+                    return new HorizontalDraft();
+                case "Deadlift":
+                    return new Deadlift();
+                case "BicepsCurl":
+                    return new BicepsCurl();
+                case "CurlRotation":
+                    return new CurlRotation();
+                case "PulleyCurl":
+                    return new PulleyCurl();
+                case "Squat":
+                    return new Squat();
+                case "LegPress":
+                    return new LegPress();
+                case "Slots":
+                    return new Slots();
+                case "LegExtension":
+                    return new LegExtension();
+                case "LegFlexion":
+                    return new LegFlexion();
+                case "CalfPress":
+                    return new CalfPress();
+                case "PullUps":
+                    return new PullUps();
+                case "Treadmill":
+                    return new Treadmill();
+                case "Rowing":
+                    return new Rowing();
+                case "Stairs":
+                    return new Stairs();
+                case "Elliptical":
+                    return new Elliptical();
                 default:
                     return null;
-                    break;
             }
         }
     }

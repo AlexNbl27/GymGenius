@@ -43,7 +43,7 @@ namespace GymGenius.Models
             Description = TranslateUtils.Translate(idname, "Description");
             Level.value = 3;
             Duration.setTime("00:00:03");
-            Equipments.Add(new DoublesBars());
+            Equipments.Add(new DoubleBars());
             Equipments.Add(new MachineDips());
             Type = new Muscular();
             Tags.Muscles = new List<AMuscles>();

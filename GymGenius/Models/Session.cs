@@ -4,10 +4,10 @@ namespace GymGenius.Models
 {
     public class Session
     {
-        protected List<AExercise> exercises;
-        protected float totalDuration;
-        protected bool isAtHome;
-        protected TimeController restTime;
+        public List<AExercise> exercises;
+        public float totalDuration;
+        public bool isAtHome;
+        public TimeController restTime;
 
         public Session(List<AExercise> _exercises)
         {

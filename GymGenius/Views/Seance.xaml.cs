@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using GymGenius.Utilities;
 
 namespace GymGenius.Views
 {
@@ -34,6 +35,17 @@ namespace GymGenius.Views
                 new PullUps(),
                 new Dips(),
             };
+
+            // Set the DataContext to this window so that bindings work
+            DataContext = this;
+        }
+
+        public Seance(Session session)
+        {
+            InitializeComponent();
+            InitializePlaceholder();
+
+            Exercises = session.exercises;
 
             // Set the DataContext to this window so that bindings work
             DataContext = this;
@@ -80,5 +92,23 @@ namespace GymGenius.Views
         }
         public int NumericalValue { get; set; }
 
+        public void Button_Click(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void ExportButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Create an instance of ICSUtils with fake variables
+            ICSUtils ics = new ICSUtils(
+                "Seance de musculation",
+                DateTime.Now,
+                DateTime.Now.AddHours(1),
+                "Gym",
+                this.Exercises
+            );
+
+            // Call the ExportICS method
+            ics.ExportICS();
+        }
     }
 }

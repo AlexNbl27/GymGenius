@@ -9,6 +9,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GymGenius.Models;
+using GymGenius.Utilities;
 
 namespace GymGenius
 {
@@ -36,33 +38,32 @@ namespace GymGenius
 
         private void TextBox_LostFocus(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(coucou.Text))
-            {
-                ShowPlaceholder();
-            }
         }
 
         private void ShowPlaceholder()
         {
-            coucou.Text = "Rechercher un exercice en particulier"; 
-            coucou.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#25322C"));
-            coucou.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#6D887B"));
         }
 
         private void HidePlaceholder()
         {
-            if (coucou.Text == "Rechercher un exercice en particulier")
-            {
-                coucou.Text = string.Empty;
-                coucou.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#25322C"));
-                coucou.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#6D887B"));
-            }
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Show();
             ExerciceWindow exerciceWindow = new();
             exerciceWindow.Show();
+        }
+
+        private void ImportButton_Click(object sender, RoutedEventArgs e)
+        {
+            Show();
+            ICSUtils ics = new();
+            Session session = ics.ImportICS();
+            if (session != null)
+            {
+                Seance seance = new(session);
+                seance.Show();
+            }   
         }
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
