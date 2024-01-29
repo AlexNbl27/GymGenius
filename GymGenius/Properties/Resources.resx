@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AbdominalsName_EN" xml:space="preserve">
+    <value>Abdominals</value>
+  </data>
+  <data name="AbdominalsName_FR" xml:space="preserve">
+    <value>Abdominaux</value>
+  </data>
+  <data name="AbductorsName_EN" xml:space="preserve">
+    <value>Abductors</value>
+  </data>
+  <data name="AbductorsName_FR" xml:space="preserve">
+    <value>Abducteurs</value>
+  </data>
   <data name="AlternatingDumbbellCurlDescription_EN" xml:space="preserve">
     <value>The standing rotation curl is one of the most effective movements for building biceps muscle. It targets the biceps in their entirety: biceps brachii, brachialis anterior and brachioradialis.</value>
   </data>
@@ -129,6 +141,18 @@
   <data name="AlternatingDumbbellCurlName_FR" xml:space="preserve">
     <value>Flexion rotation</value>
   </data>
+  <data name="ArmsName_EN" xml:space="preserve">
+    <value>Arms</value>
+  </data>
+  <data name="ArmsName_FR" xml:space="preserve">
+    <value>Bras</value>
+  </data>
+  <data name="BackName_EN" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="BackName_FR" xml:space="preserve">
+    <value>Dos</value>
+  </data>
   <data name="BenchPressDescription_EN" xml:space="preserve">
     <value>The bench press is a poly-articular strength and muscle-building exercise performed on a weight bench in the supine position.</value>
   </data>
@@ -140,6 +164,12 @@
   </data>
   <data name="BenchPressName_FR" xml:space="preserve">
     <value>Développé couché</value>
+  </data>
+  <data name="BicepsName_EN" xml:space="preserve">
+    <value>Biceps</value>
+  </data>
+  <data name="BicepsName_FR" xml:space="preserve">
+    <value>Biceps</value>
   </data>
   <data name="BirdElevationDescription_EN" xml:space="preserve">
     <value>Known as the bird, the movement that imitates the flapping of wings, or posterior raises, this variation of lateral raises is ideal for developing the back of the shoulders. This exercise targets the posterior and middle deltoids.</value>
@@ -171,11 +201,29 @@
   <data name="CalfPressDescription_FR" xml:space="preserve">
     <value>La presse à mollets professionnelle est conçue pour les personnes désireuses de s'entrainer en isolant bien les muscles des mollets. En effet, grâce à la position assise et avec une position des pieds légèrement inclinée, vous pouvez travailler les mollets avec une contraction maximale.</value>
   </data>
+  <data name="CalfPressMachineName_EN" xml:space="preserve">
+    <value>Calf press machine</value>
+  </data>
+  <data name="CalfPressMachineName_FR" xml:space="preserve">
+    <value>Machine presse mollet</value>
+  </data>
   <data name="CalfPressName_EN" xml:space="preserve">
     <value>Calf press</value>
   </data>
   <data name="CalfPressName_FR" xml:space="preserve">
     <value>Presse à mollet</value>
+  </data>
+  <data name="CalvesName_EN" xml:space="preserve">
+    <value>Calves</value>
+  </data>
+  <data name="CalvesName_FR" xml:space="preserve">
+    <value>Mollets</value>
+  </data>
+  <data name="CardioName_EN" xml:space="preserve">
+    <value>Cardio</value>
+  </data>
+  <data name="CardioName_FR" xml:space="preserve">
+    <value>Cardio</value>
   </data>
   <data name="CrunchDescription_EN" xml:space="preserve">
     <value>The crunch or spinal curl is one of the most popular abdominal exercises. It mainly works the rectus abdominis muscle.</value>
@@ -188,6 +236,12 @@
   </data>
   <data name="CrunchName_FR" xml:space="preserve">
     <value>Crunch</value>
+  </data>
+  <data name="CurlBarName_EN" xml:space="preserve">
+    <value>Curl bar</value>
+  </data>
+  <data name="CurlBarName_FR" xml:space="preserve">
+    <value>Barre de flexion</value>
   </data>
   <data name="CurlBicepsDescription_EN" xml:space="preserve">
     <value>The biceps flexion is a classic bodybuilding exercise targeting the biceps brachii muscle. It's an isolation movement.</value>
@@ -213,6 +267,12 @@
   <data name="DeadliftName_FR" xml:space="preserve">
     <value>Soulevé de terre</value>
   </data>
+  <data name="DeltoidsName_EN" xml:space="preserve">
+    <value>Deltoids</value>
+  </data>
+  <data name="DeltoidsName_FR" xml:space="preserve">
+    <value>Deltoids</value>
+  </data>
   <data name="DipsDescription_EN" xml:space="preserve">
     <value>Dips, are a polyarticular muscle-building exercise designed primarily to develop strength and volume in the triceps, pectorals and shoulders (anterior deltoid).</value>
   </data>
@@ -225,6 +285,24 @@
   <data name="DipsName_FR" xml:space="preserve">
     <value>Doubles barres</value>
   </data>
+  <data name="DoubleBarsName_EN" xml:space="preserve">
+    <value>Double bars</value>
+  </data>
+  <data name="DoubleBarsName_FR" xml:space="preserve">
+    <value>Double bars</value>
+  </data>
+  <data name="DoublePulleyName_EN" xml:space="preserve">
+    <value>Double poulie</value>
+  </data>
+  <data name="DoublePulleyName_FR" xml:space="preserve">
+    <value>Poulie double</value>
+  </data>
+  <data name="DumbbellsName_EN" xml:space="preserve">
+    <value>Dumbbells</value>
+  </data>
+  <data name="DumbbellsName_FR" xml:space="preserve">
+    <value>Haltère</value>
+  </data>
   <data name="ElipticalBikeDescription_EN" xml:space="preserve">
     <value>An elliptical is a static exercise machine used to simulate running, climbing and walking without exposing joints to excessive pressure. Elliptical bikes offer a non-impact cardiovascular workout whose intensity can vary according to user-defined preferences.</value>
   </data>
@@ -236,6 +314,12 @@
   </data>
   <data name="ElipticalBikeName_FR" xml:space="preserve">
     <value>Vélo elliptique</value>
+  </data>
+  <data name="EllipticalMachineName_EN" xml:space="preserve">
+    <value>Elliptical machine</value>
+  </data>
+  <data name="EllipticalMachineName_FR" xml:space="preserve">
+    <value>Machine elliptique</value>
   </data>
   <data name="FacePullDescription_EN" xml:space="preserve">
     <value>The face pull is an excellent way of strengthening rotator cuff muscles such as the infraspinatus. This helps build stability and strength in the shoulder blades, making your shoulders more resistant to injury.</value>
@@ -254,6 +338,12 @@
   </data>
   <data name="FitnessMatName_FR" xml:space="preserve">
     <value>Tapis de fitness</value>
+  </data>
+  <data name="ForearmsName_EN" xml:space="preserve">
+    <value>Forearms</value>
+  </data>
+  <data name="ForearmsName_FR" xml:space="preserve">
+    <value>Avant-bras</value>
   </data>
   <data name="ForeheadBarDescription_EN" xml:space="preserve">
     <value>The forehead bar is a muscle-building movement that targets the triceps (back of the arm) and uses the forearms to a lesser extent.</value>
@@ -278,6 +368,24 @@
   </data>
   <data name="FrontalElevationName_FR" xml:space="preserve">
     <value>Élévation frontale</value>
+  </data>
+  <data name="GlutesName_EN" xml:space="preserve">
+    <value>Glutes</value>
+  </data>
+  <data name="GlutesName_FR" xml:space="preserve">
+    <value>Fessier</value>
+  </data>
+  <data name="HamstringsName_EN" xml:space="preserve">
+    <value>Hamstrings</value>
+  </data>
+  <data name="HamstringsName_FR" xml:space="preserve">
+    <value>Ischio-jambiers</value>
+  </data>
+  <data name="HighPulleyName_EN" xml:space="preserve">
+    <value>High pulley</value>
+  </data>
+  <data name="HighPulleyName_FR" xml:space="preserve">
+    <value>Poulie haute</value>
   </data>
   <data name="HorizontalDraftDescription_EN" xml:space="preserve">
     <value>The horizontal pull, or seated rowing on the low pulley, is a strength-building exercise for the back. It works the back in thickness, and is appreciated by many weight-lifters, from beginners to advanced.</value>
@@ -315,6 +423,12 @@
   <data name="InvertedPecDeckName_FR" xml:space="preserve">
     <value>Pec deck inversé</value>
   </data>
+  <data name="LargeDorsalsName_EN" xml:space="preserve">
+    <value>Large dorsals</value>
+  </data>
+  <data name="LargeDorsalsName_FR" xml:space="preserve">
+    <value>Grand dorsaux</value>
+  </data>
   <data name="LegPressDescription_EN" xml:space="preserve">
     <value>The thigh press improves strength (with heavy loads), which is essential for deadlifts and squats. It's the perfect guided-load machine for building muscle in real comfort.</value>
   </data>
@@ -351,6 +465,42 @@
   <data name="LegsFlexionsName_FR" xml:space="preserve">
     <value>Legs flexions</value>
   </data>
+  <data name="LegsName_EN" xml:space="preserve">
+    <value>Legs</value>
+  </data>
+  <data name="LegsName_FR" xml:space="preserve">
+    <value>Jambes</value>
+  </data>
+  <data name="LowPulleyName_EN" xml:space="preserve">
+    <value>Low pulley</value>
+  </data>
+  <data name="LowPulleyName_FR" xml:space="preserve">
+    <value>Poulie basse</value>
+  </data>
+  <data name="MachineDipsName_EN" xml:space="preserve">
+    <value>Dips machine</value>
+  </data>
+  <data name="MachineDipsName_FR" xml:space="preserve">
+    <value>Machine dips</value>
+  </data>
+  <data name="MachineLegCurlName_EN" xml:space="preserve">
+    <value>Leg curl machine</value>
+  </data>
+  <data name="MachineLegCurlName_FR" xml:space="preserve">
+    <value>Machine leg flexion</value>
+  </data>
+  <data name="MachineLegExtensionName_EN" xml:space="preserve">
+    <value>Leg extension machine</value>
+  </data>
+  <data name="MachineLegExtensionName_FR" xml:space="preserve">
+    <value>Machine leg extension</value>
+  </data>
+  <data name="MachinePecDeckName_EN" xml:space="preserve">
+    <value>Pec deck machine</value>
+  </data>
+  <data name="MachinePecDeckName_FR" xml:space="preserve">
+    <value>Machine pec deck</value>
+  </data>
   <data name="MilitaryBenchPressDescription_EN" xml:space="preserve">
     <value>The "military" bench press, also known as the front press, is an exercise designed to strengthen the shoulders. The shoulder is a complex joint made up of three main fascicles. These are the anterior deltoid, the lateral or middle deltoid and the posterior deltoid.</value>
   </data>
@@ -362,6 +512,36 @@
   </data>
   <data name="MilitaryBenchPressName_FR" xml:space="preserve">
     <value>Développé militaire</value>
+  </data>
+  <data name="MuscularName_EN" xml:space="preserve">
+    <value>Muscular</value>
+  </data>
+  <data name="MuscularName_FR" xml:space="preserve">
+    <value>Musculaire</value>
+  </data>
+  <data name="NeckName_EN" xml:space="preserve">
+    <value>Neck</value>
+  </data>
+  <data name="NeckName_FR" xml:space="preserve">
+    <value>Cou</value>
+  </data>
+  <data name="ObliquesName_EN" xml:space="preserve">
+    <value>Obliques</value>
+  </data>
+  <data name="ObliquesName_FR" xml:space="preserve">
+    <value>Obliques</value>
+  </data>
+  <data name="PectoralsName_EN" xml:space="preserve">
+    <value>Pectorals</value>
+  </data>
+  <data name="PectoralsName_FR" xml:space="preserve">
+    <value>Pectoraux</value>
+  </data>
+  <data name="PressName_EN" xml:space="preserve">
+    <value>Press</value>
+  </data>
+  <data name="PressName_FR" xml:space="preserve">
+    <value>Presse</value>
   </data>
   <data name="PulleyCurlDescription_EN" xml:space="preserve">
     <value>Standing in front of a low pulley, hands in supinated grip about shoulder-width apart, in a stable position (back straight, feet shoulder-width apart), bend the elbows, keeping them close to the body.</value>
@@ -375,6 +555,12 @@
   <data name="PulleyCurlName_FR" xml:space="preserve">
     <value>Flexion à la poulie</value>
   </data>
+  <data name="PulleyName_EN" xml:space="preserve">
+    <value>Pulley</value>
+  </data>
+  <data name="PulleyName_FR" xml:space="preserve">
+    <value>Poulie</value>
+  </data>
   <data name="PulleyTricepsExtensionsDescription_EN" xml:space="preserve">
     <value>The high pulley triceps extension is a muscle-building exercise for developing the triceps. Although it is primarily an isolation exercise, it is no less effective than basic polyarticular exercises such as dips or bench presses.</value>
   </data>
@@ -386,6 +572,12 @@
   </data>
   <data name="PulleyTricepsExtensionsName_FR" xml:space="preserve">
     <value>Extensions triceps à la poulie</value>
+  </data>
+  <data name="PullUpBarName_EN" xml:space="preserve">
+    <value>Pull up bar</value>
+  </data>
+  <data name="PullUpBarName_FR" xml:space="preserve">
+    <value>Bar de traction</value>
   </data>
   <data name="PullUpsDescription_EN" xml:space="preserve">
     <value>The pull-up is a physical exercise consisting in raising your shoulders to the level of a barbell by holding it with your hands. The main aim of pull-ups is to develop back and arm muscles.</value>
@@ -411,17 +603,47 @@
   <data name="PushUpsName_FR" xml:space="preserve">
     <value>Pompes</value>
   </data>
+  <data name="QuadricepsName_EN" xml:space="preserve">
+    <value>Quadriceps</value>
+  </data>
+  <data name="QuadricepsName_FR" xml:space="preserve">
+    <value>Quadriceps</value>
+  </data>
+  <data name="RhomboidsName_EN" xml:space="preserve">
+    <value>Rhomboids</value>
+  </data>
+  <data name="RhomboidsName_FR" xml:space="preserve">
+    <value>Rhomboids</value>
+  </data>
+  <data name="RotatorCuffName_EN" xml:space="preserve">
+    <value>Rotator cuff</value>
+  </data>
+  <data name="RotatorCuffName_FR" xml:space="preserve">
+    <value>Coiffe des rotateurs</value>
+  </data>
   <data name="RowingMachineDescription_EN" xml:space="preserve">
     <value>A rowing machine is a physical exercise machine that makes the user reproduce a movement that would make him move if he wasn't on the machine.</value>
   </data>
   <data name="RowingMachineDescription_FR" xml:space="preserve">
     <value>Un rameur est une machine d'exercice physique qui consiste à faire reproduire à l'utilisateur un mouvement qui le ferait se déplacer s'il n'était pas sur la machine.</value>
   </data>
+  <data name="RowingMachineName_ EN" xml:space="preserve">
+    <value>Rowing machine</value>
+  </data>
+  <data name="RowingMachineName_ FR" xml:space="preserve">
+    <value>Machine à ramer</value>
+  </data>
   <data name="RowingMachineName_EN" xml:space="preserve">
     <value>Rowing machine</value>
   </data>
   <data name="RowingMachineName_FR" xml:space="preserve">
     <value>Rameur</value>
+  </data>
+  <data name="ShouldersName_EN" xml:space="preserve">
+    <value>Shoulders</value>
+  </data>
+  <data name="ShouldersName_FR" xml:space="preserve">
+    <value>Épaules</value>
   </data>
   <data name="SideElevationDescription_EN" xml:space="preserve">
     <value>The lateral raise is a muscle-building exercise that develops and broadens the shoulders, especially the middle fascicles of the deltoids, and to a lesser degree the other shoulder muscles.</value>
@@ -447,6 +669,12 @@
   <data name="SlotsName_FR" xml:space="preserve">
     <value>Fentes</value>
   </data>
+  <data name="SmallDorsalsName_EN" xml:space="preserve">
+    <value>Small dorsals</value>
+  </data>
+  <data name="SmallDorsalsName_FR" xml:space="preserve">
+    <value>Petit dorsaux</value>
+  </data>
   <data name="SquatDescription_EN" xml:space="preserve">
     <value>The squat is a poly-articular strength and muscle-building exercise targeting the thigh muscles (mainly quadriceps, adductors and hamstrings) and glutes.</value>
   </data>
@@ -465,11 +693,35 @@
   <data name="StairsDescription_FR" xml:space="preserve">
     <value>Ce type d'appareil permet à l'utilisateur d'effectuer des mouvements semblables à ceux utilisés lors d'une montée d'escalier, ce qui exerce plusieurs groupes musculaires et ajoute de la variété à l'entrainement.</value>
   </data>
+  <data name="StairsMachineName_EN" xml:space="preserve">
+    <value>Stairs machine</value>
+  </data>
+  <data name="StairsMachineName_FR" xml:space="preserve">
+    <value>Machine escalier</value>
+  </data>
   <data name="StairsName_EN" xml:space="preserve">
     <value>Stairs</value>
   </data>
   <data name="StairsName_FR" xml:space="preserve">
     <value>Escaliers</value>
+  </data>
+  <data name="StretchingName_EN" xml:space="preserve">
+    <value>Stretching</value>
+  </data>
+  <data name="StretchingName_FR" xml:space="preserve">
+    <value>Étirement</value>
+  </data>
+  <data name="TransversesName_EN" xml:space="preserve">
+    <value>Transverses</value>
+  </data>
+  <data name="TransversesName_FR" xml:space="preserve">
+    <value>Transverses</value>
+  </data>
+  <data name="TrapeziusName_EN" xml:space="preserve">
+    <value>Trapezius</value>
+  </data>
+  <data name="TrapeziusName_FR" xml:space="preserve">
+    <value>Trapèze</value>
   </data>
   <data name="TreadmillDescription_EN" xml:space="preserve">
     <value>Running on a treadmill is a great way to get exercise all year round. The treadmill can be used to work different muscles in the body: legs, thighs, buttocks, lumbar and abdominal muscles.</value>
@@ -477,10 +729,52 @@
   <data name="TreadmillDescription_FR" xml:space="preserve">
     <value>Courir sur un tapis de course est un excellent moyen de faire de l’exercice toute l’année. Le tapis de course permet de travailler différents muscles du corps: jambes, cuisses, fessiers, lombaires, abdominaux.</value>
   </data>
+  <data name="TreadmillMachineName_EN" xml:space="preserve">
+    <value>Treadmill machine</value>
+  </data>
+  <data name="TreadmillMachineName_FR" xml:space="preserve">
+    <value>Machine tapis de course</value>
+  </data>
   <data name="TreadmillName_EN" xml:space="preserve">
     <value>Treadmill</value>
   </data>
   <data name="TreadmillName_FR" xml:space="preserve">
     <value>Tapis de course</value>
+  </data>
+  <data name="TricepsName_EN" xml:space="preserve">
+    <value>Triceps</value>
+  </data>
+  <data name="TricepsName_FR" xml:space="preserve">
+    <value>Triceps</value>
+  </data>
+  <data name="TruncName_EN" xml:space="preserve">
+    <value>Trunc</value>
+  </data>
+  <data name="TruncName_FR" xml:space="preserve">
+    <value>Tronc</value>
+  </data>
+  <data name="WeightBarName_EN" xml:space="preserve">
+    <value>Weight bar</value>
+  </data>
+  <data name="WeightBarName_FR" xml:space="preserve">
+    <value>Barre de musculation</value>
+  </data>
+  <data name="WeightBenchName_EN" xml:space="preserve">
+    <value>Weight bench</value>
+  </data>
+  <data name="WeightBenchName_FR" xml:space="preserve">
+    <value>Banc de musculation</value>
+  </data>
+  <data name="WeightDiscusName_EN" xml:space="preserve">
+    <value>Weight discus</value>
+  </data>
+  <data name="WeightDiscusName_FR" xml:space="preserve">
+    <value>Disque de poids</value>
+  </data>
+  <data name="WeightName_EN" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="WeightName_FR" xml:space="preserve">
+    <value>Poids</value>
   </data>
 </root>

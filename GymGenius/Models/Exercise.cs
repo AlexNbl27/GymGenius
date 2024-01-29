@@ -1,5 +1,6 @@
 ﻿using GymGenius.Controller;
 using GymGenius.Controllers;
+using GymGenius.Models;
 
 namespace GymGenius.Models
 {
@@ -19,6 +20,7 @@ namespace GymGenius.Models
             public List<AMuscles> Muscles;
             public bool isAtHome;
         }
+
 
         public TagsStruct Tags = new TagsStruct();
     }
