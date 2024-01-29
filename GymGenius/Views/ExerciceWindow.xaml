@@ -7,7 +7,7 @@
         xmlns:components="clr-namespace:GymGenius.Views.Components" 
         xmlns:utilities="clr-namespace:GymGenius.Utilities"
         mc:Ignorable="d" 
-        Title="Exercices" Height="700" Width="1300">
+        Title="Exercices" Height="900" Width="1300">
     <Window.Resources>
         <utilities:ListToStringConverter x:Key="ListToStringConverter"/>
     </Window.Resources>
@@ -17,8 +17,9 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="60" />
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid x:Name="Header" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>
@@ -32,7 +33,7 @@
                 <TextBox x:Name="searchbar" BorderBrush="#33443C" Width="550" Height="30" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" Padding="5, 6, 0, 0" />
             </Grid>
             <Grid x:Name="Search" Grid.Column="0" >
-                <Button x:Name="myButton" Background="#33443C" Width="30" Height="30" Click="Button_Click" Cursor="Hand" Margin="600, 0, 0, 0" >
+                <Button x:Name="myButton" Background="#33443C" Width="30" Height="30" Click="OnSearch_click" Cursor="Hand" Margin="600, 0, 0, 0" >
                     <Image Source="{DynamicResource search}" Height="20" Width="20" />
                 </Button>
             </Grid>
@@ -118,6 +119,16 @@
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
             </Border>
+        </Grid>
+        <Grid Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid>
+                <Border Grid.Column="0" Background="#33443C" CornerRadius="5" Width="400" Height="80" Margin="0, 0, 10, 20">
+                    <Button x:Name="buttonswitch" Background="Transparent" Click="Button_Click" Cursor="Hand">
+                        <!-- Add content for the button here -->
+                        <TextBlock Text="Créer la séance" Foreground="White" Margin="5" FontSize="32"/>
+                    </Button>
+                </Border>
+            </Grid>
         </Grid>
     </Grid>
 </Window>

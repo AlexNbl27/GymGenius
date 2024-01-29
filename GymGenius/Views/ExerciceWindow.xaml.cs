@@ -95,5 +95,10 @@ namespace GymGenius.Views
         {
 
         }
+
+        private void OnSearch_click(object sender, RoutedEventArgs e)
+        {
+            // Handle search button click event
+        }
     }
 }
