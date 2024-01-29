@@ -229,6 +229,5 @@ namespace GymGenius.Utilities
                     break;
             }
         }
-
     }
 }

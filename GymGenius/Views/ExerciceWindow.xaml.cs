@@ -1,29 +1,31 @@
-﻿using System;
+﻿using GymGenius.Models;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace GymGenius.Views
 {
-    /// <summary>
-    /// Logique d'interaction pour ExerciceWindow.xaml
-    /// </summary>
     public partial class ExerciceWindow : Window
     {
+        // Property to store the list of exercises
+        public List<AExercise> Exercises { get; set; }
+
         public ExerciceWindow()
         {
             InitializeComponent();
             InitializePlaceholder();
+
+            // Initialize the list of exercises
+            Exercises = new List<AExercise>
+            {
+                new PushUps(),
+                new PullUps(),
+                new Dips(),
+            };
+
+            // Set the DataContext to this window so that bindings work
+            DataContext = this;
         }
 
         private void InitializePlaceholder()
@@ -48,7 +50,7 @@ namespace GymGenius.Views
         {
             searchbar.Text = "Rechercher un exercice en particulier";
             searchbar.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#25322C"));
-            searchbar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#33443C"));
+            searchbar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#6D887B"));
         }
 
         private void HidePlaceholder()
@@ -57,12 +59,13 @@ namespace GymGenius.Views
             {
                 searchbar.Text = string.Empty;
                 searchbar.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#25322C"));
-                searchbar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#33443C"));
+                searchbar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#6D887B"));
             }
         }
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
+            // Handle checkbox checked event
             // La case à cocher a été cochée, exécutez votre logique ici
         }
 
@@ -72,6 +75,25 @@ namespace GymGenius.Views
             Seance seance = new();
             seance.Show();
         }
-    }
 
+        private void NumericTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            // Valider que la saisie est un chiffre
+            if (!Char.IsDigit(e.Text, 0))
+            {
+                e.Handled = true;
+            }
+
+            // Limiter la valeur maximale à 5
+            if (int.TryParse(numericTextBox.Text + e.Text, out int result) && result > 5)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void numericTextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+
+        }
+    }
 }

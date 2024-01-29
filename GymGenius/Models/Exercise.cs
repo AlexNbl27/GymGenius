@@ -8,8 +8,8 @@ namespace GymGenius.Models
         protected string idname;
         public string Name { get; protected set; }
         public string Description { get; protected set; }
-        public ValueController Level { get; protected set; }
-        public TimeController Duration { get; protected set; }
+        public ValueController Level { get; protected set; } = new ValueController();
+        public TimeController Duration { get; protected set; } = new TimeController(new DateTime());
 
         public AExerciseType Type = new Muscular();
         public List<AEquipment> Equipments { get; protected set; } = new List<AEquipment>();

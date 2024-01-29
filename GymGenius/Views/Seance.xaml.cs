@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GymGenius.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,10 +20,22 @@ namespace GymGenius.Views
     /// </summary>
     public partial class Seance : Window
     {
+        public List<AExercise> Exercises { get; set; }
+
         public Seance()
         {
             InitializeComponent();
             InitializePlaceholder();
+
+            // Initialize the list of exercises
+            Exercises = new List<AExercise>
+            {
+                new PushUps(),
+                new PullUps(),
+                new Dips(),
+            };
+
+            // Set the DataContext to this window so that bindings work
             DataContext = this;
         }
 
@@ -48,7 +61,7 @@ namespace GymGenius.Views
         {
             searchbar.Text = "Rechercher un exercice en particulier";
             searchbar.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#25322C"));
-            searchbar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#33443C"));
+            searchbar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#6D887B"));
         }
 
         private void HidePlaceholder()
@@ -57,7 +70,7 @@ namespace GymGenius.Views
             {
                 searchbar.Text = string.Empty;
                 searchbar.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#25322C"));
-                searchbar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#33443C"));
+                searchbar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#6D887B"));
             }
         }
 
@@ -66,21 +79,6 @@ namespace GymGenius.Views
             // La case à cocher a été cochée, exécutez votre logique ici
         }
         public int NumericalValue { get; set; }
-
-        private void NumericTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
-        {
-            // Valider que la saisie est un chiffre
-            if (!Char.IsDigit(e.Text, 0))
-            {
-                e.Handled = true;
-            }
-
-            // Limiter la valeur maximale à 5
-            if (int.TryParse(numericTextBox.Text + e.Text, out int result) && result > 5)
-            {
-                e.Handled = true;
-            }
-        }
 
     }
 }
