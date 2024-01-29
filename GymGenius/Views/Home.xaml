@@ -1,7 +1,7 @@
 ﻿<Window x:Class="GymGenius.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="GymGenius" Height="350" Width="525">
+        Title="GymGenius" Height="700" Width="1300">
     <Window.Resources>
         <Style TargetType="DatePicker">
             <Setter Property="FocusVisualStyle" Value="{x:Null}" />
@@ -9,71 +9,78 @@
     </Window.Resources>
 
 
-    <Grid x:Name="All" Background="#25322C">
+    <Grid x:Name="All" Background="#99B0A5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
         <Grid x:Name="Header" VerticalAlignment="Top">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <!-- Première colonne pour le TextBox -->
-                    <ColumnDefinition Width="Auto" />
-                    <!-- Deuxième colonne pour le Button -->
-                </Grid.ColumnDefinitions>
-                <Grid x:Name="Logo" HorizontalAlignment="Left">
-                    <Image Source="{DynamicResource LogoHeader}" Height="90" Width="120" Margin="15, 0, 0, 0"/>
-                </Grid>
-                <Grid x:Name="Bar" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <!-- Première colonne pour le TextBox -->
+                <ColumnDefinition Width="Auto" />
+                <!-- Deuxième colonne pour le Button -->
+            </Grid.ColumnDefinitions>
+            <Grid x:Name="Logo" HorizontalAlignment="Left">
+                <Image Source="{DynamicResource LogoHeader}" Height="90" Width="120" Margin="15, 0, 0, 0"/>
+            </Grid>
+            <Grid x:Name="Bar" Grid.Column="0">
                 <TextBox x:Name="coucou" 
-                         BorderBrush="#33443C" 
+                         BorderBrush="#6D887B" 
                          Width="550" 
                          Height="30"
                          Padding="5, 6, 0, 0" />
-                </Grid>
-                <Grid x:Name="Search" Grid.Column="0" >
-                    <Button x:Name="myButton" Background="#33443C" Width="30" Height="30" Cursor="Hand" Margin="600, 0, 0, 0">
-                        <Image Source="{DynamicResource search}" Height="20" Width="20" />
-                    </Button>
-                </Grid>
+            </Grid>
+            <Grid x:Name="Search" Grid.Column="0" >
+                <Button x:Name="myButton" Background="#33443C" Width="30" Height="30" Cursor="Hand" Margin="600, 0, 0, 0">
+                    <Image Source="{DynamicResource search}" Height="20" Width="20" />
+                </Button>
+            </Grid>
             <Grid x:Name="Line" Margin="0, 80, 0, 0">
                 <Rectangle Height="1" HorizontalAlignment="Stretch" Stroke="Black" VerticalAlignment="Top" />
             </Grid>
         </Grid>
 
-        <Frame x:Name="MainContentFrame" Grid.Row="1"/> 
-        <Grid x:Name="Orga">
-            <Grid x:Name="Title">
-                <TextBlock Text="ORGANISER VOS SEANCES" Foreground="#607169" Margin="0, 0, 0, 515" FontSize="30"  VerticalAlignment="Center" HorizontalAlignment="Center" />
-            </Grid>
-            <Grid Height="200" Margin="50,0,50,150">
-                <Rectangle RadiusX="15" RadiusY="15" Fill="#33443C" HorizontalAlignment="Stretch"/>
-                <Grid x:Name="quand" HorizontalAlignment="Left">
+        <Frame x:Name="MainContentFrame" Grid.Row="1"/>
+        <Grid Grid.Row="1"  x:Name="Title">
+            <TextBlock Text="ORGANISER VOS SEANCES" Foreground="#25322C" FontSize="30"  VerticalAlignment="Center" HorizontalAlignment="Center" />
+        </Grid>
+        <Grid Grid.Row="2" Height="200">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid Background="#6D887B">
+                <Grid x:Name="quand" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <TextBlock Text="Quand ?"
-                           VerticalAlignment="Top"
-                           Margin="150, 30, 0, 0"
-                           FontSize="22" />
-                    <DatePicker Margin="120, 70, 0, 105" />
+                               TextAlignment="Center"
+                               VerticalAlignment="Top"
+                               FontSize="22" />
+                    <DatePicker Margin="0,50,0,0" />
                 </Grid>
-                <Grid x:Name="LineVertical" Margin="400, 30, 0, 0" HorizontalAlignment="Left">
-                    <Rectangle Height="110" Width="1" Stroke="Black" VerticalAlignment="Top" />
-                </Grid>
+            </Grid>
+            <Grid Grid.Column="2" Background="#6D887B">
                 <Grid x:Name="recurrence" Margin="0, 30, 0, 0" HorizontalAlignment="Center">
                     <TextBlock Text="Récurrence"
-                        VerticalAlignment="Top"
-                        FontSize="22" />
+                               VerticalAlignment="Top"
+                               FontSize="22" />
                     <CheckBox x:Name="day" Margin="0,50 0, 0" Content="Chaque jour" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
                     <CheckBox x:Name="week" Margin="0, 75, 0, 0" Content="Chaque semaine" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
                     <CheckBox x:Name="month" Margin="130, 50, 0, 0" Content="Chaque mois" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
                     <CheckBox x:Name="years" Margin="130, 75, 0, 0" Content="Chaque année" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
-
-
                 </Grid>
-                <Grid x:Name="LineVerticalTwo" Margin="350, 30, 0, 0" HorizontalAlignment="Center">
-                    <Rectangle Height="110" Width="1" Stroke="Black" VerticalAlignment="Top" />
-                </Grid>
-                <Grid x:Name="repos" Margin="0, 30, 100, 0" HorizontalAlignment="Right">
+            </Grid>
+            <Grid Grid.Column="4" Background="#6D887B">
+                <Grid x:Name="repos" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <Grid>
                         <Grid>
                             <TextBlock Text="Temps de repos"
-                            VerticalAlignment="Top"
-                            FontSize="22" />
+                                       VerticalAlignment="Top"
+                                       FontSize="22" />
                         </Grid>
                     </Grid>
                     <Grid>
@@ -82,7 +89,7 @@
                         </Grid>
                         <Grid>
                             <TextBlock Text="secondes entre chaque exercice" 
-                                        Padding="50, 45, 0, 0"/>
+                                       Padding="50, 45, 0, 0"/>
                         </Grid>
                     </Grid>
                     <Grid>
@@ -91,7 +98,7 @@
                         </Grid>
                         <Grid>
                             <TextBlock Text="secondes entre chaque répétition" 
-                                    Padding="50, 80, 0, 0"/>
+                                       Padding="50, 80, 0, 0"/>
                         </Grid>
                     </Grid>
                 </Grid>

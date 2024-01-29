@@ -46,7 +46,7 @@ namespace GymGenius
         {
             coucou.Text = "Rechercher un exercice en particulier"; 
             coucou.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#25322C"));
-            coucou.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#33443C"));
+            coucou.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#6D887B"));
         }
 
         private void HidePlaceholder()
@@ -55,7 +55,7 @@ namespace GymGenius
             {
                 coucou.Text = string.Empty;
                 coucou.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#25322C"));
-                coucou.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#33443C"));
+                coucou.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#6D887B"));
             }
         }
         private void Button_Click(object sender, RoutedEventArgs e)

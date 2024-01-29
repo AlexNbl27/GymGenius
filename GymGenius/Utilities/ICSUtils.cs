@@ -222,13 +222,12 @@ namespace GymGenius.Utilities
                     return new PushUps();
                     break;
                 case "Abdominal":
-                    return new Abdominal();
+                    return new Crunch();
                     break;
                 default:
                     return null;
                     break;
             }
         }
-
     }
 }
