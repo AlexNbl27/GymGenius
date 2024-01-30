@@ -22,6 +22,7 @@ namespace GymGenius.Views
     public partial class Seance : Window
     {
         public List<AExercise> Exercises { get; set; }
+        public Session Session { get; set; }
 
         public Seance()
         {
@@ -35,7 +36,7 @@ namespace GymGenius.Views
                 new PullUps(),
                 new Dips(),
             };
-
+            this.Session = new Session(Exercises);
             // Set the DataContext to this window so that bindings work
             DataContext = this;
         }
@@ -45,6 +46,14 @@ namespace GymGenius.Views
             InitializeComponent();
             InitializePlaceholder();
 
+            //TODO : this.Session = session;
+            List<AExercise> fake_Exercises = new List<AExercise>
+            {
+                new PushUps(),
+                new PullUps(),
+                new Dips(),
+            };
+            this.Session = new Session(fake_Exercises);
             Exercises = session.exercises;
 
             // Set the DataContext to this window so that bindings work
@@ -94,6 +103,8 @@ namespace GymGenius.Views
 
         public void Button_Click(object sender, RoutedEventArgs e)
         {
+            SessionWindow sessionWindow = new SessionWindow(this.Session);
+            sessionWindow.Show();
         }
 
         private void ExportButton_Click(object sender, RoutedEventArgs e)

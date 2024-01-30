@@ -14,7 +14,7 @@ namespace GymGenius.Models
             exercises = _exercises;
             totalDuration = 0;
             isAtHome = false;
-            //restTime = new TimeController();
+            restTime = new TimeController(0, 0, 30);
         }
     }
 }
