@@ -61,7 +61,7 @@ namespace GymGenius.Views
             // Mettez à jour les TextBlocks avec les valeurs de l'exercice actuel
             ExerciseName.Text = Session.exercises[currentExerciseIndex].Name;
             ExerciseDesc.Text = Session.exercises[currentExerciseIndex].Description;
-            Timer.Text = timer.ToString();
+            Timer.Text = currentExerciseElapsed.TotalSeconds.ToString();
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -102,6 +102,9 @@ namespace GymGenius.Views
                     EndSession();
                 }
             }
+
+            // Mettez à jour le TextBlock du timer avec le temps écoulé en secondes
+            Timer.Text = currentExerciseElapsed.TotalSeconds.ToString();
         }
 
         public void EndSession()

@@ -11,12 +11,10 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using GymGenius.Models;
 using GymGenius.Utilities;
+using GymGenius.Controllers;
 
 namespace GymGenius
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
    
@@ -49,8 +47,10 @@ namespace GymGenius
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Session session = new(new TimeController(0,0,30));
+
             Show();
-            ExerciceWindow exerciceWindow = new();
+            ExerciceWindow exerciceWindow = new(session);
             exerciceWindow.Show();
         }
 

@@ -71,10 +71,11 @@
                       Margin="80, 40, 100, 0" 
                       HorizontalAlignment="Center">
                     <TextBlock Text="Equipement(s) nécessaire(s)"
+                               TextWrapping="Wrap"
                                VerticalAlignment="Top"
                                FontSize="22" />
-                    <CheckBox x:Name="oui" Margin="0,40 0, 0" Content="Oui" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
-                    <CheckBox x:Name="non" Margin="70, 40, 0, 0" Content="Non" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
+                    <CheckBox x:Name="oui" Margin="0,80 0, 0" Content="Oui" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
+                    <CheckBox x:Name="non" Margin="70, 80, 0, 0" Content="Non" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
                 </Grid>
             </Grid>
             <Grid Grid.Column="4" Background="#6D887B">
@@ -101,8 +102,8 @@
                 </Grid>
             </Grid>
         </Grid>
-        <Grid x:Name="exercice" Grid.Row="3">
-            <Border Grid.Column="0">
+        <ScrollViewer Grid.Row="3" x:Name="exercice" VerticalScrollBarVisibility="Auto">
+            <Border>
                 <ItemsControl ItemsSource="{Binding Exercises}">
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
@@ -112,14 +113,17 @@
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
                             <components:ExerciseComponent
+                                BorderColor="black"
                                 Margin="5 5 5 5"
                                 ExerciseName="{Binding ExerciseName}"
-                                ExerciseDescription="{Binding ExerciseDescription}" />
+                                ExerciseDescription="{Binding ExerciseDescription}"
+                                MouseLeftButtonDown="ExerciseComponent_MouseLeftButtonDown"
+                                MouseLeftButtonUp="ExerciseComponent_MouseLeftButtonUp" />
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
             </Border>
-        </Grid>
+        </ScrollViewer>
         <Grid Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Grid>
                 <Border Grid.Column="0" Background="#33443C" CornerRadius="5" Width="400" Height="80" Margin="0, 0, 10, 20">

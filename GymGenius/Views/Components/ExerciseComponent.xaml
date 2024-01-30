@@ -6,31 +6,28 @@
              xmlns:local="clr-namespace:GymGenius.Views"
              xmlns:utilities="clr-namespace:GymGenius.Utilities">
 
-   <UserControl.Resources>
-       <utilities:ListToStringConverter x:Key="ListToStringConverter"/>
-       </UserControl.Resources>
-    <Grid>
-        <Rectangle Fill="#567666" Width="400" Height="250" RadiusX="15" RadiusY="15"/>
-        <Grid x:Name="texte" Margin="20,10,0,0">
-            <Grid>
-                <TextBlock x:Name="ExerciseNameTextBlock"
-                           Text="{Binding Name}"
-                           FontSize="20"
-                           FontWeight="Bold"/>
-            </Grid>
-            <Grid VerticalAlignment="Bottom" Margin="0, 0, 0, 40">
-                <TextBlock x:Name="ExerciseDescriptionTextBlock"
-                           Text="{Binding Description}"
-                           FontSize="16" 
-                           TextWrapping="Wrap"/>
-            </Grid>
-            <Grid HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0, 0, 10, 5">
-                <Button x:Name="buttonswitch" 
-                        Background="#202B26" 
-                        Cursor="Hand" >
-                    <Image Source="{DynamicResource fleche}" Height="20" Width="20"/>
-                </Button>
+    <UserControl.Resources>
+        <utilities:ListToStringConverter x:Key="ListToStringConverter"/>
+    </UserControl.Resources>
+
+    <Border x:Name="ExerciseBorder" BorderBrush="{Binding BorderColor}" BorderThickness="2" CornerRadius="15">
+        <Grid>
+            <Rectangle Fill="#567666" Width="400" Height="250" RadiusX="15" RadiusY="15"/>
+            <Grid x:Name="texte" Margin="20,10,0,0">
+                <Grid>
+                    <TextBlock x:Name="ExerciseNameTextBlock"
+                               Text="{Binding Name}"
+                               FontSize="20"
+                               FontWeight="Bold"/>
+                </Grid>
+                <Grid VerticalAlignment="Bottom" Margin="0, 0, 0, 40">
+                    <TextBlock x:Name="ExerciseDescriptionTextBlock"
+                               Text="{Binding Description}"
+                               FontSize="16" 
+                               TextWrapping="Wrap"/>
+                </Grid>
             </Grid>
         </Grid>
-    </Grid>
+    </Border>
 </UserControl>
+
