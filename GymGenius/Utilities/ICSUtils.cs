@@ -1,4 +1,5 @@
 ﻿using GymGenius.Controller;
+using GymGenius.Controllers;
 using GymGenius.Models;
 using Microsoft.Win32;
 using System.IO;
@@ -207,7 +208,7 @@ namespace GymGenius.Utilities
                 allExercises.Add(CreateExercise(exerciseClass));
             }
 
-            Session session = new Session(allExercises);
+            Session session = new Session(new TimeController(0,0,30), allExercises);
 
             return session;
         }

@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using GymGenius.Utilities;
+using GymGenius.Controllers;
 
 namespace GymGenius.Views
 {
@@ -22,29 +23,14 @@ namespace GymGenius.Views
     public partial class Seance : Window
     {
         public List<AExercise> Exercises { get; set; }
-
-        public Seance()
-        {
-            InitializeComponent();
-            InitializePlaceholder();
-
-            // Initialize the list of exercises
-            Exercises = new List<AExercise>
-            {
-                new PushUps(),
-                new PullUps(),
-                new Dips(),
-            };
-
-            // Set the DataContext to this window so that bindings work
-            DataContext = this;
-        }
+        public Session Session { get; set; }
 
         public Seance(Session session)
         {
             InitializeComponent();
             InitializePlaceholder();
 
+            this.Session = session;
             Exercises = session.exercises;
 
             // Set the DataContext to this window so that bindings work
@@ -94,6 +80,8 @@ namespace GymGenius.Views
 
         public void Button_Click(object sender, RoutedEventArgs e)
         {
+            SessionWindow sessionWindow = new SessionWindow(this.Session);
+            sessionWindow.Show();
         }
 
         private void ExportButton_Click(object sender, RoutedEventArgs e)

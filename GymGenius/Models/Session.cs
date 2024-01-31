@@ -9,12 +9,20 @@ namespace GymGenius.Models
         public bool isAtHome;
         public TimeController restTime;
 
-        public Session(List<AExercise> _exercises)
+        public Session(TimeController _restTime)
         {
-            exercises = _exercises;
-            totalDuration = 0;
-            isAtHome = false;
-            //restTime = new TimeController();
+            this.exercises = new List<AExercise>();
+            this.totalDuration = 0;
+            this.isAtHome = false;
+            this.restTime = _restTime;
+        }
+
+        public Session(TimeController _restTime, List<AExercise> _exercises)
+        {
+            this.exercises = _exercises;
+            this.totalDuration = 0;
+            this.isAtHome = false;
+            this.restTime = new TimeController(0, 0, 30);
         }
     }
 }
