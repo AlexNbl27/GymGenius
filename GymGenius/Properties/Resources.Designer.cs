@@ -79,42 +79,6 @@ namespace GymGenius.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à The standing rotation curl is one of the most effective movements for building biceps muscle. It targets the biceps in their entirety: biceps brachii, brachialis anterior and brachioradialis..
-        /// </summary>
-        internal static string AlternatingDumbbellCurlDescription_EN {
-            get {
-                return ResourceManager.GetString("AlternatingDumbbellCurlDescription_EN", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Le curl rotation debout est un des mouvements les plus efficaces pour la musculation des biceps. Il cible en effet les biceps dans leur intégralité : biceps brachial, brachial antérieur et brachio-radial..
-        /// </summary>
-        internal static string AlternatingDumbbellCurlDescription_FR {
-            get {
-                return ResourceManager.GetString("AlternatingDumbbellCurlDescription_FR", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Alternating dumbbell curl.
-        /// </summary>
-        internal static string AlternatingDumbbellCurlName_EN {
-            get {
-                return ResourceManager.GetString("AlternatingDumbbellCurlName_EN", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Flexion rotation.
-        /// </summary>
-        internal static string AlternatingDumbbellCurlName_FR {
-            get {
-                return ResourceManager.GetString("AlternatingDumbbellCurlName_FR", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Recherche une chaîne localisée semblable à Arms.
         /// </summary>
         internal static string ArmsName_EN {
@@ -183,6 +147,42 @@ namespace GymGenius.Properties {
         internal static string BenchPressName_FR {
             get {
                 return ResourceManager.GetString("BenchPressName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The biceps flexion is a classic bodybuilding exercise targeting the biceps brachii muscle. It&apos;s an isolation movement..
+        /// </summary>
+        internal static string BicepsCurlDescription_EN {
+            get {
+                return ResourceManager.GetString("BicepsCurlDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à La flexion du biceps est un exercice classique de musculation ayant pour cible le muscle biceps brachial. C&apos;est un mouvement d&apos;isolation..
+        /// </summary>
+        internal static string BicepsCurlDescription_FR {
+            get {
+                return ResourceManager.GetString("BicepsCurlDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Curl biceps.
+        /// </summary>
+        internal static string BicepsCurlName_EN {
+            get {
+                return ResourceManager.GetString("BicepsCurlName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Flexions biceps.
+        /// </summary>
+        internal static string BicepsCurlName_FR {
+            get {
+                return ResourceManager.GetString("BicepsCurlName_FR", resourceCulture);
             }
         }
         
@@ -421,38 +421,38 @@ namespace GymGenius.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à The biceps flexion is a classic bodybuilding exercise targeting the biceps brachii muscle. It&apos;s an isolation movement..
+        ///   Recherche une chaîne localisée semblable à The standing rotation curl is one of the most effective movements for building biceps muscle. It targets the biceps in their entirety: biceps brachii, brachialis anterior and brachioradialis..
         /// </summary>
-        internal static string CurlBicepsDescription_EN {
+        internal static string CurlRotationDescription_EN {
             get {
-                return ResourceManager.GetString("CurlBicepsDescription_EN", resourceCulture);
+                return ResourceManager.GetString("CurlRotationDescription_EN", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à La flexion du biceps est un exercice classique de musculation ayant pour cible le muscle biceps brachial. C&apos;est un mouvement d&apos;isolation..
+        ///   Recherche une chaîne localisée semblable à Le curl rotation debout est un des mouvements les plus efficaces pour la musculation des biceps. Il cible en effet les biceps dans leur intégralité : biceps brachial, brachial antérieur et brachio-radial..
         /// </summary>
-        internal static string CurlBicepsDescription_FR {
+        internal static string CurlRotationDescription_FR {
             get {
-                return ResourceManager.GetString("CurlBicepsDescription_FR", resourceCulture);
+                return ResourceManager.GetString("CurlRotationDescription_FR", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Curl biceps.
+        ///   Recherche une chaîne localisée semblable à Alternating dumbbell curl.
         /// </summary>
-        internal static string CurlBicepsName_EN {
+        internal static string CurlRotationName_EN {
             get {
-                return ResourceManager.GetString("CurlBicepsName_EN", resourceCulture);
+                return ResourceManager.GetString("CurlRotationName_EN", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Flexions biceps.
+        ///   Recherche une chaîne localisée semblable à Flexion rotation.
         /// </summary>
-        internal static string CurlBicepsName_FR {
+        internal static string CurlRotationName_FR {
             get {
-                return ResourceManager.GetString("CurlBicepsName_FR", resourceCulture);
+                return ResourceManager.GetString("CurlRotationName_FR", resourceCulture);
             }
         }
         
@@ -1197,36 +1197,36 @@ namespace GymGenius.Properties {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à The &quot;military&quot; bench press, also known as the front press, is an exercise designed to strengthen the shoulders. The shoulder is a complex joint made up of three main fascicles. These are the anterior deltoid, the lateral or middle deltoid and the posterior deltoid..
         /// </summary>
-        internal static string MilitaryBenchPressDescription_EN {
+        internal static string MilitaryPressDescription_EN {
             get {
-                return ResourceManager.GetString("MilitaryBenchPressDescription_EN", resourceCulture);
+                return ResourceManager.GetString("MilitaryPressDescription_EN", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Le développé « militaire » appelé aussi développé devant est un exercice destiné à muscler les épaules. L’épaule est une articulation complexe composée de trois faisceaux principaux. Ce sont le deltoïde antérieur, le latéral ou moyen et le postérieur..
         /// </summary>
-        internal static string MilitaryBenchPressDescription_FR {
+        internal static string MilitaryPressDescription_FR {
             get {
-                return ResourceManager.GetString("MilitaryBenchPressDescription_FR", resourceCulture);
+                return ResourceManager.GetString("MilitaryPressDescription_FR", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Military bench press.
         /// </summary>
-        internal static string MilitaryBenchPressName_EN {
+        internal static string MilitaryPressName_EN {
             get {
-                return ResourceManager.GetString("MilitaryBenchPressName_EN", resourceCulture);
+                return ResourceManager.GetString("MilitaryPressName_EN", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Développé militaire.
         /// </summary>
-        internal static string MilitaryBenchPressName_FR {
+        internal static string MilitaryPressName_FR {
             get {
-                return ResourceManager.GetString("MilitaryBenchPressName_FR", resourceCulture);
+                return ResourceManager.GetString("MilitaryPressName_FR", resourceCulture);
             }
         }
         

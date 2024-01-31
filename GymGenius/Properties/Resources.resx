@@ -123,18 +123,6 @@
   <data name="AbductorsName_FR" xml:space="preserve">
     <value>Abducteurs</value>
   </data>
-  <data name="AlternatingDumbbellCurlDescription_EN" xml:space="preserve">
-    <value>The standing rotation curl is one of the most effective movements for building biceps muscle. It targets the biceps in their entirety: biceps brachii, brachialis anterior and brachioradialis.</value>
-  </data>
-  <data name="AlternatingDumbbellCurlDescription_FR" xml:space="preserve">
-    <value>Le curl rotation debout est un des mouvements les plus efficaces pour la musculation des biceps. Il cible en effet les biceps dans leur intégralité : biceps brachial, brachial antérieur et brachio-radial.</value>
-  </data>
-  <data name="AlternatingDumbbellCurlName_EN" xml:space="preserve">
-    <value>Alternating dumbbell curl</value>
-  </data>
-  <data name="AlternatingDumbbellCurlName_FR" xml:space="preserve">
-    <value>Flexion rotation</value>
-  </data>
   <data name="ArmsName_EN" xml:space="preserve">
     <value>Arms</value>
   </data>
@@ -158,6 +146,18 @@
   </data>
   <data name="BenchPressName_FR" xml:space="preserve">
     <value>Développé couché</value>
+  </data>
+  <data name="BicepsCurlDescription_EN" xml:space="preserve">
+    <value>The biceps flexion is a classic bodybuilding exercise targeting the biceps brachii muscle. It's an isolation movement.</value>
+  </data>
+  <data name="BicepsCurlDescription_FR" xml:space="preserve">
+    <value>La flexion du biceps est un exercice classique de musculation ayant pour cible le muscle biceps brachial. C'est un mouvement d'isolation.</value>
+  </data>
+  <data name="BicepsCurlName_EN" xml:space="preserve">
+    <value>Curl biceps</value>
+  </data>
+  <data name="BicepsCurlName_FR" xml:space="preserve">
+    <value>Flexions biceps</value>
   </data>
   <data name="BicepsName_EN" xml:space="preserve">
     <value>Biceps</value>
@@ -237,17 +237,17 @@
   <data name="CurlBarName_FR" xml:space="preserve">
     <value>Barre de flexion</value>
   </data>
-  <data name="CurlBicepsDescription_EN" xml:space="preserve">
-    <value>The biceps flexion is a classic bodybuilding exercise targeting the biceps brachii muscle. It's an isolation movement.</value>
+  <data name="CurlRotationDescription_EN" xml:space="preserve">
+    <value>The standing rotation curl is one of the most effective movements for building biceps muscle. It targets the biceps in their entirety: biceps brachii, brachialis anterior and brachioradialis.</value>
   </data>
-  <data name="CurlBicepsDescription_FR" xml:space="preserve">
-    <value>La flexion du biceps est un exercice classique de musculation ayant pour cible le muscle biceps brachial. C'est un mouvement d'isolation.</value>
+  <data name="CurlRotationDescription_FR" xml:space="preserve">
+    <value>Le curl rotation debout est un des mouvements les plus efficaces pour la musculation des biceps. Il cible en effet les biceps dans leur intégralité : biceps brachial, brachial antérieur et brachio-radial.</value>
   </data>
-  <data name="CurlBicepsName_EN" xml:space="preserve">
-    <value>Curl biceps</value>
+  <data name="CurlRotationName_EN" xml:space="preserve">
+    <value>Alternating dumbbell curl</value>
   </data>
-  <data name="CurlBicepsName_FR" xml:space="preserve">
-    <value>Flexions biceps</value>
+  <data name="CurlRotationName_FR" xml:space="preserve">
+    <value>Flexion rotation</value>
   </data>
   <data name="DeadliftDescription_EN" xml:space="preserve">
     <value>The deadlift is a complete bodybuilding exercise designed to strengthen both upper and lower body muscle groups. This multi-joint exercise involves flexing/extending the hip while lifting a load from the ground.</value>
@@ -495,16 +495,16 @@
   <data name="MachinePecDeckName_FR" xml:space="preserve">
     <value>Machine pec deck</value>
   </data>
-  <data name="MilitaryBenchPressDescription_EN" xml:space="preserve">
+  <data name="MilitaryPressDescription_EN" xml:space="preserve">
     <value>The "military" bench press, also known as the front press, is an exercise designed to strengthen the shoulders. The shoulder is a complex joint made up of three main fascicles. These are the anterior deltoid, the lateral or middle deltoid and the posterior deltoid.</value>
   </data>
-  <data name="MilitaryBenchPressDescription_FR" xml:space="preserve">
+  <data name="MilitaryPressDescription_FR" xml:space="preserve">
     <value>Le développé « militaire » appelé aussi développé devant est un exercice destiné à muscler les épaules. L’épaule est une articulation complexe composée de trois faisceaux principaux. Ce sont le deltoïde antérieur, le latéral ou moyen et le postérieur.</value>
   </data>
-  <data name="MilitaryBenchPressName_EN" xml:space="preserve">
+  <data name="MilitaryPressName_EN" xml:space="preserve">
     <value>Military bench press</value>
   </data>
-  <data name="MilitaryBenchPressName_FR" xml:space="preserve">
+  <data name="MilitaryPressName_FR" xml:space="preserve">
     <value>Développé militaire</value>
   </data>
   <data name="MuscularName_EN" xml:space="preserve">

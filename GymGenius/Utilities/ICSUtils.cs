@@ -226,7 +226,7 @@ namespace GymGenius.Utilities
                 case "BenchPress":
                     return new BenchPress();
                 case "InclineBenchPress":
-                    return new InclineBenchPress();
+                    return new InclinedBenchPress();
                 case "ForeheadBar":
                     return new ForeheadBar();
                 case "PulleyTricepsExtensions":
@@ -262,9 +262,9 @@ namespace GymGenius.Utilities
                 case "Slots":
                     return new Slots();
                 case "LegExtension":
-                    return new LegExtension();
+                    return new LegsExtensions();
                 case "LegFlexion":
-                    return new LegFlexion();
+                    return new LegsFlexions();
                 case "CalfPress":
                     return new CalfPress();
                 case "PullUps":

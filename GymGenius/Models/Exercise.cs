@@ -81,14 +81,14 @@ namespace GymGenius.Models
         }
     }
 
-    public class InclineBenchPress : AExercise, ISerie
+    public class InclinedBenchPress : AExercise, ISerie
     {
         public int NbRepetitions { get; set; }
         public TimeController DodoTime { get; set; }
 
-        public InclineBenchPress()
+        public InclinedBenchPress()
         {
-            idname = "InclineBenchPress";
+            idname = "InclinedBenchPress";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
             Level.value = 2;
@@ -514,14 +514,14 @@ namespace GymGenius.Models
         }
     }
 
-    public class LegExtension : AExercise, ISerie
+    public class LegsExtensions : AExercise, ISerie
     {
         public int NbRepetitions { get; set; }
         public TimeController DodoTime { get; set; }
 
-        public LegExtension()
+        public LegsExtensions()
         {
-            idname = "Leg Extension";
+            idname = "LegsExtensions";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
             Level.value = 2;
@@ -535,14 +535,14 @@ namespace GymGenius.Models
         }
     }
 
-    public class LegFlexion : AExercise, ISerie
+    public class LegsFlexions : AExercise, ISerie
     {
         public int NbRepetitions { get; set; }
         public TimeController DodoTime { get; set; }
 
-        public LegFlexion()
+        public LegsFlexions()
         {
-            idname = "Leg Flexion";
+            idname = "LegsFlexions";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
             Level.value = 2;
