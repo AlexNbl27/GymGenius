@@ -57,24 +57,33 @@
             </StackPanel>
         </Grid>
         <Grid Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <!-- Column for the first button -->
-                    <ColumnDefinition Width="Auto"/>
-                    <!-- Column for spacing between buttons -->
-                    <ColumnDefinition Width="Auto"/>
-                    <!-- Column for the second button -->
-                </Grid.ColumnDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <!-- Column for the first button -->
+                <ColumnDefinition Width="Auto"/>
+                <!-- Column for spacing between buttons -->
+                <ColumnDefinition Width="Auto"/>
+                <!-- Column for the second button -->
+            </Grid.ColumnDefinitions>
 
-                <!-- First button -->
-                <Border Grid.Column="0" Background="#33443C" CornerRadius="5" Width="400" Height="100" Margin="0, 0, 10, 20">
-                    <Button x:Name="buttonswitch" Background="Transparent" Click="StopButton" Cursor="Hand">
-                        <!-- Add content for the button here -->
-                        <TextBlock Text="Arreter la session" Foreground="White" Margin="5" FontSize="32"/>
-                    </Button>
-                </Border>
-            </Grid>
+            <!-- First button -->
+            <Border Grid.Column="0" Background="#33443C" CornerRadius="5" Width="400" Height="100" Margin="0, 0, 10, 20">
+                <Button x:Name="stopButton" Background="Transparent" Click="StopButton" Cursor="Hand">
+                    <!-- Add content for the button here -->
+                    <TextBlock Text="Arrêter la séance" Foreground="White" Margin="5" FontSize="32"/>
+                </Button>
+            </Border>
+
+            <!-- Spacing between buttons -->
+            <Grid Grid.Column="1" Width="20"/>
+
+            <!-- Second button -->
+            <Border Name="exerciseOverButton"  Grid.Column="2" Background="#33443C" CornerRadius="5" Width="600" Height="100" Margin="0, 0, 10, 20">
+                <Button Background="Transparent" Click="NextButton" Cursor="Hand">
+                    <!-- Add content for the button here -->
+                    <TextBlock Text="Exercice terminé !" Name="exerciseOverButtonText" Foreground="White" Margin="5" FontSize="32"/>
+                </Button>
+            </Border>
         </Grid>
     </Grid>
 </Window>

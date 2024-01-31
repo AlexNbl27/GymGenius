@@ -94,7 +94,6 @@
             </Grid>
         </Grid>
         <Grid Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/> <!-- Column for the first button -->
                     <ColumnDefinition Width="Auto"/> <!-- Column for spacing between buttons -->
@@ -120,6 +119,5 @@
                     </Button>
                 </Border>
             </Grid>
-        </Grid>
     </Grid>
 </Window>
