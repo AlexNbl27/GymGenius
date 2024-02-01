@@ -9,7 +9,7 @@ namespace GymGenius.Models
         protected string idname;
         public string Name { get; protected set; }
         public string Description { get; protected set; }
-        public ValueController Level { get; protected set; } = new ValueController();
+        public int Level { get; protected set; }
         public TimeController Duration { get; protected set; } = new TimeController(new DateTime());
 
         public AExerciseType Type = new Muscular();
@@ -41,7 +41,7 @@ namespace GymGenius.Models
             idname = "Dips";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 3;
+            Level = 3;
             Duration.setTime("00:00:03");
             Equipments.Add(new DoubleBars());
             Equipments.Add(new MachineDips());
@@ -68,7 +68,7 @@ namespace GymGenius.Models
             idname = "BenchPress";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 2;
+            Level = 2;
             Duration.setTime("00:00:03");
             Equipments.Add(new WeightBench());
             Equipments.Add(new Dumbbells());
@@ -91,7 +91,7 @@ namespace GymGenius.Models
             idname = "InclinedBenchPress";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 2;
+            Level = 2;
             Duration.setTime("00:00:03");
             Equipments.Add(new WeightBench());
             Equipments.Add(new Dumbbells());
@@ -116,7 +116,7 @@ namespace GymGenius.Models
             idname = "ForeheadBar";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 2;
+            Level = 2;
             Duration.setTime("00:00:03");
             Equipments.Add(new CurlBar());
             Type = new Muscular();
@@ -139,7 +139,7 @@ namespace GymGenius.Models
             idname = "PulleyTricepsExtensions";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 3;
+            Level = 3;
             Duration.setTime("00:00:03");
             Equipments.Add(new HighPulley());
             Type = new Muscular();
@@ -161,7 +161,7 @@ namespace GymGenius.Models
             idname = "CableMiddleFly";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 3;
+            Level = 3;
             Duration.setTime("00:00:03");
             Equipments.Add(new HighPulley());
             Type = new Muscular();
@@ -183,7 +183,7 @@ namespace GymGenius.Models
             idname = "Crunch";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 1;
+            Level = 1;
             Duration.setTime("00:00:03");
             Equipments.Add(new FitnessMat());
             Type = new Muscular();
@@ -204,7 +204,7 @@ namespace GymGenius.Models
             idname = "SideElevation";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 3;
+            Level = 3;
             Duration.setTime("00:00:03");
             Equipments.Add(new FitnessMat());
             Type = new Muscular();
@@ -227,7 +227,7 @@ namespace GymGenius.Models
             idname = "FrontalElevation";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 3;
+            Level = 3;
             Duration.setTime("00:00:03");
             Equipments.Add(new Dumbbells());
             Type = new Muscular();
@@ -250,7 +250,7 @@ namespace GymGenius.Models
             idname = "BirdElevation";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 3;
+            Level = 3;
             Duration.setTime("00:00:03");
             Equipments.Add(new Dumbbells());
             Type = new Muscular();
@@ -273,7 +273,7 @@ namespace GymGenius.Models
             idname = "MilitaryPress";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 4;
+            Level = 4;
             Duration.setTime("00:00:03");
             Equipments.Add(new Dumbbells());
             Type = new Muscular();
@@ -296,7 +296,7 @@ namespace GymGenius.Models
             idname = "InvertedPecDeck";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 2;
+            Level = 2;
             Duration.setTime("00:00:03");
             Equipments.Add(new MachinePecDeck());
             Type = new Muscular();
@@ -320,7 +320,7 @@ namespace GymGenius.Models
             idname = "FacePull";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 3;
+            Level = 3;
             Duration.setTime("00:00:03");
             Equipments.Add(new Pulley());
             Type = new Muscular();
@@ -343,7 +343,7 @@ namespace GymGenius.Models
             idname = "HorizontalDraft";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 3;
+            Level = 3;
             Duration.setTime("00:00:03");
             Equipments.Add(new LowPulley());
             Type = new Muscular();
@@ -366,7 +366,7 @@ namespace GymGenius.Models
             idname = "Deadlift";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 2;
+            Level = 2;
             Duration.setTime("00:00:03");
             Equipments.Add(new WeightBar());
             Equipments.Add(new WeightDiscus());
@@ -392,7 +392,7 @@ namespace GymGenius.Models
             idname = "BicepsCurl";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 1;
+            Level = 1;
             Duration.setTime("00:00:02");
             Equipments.Add(new CurlBar());
             Type = new Muscular();
@@ -413,7 +413,7 @@ namespace GymGenius.Models
             idname = "CurlRotation";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 1;
+            Level = 1;
             Duration.setTime("00:00:03");
             Equipments.Add(new Dumbbells());
             Type = new Muscular();
@@ -434,7 +434,7 @@ namespace GymGenius.Models
             idname = "PulleyCurl";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 3;
+            Level = 3;
             Duration.setTime("00:00:03");
             Equipments.Add(new LowPulley());
             Type = new Muscular();
@@ -455,7 +455,7 @@ namespace GymGenius.Models
             idname = "Squat";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 3;
+            Level = 3;
             Duration.setTime("00:00:03");
             Equipments.Add(new Weights());
             Type = new Muscular();
@@ -478,7 +478,7 @@ namespace GymGenius.Models
             idname = "LegPress";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 3;
+            Level = 3;
             Duration.setTime("00:00:03");
             Equipments.Add(new Press());
             Type = new Muscular();
@@ -501,7 +501,7 @@ namespace GymGenius.Models
             idname = "Slots";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 3;
+            Level = 3;
             Duration.setTime("00:00:03");
             Equipments.Add(new Weights());
             Type = new Muscular();
@@ -524,7 +524,7 @@ namespace GymGenius.Models
             idname = "LegsExtensions";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 2;
+            Level = 2;
             Duration.setTime("00:00:03");
             Equipments.Add(new MachineLegExtension());
             Type = new Muscular();
@@ -545,7 +545,7 @@ namespace GymGenius.Models
             idname = "LegsFlexions";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 2;
+            Level = 2;
             Duration.setTime("00:00:03");
             Equipments.Add(new MachineLegCurl());
             Type = new Muscular();
@@ -567,7 +567,7 @@ namespace GymGenius.Models
             idname = "CalfPress";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 1;
+            Level = 1;
             Duration.setTime("00:00:03");
             Equipments.Add(new CalfPressMachine());
             Type = new Muscular();
@@ -588,7 +588,7 @@ namespace GymGenius.Models
             idname = "PushUps";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 3;
+            Level = 3;
             Duration.setTime("00:00:03");
             Equipments.Add(new FitnessMat());
             Type = new Muscular();
@@ -616,7 +616,7 @@ namespace GymGenius.Models
             idname = "PullUps";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 4;
+            Level = 4;
             Duration.setTime("00:00:05");
             Equipments.Add(new PullUpBar());
             Type = new Muscular();
@@ -642,10 +642,10 @@ namespace GymGenius.Models
             idname = "Treadmill";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 2;
+            Level = 2;
             Duration.setTime("00:15:00");
             Equipments.Add(new TreadmillMachine());
-            Type = new Muscular();
+            Type = new Cardio();
 
             Tags.Muscles = new List<AMuscles>();
             Tags.Muscles.Add(new Quadriceps());
@@ -663,10 +663,10 @@ namespace GymGenius.Models
             idname = "Rowing";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 3;
+            Level = 3;
             Duration.setTime("00:15:00");
             Equipments.Add(new RowingMachine());
-            Type = new Muscular();
+            Type = new Cardio();
 
             Tags.Muscles = new List<AMuscles>();
             Tags.Muscles.Add(new Quadriceps());
@@ -683,10 +683,10 @@ namespace GymGenius.Models
             idname = "Stairs";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 3;
+            Level = 3;
             Duration.setTime("00:10:00");
             Equipments.Add(new StairsMachine());
-            Type = new Muscular();
+            Type = new Cardio();
 
             Tags.Muscles = new List<AMuscles>();
             Tags.Muscles.Add(new Quadriceps());
@@ -703,10 +703,10 @@ namespace GymGenius.Models
             idname = "ElipticalBike";
             Name = TranslateUtils.Translate(idname, "Name");
             Description = TranslateUtils.Translate(idname, "Description");
-            Level.value = 3;
+            Level = 3;
             Duration.setTime("00:15:00");
             Equipments.Add(new EllipticalMachine());
-            Type = new Muscular();
+            Type = new Cardio();
 
             Tags.Muscles = new List<AMuscles>();
             Tags.Muscles.Add(new Quadriceps());

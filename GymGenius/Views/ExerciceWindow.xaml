@@ -64,18 +64,19 @@
                     <CheckBox x:Name="tronc" Margin="70, 40, 0, 0" Content="Tronc" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
                     <CheckBox x:Name="pec" Margin="70, 65, 0, 0" Content="Pectoraux" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
                     <CheckBox x:Name="dos" Margin="130, 40, 0, 0" Content="Dos" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
+                    <CheckBox x:Name="bras" Margin="130, 65, 0, 0" Content="Bras" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
                 </Grid>
             </Grid>
             <Grid Grid.Column="2" Background="#6D887B">
                 <Grid x:Name="ouinon" 
                       Margin="80, 40, 100, 0" 
                       HorizontalAlignment="Center">
-                    <TextBlock Text="Equipement(s) nécessaire(s)"
+                    <TextBlock Text="Type d'exercise"
                                TextWrapping="Wrap"
                                VerticalAlignment="Top"
                                FontSize="22" />
-                    <CheckBox x:Name="oui" Margin="0,80 0, 0" Content="Oui" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
-                    <CheckBox x:Name="non" Margin="70, 80, 0, 0" Content="Non" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
+                    <CheckBox x:Name="cardio" Margin="0,80 0, 0" Content="cardio" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
+                    <CheckBox x:Name="musculaire" Margin="70, 80, 0, 0" Content="musculaire" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
                 </Grid>
             </Grid>
             <Grid Grid.Column="4" Background="#6D887B">
@@ -95,7 +96,7 @@
                                  Background="White" TextChanged="numericTextBox_TextChanged"/>
                     </Grid>
                     <Grid x:Name="buttonsearch" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0, 0, 20, 10">
-                        <Button x:Name="BUTTON" Background="Black" Width="30" Height="30" Cursor="Hand">
+                        <Button x:Name="BUTTON" Background="Black" Width="30" Height="30" Cursor="Hand" Click="OnSearch_click">
                             <Image Source="{DynamicResource search}" Height="20" Width="20" />
                         </Button>
                     </Grid>
