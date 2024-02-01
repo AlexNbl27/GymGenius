@@ -219,7 +219,7 @@ namespace GymGenius.Utilities
                     return new Dips();
                 case "BenchPress":
                     return new BenchPress();
-                case "InclineBenchPress":
+                case "InclinedBenchPress":
                     return new InclinedBenchPress();
                 case "ForeheadBar":
                     return new ForeheadBar();
