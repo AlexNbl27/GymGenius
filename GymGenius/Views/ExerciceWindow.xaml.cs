@@ -48,7 +48,7 @@ namespace GymGenius.Views
                 new LegPress(),
                 new Slots(),
                 new LegsExtensions(),
-                new LegsFlexions(),
+                new LegsExtensions(),
                 new CalfPress(),
                 new Treadmill(),
                 new Rowing(),
@@ -105,9 +105,16 @@ namespace GymGenius.Views
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Session.exercises = this.selectedExercises;
-            Seance seance = new(this.Session);
-            seance.Show();
+            if (this.selectedExercises.Count != 0)
+            {
+                this.Session.exercises = this.selectedExercises;
+                Seance seance = new(this.Session);
+                seance.Show();
+            }
+            else
+            {
+                MessageBox.Show("Sélectionnez au moins un exercice !");
+            }
         }
 
         private void NumericTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
