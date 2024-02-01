@@ -86,19 +86,13 @@ namespace GymGenius.Views
 
         private void ExportButton_Click(object sender, RoutedEventArgs e)
         {
-            // Create an instance of ICSUtils with fake variables
-            DateTime date = DateTime.Now.AddDays(3); // ERROR: date is always null
+            DateTime date = DateTime.Now;
             if (Session.date != null)
             {
                 date = (DateTime)Session.date;
             }
 
-            ICSUtils ics = new ICSUtils(
-                "GymGenius",
-                date,
-                this.Exercises
-            );
-
+            ICSUtils ics = new ICSUtils(this.Session);
             // Call the ExportICS method
             ics.ExportICS();
         }

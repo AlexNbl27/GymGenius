@@ -51,11 +51,30 @@ namespace GymGenius
 
             if (int.TryParse(timexo.Text, out timeBetweenExercises))
             {
-                // Creating a session with the specified time intervals
                 Session session = new Session(new TimeController(0, 0, timeBetweenExercises));
 
-                // Showing the Exercise window
-                Show();
+                var date = GetDatePicker();
+                if (date != null)
+                {
+                    session.date = (DateTime)date;
+                }
+
+                List<int> checkedTags = new List<int>();
+
+                foreach (var child in recurrence.Children)
+                {
+                    if (child is CheckBox checkBox && checkBox.IsChecked == true)
+                    {
+                        checkedTags.Add(int.Parse(checkBox.Tag.ToString()));
+                    }
+                }
+
+                if (checkedTags.Count > 0)
+                {
+                    session.recurrenceId = checkedTags[0];
+                }
+
+
                 ExerciceWindow exerciceWindow = new ExerciceWindow(session);
                 exerciceWindow.Show();
             }
@@ -74,11 +93,6 @@ namespace GymGenius
                 ICSUtils ics = new();
                 Session session = ics.ImportICS();
                 session.restTime.setTime(0, 0, timeBetweenExercises);
-                var date = GetDatePicker();
-                if(date != null)
-                {
-                    session.date = (DateTime)date;
-                }
                 if (session != null)
                 {
                     Seance seance = new(session);
@@ -97,14 +111,23 @@ namespace GymGenius
 
             if (datePickerExercise != null)
             {
-                return datePickerExercise.SelectedDate = DateTime.Today;
+                return datePickerExercise.SelectedDate;
             }
             return null;
         }
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
-            // La case à cocher a été cochée, exécutez votre logique ici
+            var checkBox = sender as CheckBox;
+
+            foreach (var child in recurrence.Children)
+            {
+                if (child is CheckBox otherCheckBox && otherCheckBox != checkBox)
+                {
+                    otherCheckBox.IsChecked = false;
+                }
+            }
         }
+
     }
 }

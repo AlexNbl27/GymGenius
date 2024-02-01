@@ -97,10 +97,10 @@
                                         <ColumnDefinition />
                                         <ColumnDefinition />
                                     </Grid.ColumnDefinitions>
-                                    <CheckBox x:Name="day" Content="Chaque jour" HorizontalAlignment="Left" VerticalAlignment="Center" IsThreeState="False" Checked="CheckBox_Checked" Grid.Row="1" Grid.Column="0"/>
-                                    <CheckBox x:Name="week" Content="Chaque semaine" HorizontalAlignment="Left" VerticalAlignment="Center" IsThreeState="False" Checked="CheckBox_Checked" Grid.Row="1" Grid.Column="1"/>
-                                    <CheckBox x:Name="month" Content="Chaque mois" HorizontalAlignment="Left" VerticalAlignment="Center" IsThreeState="False" Checked="CheckBox_Checked" Grid.Row="0" Grid.Column="0"/>
-                                    <CheckBox x:Name="years" Content="Chaque année" HorizontalAlignment="Left" VerticalAlignment="Center" IsThreeState="False" Checked="CheckBox_Checked" Grid.Row="0" Grid.Column="1"/>
+                                    <CheckBox x:Name="day" Content="Chaque jour" Tag="1" HorizontalAlignment="Left" VerticalAlignment="Center" IsThreeState="False" Checked="CheckBox_Checked" Grid.Row="0" Grid.Column="0"/>
+                                    <CheckBox x:Name="week" Content="Chaque semaine" Tag="2" HorizontalAlignment="Left" VerticalAlignment="Center" IsThreeState="False" Checked="CheckBox_Checked" Grid.Row="0" Grid.Column="1"/>
+                                    <CheckBox x:Name="month" Content="Chaque mois" Tag="3" HorizontalAlignment="Left" VerticalAlignment="Center" IsThreeState="False" Checked="CheckBox_Checked" Grid.Row="1" Grid.Column="0"/>
+                                    <CheckBox x:Name="years" Content="Chaque année" Tag="4" HorizontalAlignment="Left" VerticalAlignment="Center" IsThreeState="False" Checked="CheckBox_Checked" Grid.Row="1" Grid.Column="1"/>
                                 </Grid>
                             </Grid>
                         </Grid>

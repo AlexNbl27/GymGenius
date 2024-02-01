@@ -12,16 +12,33 @@ namespace GymGenius.Utilities
     {
         private string summary;
         private string date;
+        private string endDate;
         private string description;
+        private string? reccurence;
         private List<AExercise> allExercises;
 
         public ICSUtils() { }
 
-        public ICSUtils(string summary, DateTime date, List<AExercise> allExercises)
+        public ICSUtils(Session session)
         {
-            this.summary = summary;
-            this.date = date.ToString("yyyyMMddTHHmmssZ");
-            this.allExercises = allExercises;
+            this.summary = "Ma séance de sport GymGenius";
+            if(session.date != null)
+            {
+                DateTime _date = (DateTime)session.date;
+                DateTime _endDate = (DateTime)session.date;
+                _endDate = _endDate.AddDays(1);
+                this.date =_date.ToString("yyyyMMdd");
+                this.endDate = _endDate.ToString("yyyyMMdd");
+            } else {
+                DateTime now = DateTime.Now;
+                this.date = now.ToString("yyyyMMdd");
+                this.endDate = now.ToString("yyyyMMdd");
+            }
+            if(session.recurrenceId > 0)
+            {
+                this.reccurence = session.GetRecurrenceString();
+            }
+            this.allExercises = session.exercises;
         }
 
 
@@ -55,12 +72,14 @@ namespace GymGenius.Utilities
             icsContent.AppendLine("VERSION:2.0");
             icsContent.AppendLine("BEGIN:VEVENT");
 
-            // Event details
             icsContent.AppendLine($"SUMMARY:{this.summary}");
-            icsContent.AppendLine($"DTSTART:{this.date}");
+            icsContent.AppendLine($"DTSTART;VALUE=DATE:{this.date}");
+            icsContent.AppendLine($"DTEND;VALUE=DATE:{this.endDate}");
             icsContent.AppendLine($"DESCRIPTION:{this.description}");
-
-            // Other optional properties (you can add more as needed)
+            if(this.reccurence != null)
+            {
+                icsContent.AppendLine($"RRULE:{this.reccurence};INTERVAL=1;COUNT=25");
+            }
             icsContent.AppendLine("BEGIN:VALARM");
             icsContent.AppendLine("TRIGGER:-PT15M");
             icsContent.AppendLine("DESCRIPTION:Reminder");
@@ -72,6 +91,7 @@ namespace GymGenius.Utilities
 
             return icsContent.ToString();
         }
+
 
         private void DownloadICSFile(string icscontent)
         {
