@@ -3,6 +3,7 @@ using GymGenius.Models;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 
@@ -55,6 +56,21 @@ namespace GymGenius.Views
                 new Stairs(),
                 new Elliptical()
             };
+
+            this.Session = session;
+
+            // Set the DataContext to this window so that bindings work
+            DataContext = this;
+        }
+
+        public ExerciceWindow(Session session, List<AExercise> aExercises)
+        {
+            InitializeComponent();
+            InitializePlaceholder();
+            this.selectedExercises = new List<AExercise>();
+
+            // Initialize the list of exercises
+            Exercises = aExercises;
 
             this.Session = session;
 
@@ -139,7 +155,128 @@ namespace GymGenius.Views
 
         private void OnSearch_click(object sender, RoutedEventArgs e)
         {
-            // Handle search button click event
+            this.Exercises = new List<AExercise>();
+
+            if (jambe.IsChecked.GetValueOrDefault())
+            {
+                this.Exercises.Add(new Squat());
+                this.Exercises.Add(new LegPress());
+                this.Exercises.Add(new Slots());
+                this.Exercises.Add(new LegsExtensions());
+                this.Exercises.Add(new LegsExtensions());
+                this.Exercises.Add(new CalfPress());
+            }
+            if (dos.IsChecked.GetValueOrDefault())
+            {
+                this.Exercises.Add(new PullUps());
+                this.Exercises.Add(new HorizontalDraft());
+                this.Exercises.Add(new Deadlift());
+                this.Exercises.Add(new FacePull());
+                this.Exercises.Add(new InvertedPecDeck());
+            }
+            if (epaule.IsChecked.GetValueOrDefault())
+            {
+                this.Exercises.Add(new MilitaryPress());
+                this.Exercises.Add(new SideElevation());
+                this.Exercises.Add(new FrontalElevation());
+                this.Exercises.Add(new BirdElevation());
+            }
+            if (pec.IsChecked.GetValueOrDefault())
+            {
+                this.Exercises.Add(new BenchPress());
+                this.Exercises.Add(new InclinedBenchPress());
+                this.Exercises.Add(new ForeheadBar());
+                this.Exercises.Add(new PulleyTricepsExtensions());
+                this.Exercises.Add(new CableMiddleFly());
+            }
+            if (bras.IsChecked.GetValueOrDefault())
+            {
+                this.Exercises.Add(new BicepsCurl());
+                this.Exercises.Add(new CurlRotation());
+                this.Exercises.Add(new PulleyCurl());
+            }
+            if (tronc.IsChecked.GetValueOrDefault())
+            {
+                this.Exercises.Add(new Crunch());
+            }
+            if (this.Exercises.Count == 0)
+            {
+                this.Exercises = new List<AExercise>
+                {
+                    new PushUps(),
+                    new PullUps(),
+                    new Dips(),
+                    new BenchPress(),
+                    new InclinedBenchPress(),
+                    new ForeheadBar(),
+                    new PulleyTricepsExtensions(),
+                    new CableMiddleFly(),
+                    new Crunch(),
+                    new SideElevation(),
+                    new FrontalElevation(),
+                    new BirdElevation(),
+                    new MilitaryPress(),
+                    new InvertedPecDeck(),
+                    new FacePull(),
+                    new HorizontalDraft(),
+                    new Deadlift(),
+                    new BicepsCurl(),
+                    new CurlRotation(),
+                    new PulleyCurl(),
+                    new Squat(),
+                    new LegPress(),
+                    new Slots(),
+                    new LegsExtensions(),
+                    new LegsExtensions(),
+                    new CalfPress(),
+                    new Treadmill(),
+                    new Rowing(),
+                    new Stairs(),
+                    new Elliptical()
+                };
+            }
+            if (numericTextBox.Text != "")
+            {
+                List<AExercise> tmp = new List<AExercise>();
+                int difficulty = int.Parse(numericTextBox.Text);
+                foreach (var item in this.Exercises)
+                {
+                    if (item.Level <= difficulty)
+                    {
+                        tmp.Add(item);
+                    }
+                }
+                this.Exercises = tmp;
+            }
+            if (cardio.IsChecked.GetValueOrDefault())
+            {
+                List<AExercise> tmp = new List<AExercise>();
+                foreach (var item in this.Exercises)
+                {
+                    if (item.Type is Cardio)
+                    {
+                        tmp.Add(item);
+                    }
+                }
+                this.Exercises = tmp;
+            }
+            if (musculaire.IsChecked.GetValueOrDefault())
+            {
+                List<AExercise> tmp = new List<AExercise>();
+                foreach (var item in this.Exercises)
+                {
+                    if (item.Type is Muscular)
+                    {
+                        tmp.Add(item);
+                    }
+                }
+                this.Exercises = tmp;
+            }
+
+            Close();
+            ExerciceWindow exerciceWindow = new(this.Session, this.Exercises);
+            exerciceWindow.Show();
+
         }
 
         public event EventHandler<AExercise> ExerciseClicked;
