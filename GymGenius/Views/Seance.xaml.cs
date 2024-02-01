@@ -87,11 +87,15 @@ namespace GymGenius.Views
         private void ExportButton_Click(object sender, RoutedEventArgs e)
         {
             // Create an instance of ICSUtils with fake variables
+            DateTime date = DateTime.Now.AddDays(3); // ERROR: date is always null
+            if (Session.date != null)
+            {
+                date = (DateTime)Session.date;
+            }
+
             ICSUtils ics = new ICSUtils(
-                "Seance de musculation",
-                DateTime.Now,
-                DateTime.Now.AddHours(1),
-                "Gym",
+                "GymGenius",
+                date,
                 this.Exercises
             );
 

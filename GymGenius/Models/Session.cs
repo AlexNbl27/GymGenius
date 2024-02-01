@@ -8,6 +8,7 @@ namespace GymGenius.Models
         public float totalDuration;
         public bool isAtHome;
         public TimeController restTime;
+        public DateTime? date;
 
         public Session(TimeController _restTime)
         {
@@ -15,6 +16,7 @@ namespace GymGenius.Models
             this.totalDuration = 0;
             this.isAtHome = false;
             this.restTime = _restTime;
+            this.date = null;
         }
 
         public Session(TimeController _restTime, List<AExercise> _exercises)
@@ -22,7 +24,8 @@ namespace GymGenius.Models
             this.exercises = _exercises;
             this.totalDuration = 0;
             this.isAtHome = false;
-            this.restTime = new TimeController(0, 0, 30);
+            this.restTime = _restTime;
+            this.date = null;
         }
     }
 }

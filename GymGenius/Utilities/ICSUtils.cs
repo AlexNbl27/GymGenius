@@ -11,21 +11,17 @@ namespace GymGenius.Utilities
     public class ICSUtils
     {
         private string summary;
-        private string startTime;
-        private string endTime;
+        private string date;
         private string description;
-        private string location;
         private List<AExercise> allExercises;
 
         public ICSUtils() { }
 
-        public ICSUtils(string summary, DateTime startTime, DateTime endTime, string location, List<AExercise> allExercises)
+        public ICSUtils(string summary, DateTime date, List<AExercise> allExercises)
         {
             this.summary = summary;
-            this.startTime = startTime.ToString("yyyyMMddTHHmmssZ");
-            this.endTime = endTime.ToString("yyyyMMddTHHmmssZ");
+            this.date = date.ToString("yyyyMMddTHHmmssZ");
             this.allExercises = allExercises;
-            this.location = location;
         }
 
 
@@ -61,10 +57,8 @@ namespace GymGenius.Utilities
 
             // Event details
             icsContent.AppendLine($"SUMMARY:{this.summary}");
-            icsContent.AppendLine($"DTSTART:{this.startTime}");
-            icsContent.AppendLine($"DTEND:{this.endTime}");
+            icsContent.AppendLine($"DTSTART:{this.date}");
             icsContent.AppendLine($"DESCRIPTION:{this.description}");
-            icsContent.AppendLine($"LOCATION:{this.location}");
 
             // Other optional properties (you can add more as needed)
             icsContent.AppendLine("BEGIN:VALARM");

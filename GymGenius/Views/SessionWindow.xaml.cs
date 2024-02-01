@@ -93,7 +93,8 @@ namespace GymGenius.Views
                     exerciseOverButtonText.Text = "Terminer la séance";
                 }
                 currentRestElapsed = currentRestElapsed.Add(TimeSpan.FromSeconds(1));
-                var restDuration = TimeSpan.FromSeconds(30);
+                //var restDuration = TimeSpan.FromSeconds(30);
+                var restDuration = TimeSpan.FromSeconds(Session.restTime.getDurationInSecond());
                 var remainingRestTime = restDuration - currentRestElapsed;
                 Timer.Text = remainingRestTime.ToString(@"mm\:ss");
                 if (currentRestElapsed >= restDuration)
@@ -113,6 +114,7 @@ namespace GymGenius.Views
         public void EndSession()
         {
             timer.Stop();
+            MessageBox.Show("Séance terminée !");
             Close();
         }
 
