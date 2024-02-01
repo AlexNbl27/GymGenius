@@ -68,5 +68,13 @@
         {
             return (this.hour * 3600) + (this.minute * 60) + this.second;
         }
+
+        public List<double> getDurationInMinutesAndSeconds()
+        {
+            List<double> result = new List<double>();
+            result.Add(this.second);
+            result.Add(this.minute);
+            return result;
+        }
     }
 }

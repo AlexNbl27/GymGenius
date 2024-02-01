@@ -6,10 +6,6 @@
              xmlns:local="clr-namespace:GymGenius.Views"
              xmlns:utilities="clr-namespace:GymGenius.Utilities">
 
-    <UserControl.Resources>
-        <utilities:ListToStringConverter x:Key="ListToStringConverter"/>
-    </UserControl.Resources>
-
     <Border x:Name="ExerciseBorder" BorderBrush="{Binding BorderColor}" BorderThickness="2" CornerRadius="15">
         <Grid>
             <Rectangle Fill="#567666" Width="400" Height="250" RadiusX="15" RadiusY="15"/>

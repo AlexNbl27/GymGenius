@@ -1,6 +1,5 @@
 ﻿using GymGenius.Controller;
 using GymGenius.Controllers;
-using GymGenius.Models;
 
 namespace GymGenius.Models
 {
@@ -626,7 +625,7 @@ namespace GymGenius.Models
             Tags.Muscles.Add(new Pectorals());
             Tags.Muscles.Add(new Deltoids());
             Tags.Muscles.Add(new Trapezius());
-                Tags.Muscles.Add(new Biceps());
+            Tags.Muscles.Add(new Biceps());
             Tags.Muscles.Add(new Triceps());
             Tags.Muscles.Add(new Quadriceps());
             Tags.Muscles.Add(new LargeDorsals());
