@@ -8,10 +8,6 @@
         xmlns:utilities="clr-namespace:GymGenius.Utilities"
         mc:Ignorable="d" 
         Title="Exercices" Height="900" Width="1300">
-    <Window.Resources>
-        <utilities:ListToStringConverter x:Key="ListToStringConverter"/>
-    </Window.Resources>
-
 
     <Grid x:Name="All" Background="#99B0A5">
         <Grid.RowDefinitions>
@@ -19,6 +15,7 @@
             <RowDefinition Height="60" />
             <RowDefinition Height="2*"/>
             <RowDefinition Height="4*" />
+            <RowDefinition Height="20" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid x:Name="Header" VerticalAlignment="Top">
@@ -28,14 +25,6 @@
             </Grid.ColumnDefinitions>
             <Grid x:Name="Logo" HorizontalAlignment="Left">
                 <Image Source="{DynamicResource LogoHeader}" Height="90" Width="120" Margin="15, 0, 0, 0"/>
-            </Grid>
-            <Grid x:Name="Bar" Grid.Column="0" >
-                <TextBox x:Name="searchbar" BorderBrush="#33443C" Width="550" Height="30" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" Padding="5, 6, 0, 0" />
-            </Grid>
-            <Grid x:Name="Search" Grid.Column="0" >
-                <Button x:Name="myButton" Background="#33443C" Width="30" Height="30" Click="OnSearch_click" Cursor="Hand" Margin="600, 0, 0, 0" >
-                    <Image Source="{DynamicResource search}" Height="20" Width="20" />
-                </Button>
             </Grid>
             <Grid x:Name="Line" Margin="0, 80, 0, 0">
                 <Rectangle Height="1" HorizontalAlignment="Stretch" Stroke="Black" VerticalAlignment="Top" />
@@ -96,7 +85,7 @@
                                  Background="White" TextChanged="numericTextBox_TextChanged"/>
                     </Grid>
                     <Grid x:Name="buttonsearch" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0, 0, 20, 10">
-                        <Button x:Name="BUTTON" Background="Black" Width="30" Height="30" Cursor="Hand" Click="OnSearch_click">
+                        <Button x:Name="BUTTON" Background="Red" Width="30" Height="30" Cursor="Hand" Click="OnSearch_click">
                             <Image Source="{DynamicResource search}" Height="20" Width="20" />
                         </Button>
                     </Grid>
@@ -125,7 +114,7 @@
                 </ItemsControl>
             </Border>
         </ScrollViewer>
-        <Grid Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Grid>
                 <Border Grid.Column="0" Background="#33443C" CornerRadius="5" Width="400" Height="80" Margin="0, 0, 10, 20">
                     <Button x:Name="buttonswitch" Background="Transparent" Click="Button_Click" Cursor="Hand">

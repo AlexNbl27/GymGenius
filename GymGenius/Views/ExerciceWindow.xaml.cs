@@ -1,11 +1,7 @@
-﻿using GymGenius.Controllers;
-using GymGenius.Models;
-using System.Collections.Generic;
+﻿using GymGenius.Models;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
 
 namespace GymGenius.Views
 {
@@ -13,16 +9,13 @@ namespace GymGenius.Views
     {
         // Property to store the list of exercises
         public List<AExercise> Exercises { get; set; }
-        public List<AExercise> selectedExercises { get; set; }
+        public List<AExercise> selectedExercises { get; set; } = new List<AExercise>();
         public Session Session { get; set; }
 
         public ExerciceWindow(Session session)
         {
             InitializeComponent();
-            InitializePlaceholder();
-            this.selectedExercises = new List<AExercise>();
 
-            // Initialize the list of exercises
             Exercises = new List<AExercise>
             {
                 new PushUps(),
@@ -63,60 +56,18 @@ namespace GymGenius.Views
             DataContext = this;
         }
 
-        public ExerciceWindow(Session session, List<AExercise> aExercises)
+        public ExerciceWindow(Session session, List<AExercise> filteredExercises)
         {
             InitializeComponent();
-            InitializePlaceholder();
-            this.selectedExercises = new List<AExercise>();
-
-            // Initialize the list of exercises
-            Exercises = aExercises;
-
+            Exercises = filteredExercises;
             this.Session = session;
 
             // Set the DataContext to this window so that bindings work
             DataContext = this;
         }
 
-        private void InitializePlaceholder()
-        {
-            ShowPlaceholder();
-        }
-
-        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
-        {
-            HidePlaceholder();
-        }
-
-        private void TextBox_LostFocus(object sender, RoutedEventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(searchbar.Text))
-            {
-                ShowPlaceholder();
-            }
-        }
-
-        private void ShowPlaceholder()
-        {
-            searchbar.Text = "Rechercher un exercice en particulier";
-            searchbar.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#25322C"));
-            searchbar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#6D887B"));
-        }
-
-        private void HidePlaceholder()
-        {
-            if (searchbar.Text == "Rechercher un exercice en particulier")
-            {
-                searchbar.Text = string.Empty;
-                searchbar.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#25322C"));
-                searchbar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#6D887B"));
-            }
-        }
-
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
-            // Handle checkbox checked event
-            // La case à cocher a été cochée, exécutez votre logique ici
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -124,7 +75,7 @@ namespace GymGenius.Views
             if (this.selectedExercises.Count != 0)
             {
                 this.Session.exercises = this.selectedExercises;
-                Seance seance = new(this.Session);
+                RecapSessionWindow seance = new(this.Session);
                 seance.Show();
             }
             else

@@ -7,30 +7,22 @@ namespace GymGenius.Models
         public Dictionary<int, string> recurrenceOptions = new Dictionary<int, string>();
 
         public List<AExercise> exercises;
-        public float totalDuration;
-        public bool isAtHome;
-        public TimeController restTime;
-        public DateTime? date;
-        public int recurrenceId;
+        public float totalDuration = 0;
+        public bool isAtHome = false;
+        public TimeController restTime = new TimeController(0, 0, 30);
+        public DateTime? date = null;
+        public int recurrenceId = 0;
 
-        public Session(TimeController _restTime)
+        public Session()
         {
             CreateReccurenceDict();
             this.exercises = new List<AExercise>();
-            this.totalDuration = 0;
-            this.isAtHome = false;
-            this.restTime = _restTime;
-            this.date = null;
-            this.recurrenceId = 0;
         }
 
-        public Session(TimeController _restTime, List<AExercise> _exercises)
+        public Session(List<AExercise> _exercises)
         {
+            CreateReccurenceDict();
             this.exercises = _exercises;
-            this.totalDuration = 0;
-            this.isAtHome = false;
-            this.restTime = _restTime;
-            this.date = null;
         }
 
         private void CreateReccurenceDict()
