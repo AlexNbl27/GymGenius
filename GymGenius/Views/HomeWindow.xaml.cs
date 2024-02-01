@@ -23,6 +23,7 @@ namespace GymGenius
             if (VerifyRestTime())
             {
                 GetSessionDate();
+                GetSessionReccurence();
                 ExerciceWindow exerciceWindow = new ExerciceWindow(session);
                 exerciceWindow.Show();
             }
