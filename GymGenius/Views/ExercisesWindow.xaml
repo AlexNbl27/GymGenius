@@ -1,4 +1,4 @@
-﻿<Window x:Class="GymGenius.Views.ExerciceWindow"
+﻿<Window x:Class="GymGenius.Views.ExercisesWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -48,12 +48,11 @@
                     <TextBlock Text="Muscles sollicités"
                                VerticalAlignment="Top"
                                FontSize="22" />
-                    <CheckBox x:Name="jambe" Margin="0,40 0, 0" Content="Jambe" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
-                    <CheckBox x:Name="epaule" Margin="0, 65, 0, 0" Content="Epaule" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
-                    <CheckBox x:Name="tronc" Margin="70, 40, 0, 0" Content="Tronc" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
-                    <CheckBox x:Name="pec" Margin="70, 65, 0, 0" Content="Pectoraux" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
-                    <CheckBox x:Name="dos" Margin="130, 40, 0, 0" Content="Dos" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
-                    <CheckBox x:Name="bras" Margin="130, 65, 0, 0" Content="Bras" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
+                    <CheckBox x:Name="jambe" Margin="0,40 0, 0" Content="Jambe" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" />
+                    <CheckBox x:Name="epaule" Margin="0, 65, 0, 0" Content="Epaule" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" />
+                    <CheckBox x:Name="tronc" Margin="70, 40, 0, 0" Content="Tronc" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" />
+                    <CheckBox x:Name="dos" Margin="130, 40, 0, 0" Content="Dos" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" />
+                    <CheckBox x:Name="bras" Margin="70, 65, 0, 0" Content="Bras" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" />
                 </Grid>
             </Grid>
             <Grid Grid.Column="2" Background="#6D887B">
@@ -117,7 +116,7 @@
         <Grid Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Grid>
                 <Border Grid.Column="0" Background="#33443C" CornerRadius="5" Width="400" Height="80" Margin="0, 0, 10, 20">
-                    <Button x:Name="buttonswitch" Background="Transparent" Click="Button_Click" Cursor="Hand">
+                    <Button x:Name="buttonswitch" Background="Transparent" Click="CreateSessionButton" Cursor="Hand">
                         <!-- Add content for the button here -->
                         <TextBlock Text="Créer la séance" Foreground="White" Margin="5" FontSize="32"/>
                     </Button>
