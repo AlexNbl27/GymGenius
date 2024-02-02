@@ -24,7 +24,7 @@ namespace GymGenius
             {
                 GetSessionDate();
                 GetSessionReccurence();
-                ExerciceWindow exerciceWindow = new ExerciceWindow(session);
+                ExercisesWindow exerciceWindow = new ExercisesWindow(session);
                 exerciceWindow.Show();
             }
         }
