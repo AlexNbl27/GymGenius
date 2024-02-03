@@ -7,7 +7,7 @@ namespace GymGenius.Models
         public Dictionary<int, string> recurrenceOptions = [];
 
         public List<AExercise> exercises;
-        public float totalDuration = 0;
+        public TimeController totalDuration;
         public bool isAtHome = false;
         public TimeController restTime = new(0, 0, 30);
         public DateTime? date = null;
@@ -39,5 +39,25 @@ namespace GymGenius.Models
             // Check if the key exists in the dictionary
             return recurrenceOptions.ContainsKey(recurrenceId) ? recurrenceOptions[recurrenceId] : throw new Exception();
         }
+
+        public void calculateTotalDuration()
+        {
+            double _totalDuration = 0;
+            foreach (AExercise exercise in exercises)
+            {
+                if (exercise is ISerie serieExercise)
+                {
+                    _totalDuration += exercise.Duration.getDurationInSecond() * serieExercise.NbRepetitions;
+                    _totalDuration += serieExercise.DodoTime.getDurationInSecond();
+                }
+                else
+                {
+                    _totalDuration += exercise.Duration.getDurationInSecond();
+                }
+                _totalDuration += restTime.getDurationInSecond();
+            }
+            this.totalDuration = new TimeController(_totalDuration);
+        }
+
     }
 }

@@ -10,14 +10,16 @@
 
     <Grid x:Name="All" Background="#99B0A5">
         <Grid.RowDefinitions>
-            <RowDefinition Height="60" />
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="3*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid  Grid.Row="0" x:Name="Title">
             <TextBlock Text="VOTRE SÉANCE" Foreground="#25322C" FontSize="30"  VerticalAlignment="Center" HorizontalAlignment="Center" />
         </Grid>
-        <ScrollViewer VerticalScrollBarVisibility="Auto" Name="exercises" Grid.Row="1">
+        <TextBlock Name="TotalDuration" Text="{Binding TotalDuration}" Grid.Row="1" Foreground="#25322C" FontSize="30" VerticalAlignment="Top" HorizontalAlignment="Center" />
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Name="exercises" Grid.Row="2">
             <Border>
                 <ItemsControl ItemsSource="{Binding Exercises}">
                     <ItemsControl.ItemsPanel>
@@ -36,7 +38,7 @@
                 </ItemsControl>
             </Border>
         </ScrollViewer>
-        <Grid Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/> <!-- Column for the first button -->

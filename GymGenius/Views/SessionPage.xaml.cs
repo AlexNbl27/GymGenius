@@ -46,10 +46,7 @@ namespace GymGenius.Views
             }
             else if (currentState is RestState)
             {
-                List<double> secondsAndMinutes = mainWindow.session.restTime.getDurationInMinutesAndSeconds();
-                string seconds = $"{(secondsAndMinutes[0] < 10 ? "0" : "")}{secondsAndMinutes[0]}";
-                string minutes = $"{(secondsAndMinutes[1] < 10 ? "0" : "")}{secondsAndMinutes[1]}";
-                Timer.Text = minutes + ":" + seconds;
+                Timer.Text = mainWindow.session.restTime.getFormatDuration();
                 if (currentExerciseIndex < mainWindow.session.exercises.Count)
                 {
                     exerciseOverButtonText.Text = "Passer au prochain exercice";

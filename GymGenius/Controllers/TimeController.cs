@@ -34,6 +34,13 @@
             this.second = second;
         }
 
+        public TimeController(double seconds)
+        {
+            hour = (int)seconds / 3600;
+            minute = ((int)seconds % 3600) / 60;
+            second = (float)(seconds % 60);
+        }
+
 
         public void setTime(float hour, float minute, float second)
         {
@@ -69,10 +76,12 @@
             return (hour * 3600) + (minute * 60) + second;
         }
 
-        public List<double> getDurationInMinutesAndSeconds()
+        public string getFormatDuration()
         {
-            List<double> result = [second, minute];
-            return result;
+            string _second = second < 10 ? "0" + second : second.ToString();
+            string _minute = minute < 10 ? "0" + minute : minute.ToString();
+
+            return _minute + ":" + _second;
         }
     }
 }

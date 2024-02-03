@@ -9,13 +9,16 @@ namespace GymGenius.Views
     {
         private readonly MainWindow mainWindow;
 
-        public List<AExercise> Exercises { get; set; } // Binnded variable
+        public List<AExercise> Exercises { get; set; }
 
         public RecapSessionPage(MainWindow _mainWindow)
         {
             mainWindow = _mainWindow;
             InitializeComponent();
             Exercises = mainWindow.session.exercises;
+            mainWindow.session.calculateTotalDuration();
+            string _totalDuration = mainWindow.session.totalDuration.getFormatDuration();
+            TotalDuration.Text = "Durée totale estimée : " + _totalDuration;
 
             // Set the DataContext to this window so that bindings work
             DataContext = this;
