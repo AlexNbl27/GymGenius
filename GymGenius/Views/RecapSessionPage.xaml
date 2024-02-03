@@ -1,4 +1,4 @@
-﻿<Window x:Class="GymGenius.Views.RecapSessionWindow"
+﻿<Page x:Class="GymGenius.Views.RecapSessionPage"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -10,27 +10,14 @@
 
     <Grid x:Name="All" Background="#99B0A5">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
             <RowDefinition Height="60" />
             <RowDefinition Height="2*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Grid x:Name="Header" VerticalAlignment="Top">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="Auto" />
-            </Grid.ColumnDefinitions>
-            <Grid x:Name="Logo" HorizontalAlignment="Left">
-                <Image Source="{DynamicResource LogoHeader}" Height="90" Width="120" Margin="15, 0, 0, 0"/>
-            </Grid>
-            <Grid x:Name="Line" Margin="0, 80, 0, 0">
-                <Rectangle Height="1" HorizontalAlignment="Stretch" Stroke="Black" VerticalAlignment="Top" />
-            </Grid>
-        </Grid>
-        <Grid  Grid.Row="1" x:Name="Title">
+        <Grid  Grid.Row="0" x:Name="Title">
             <TextBlock Text="VOTRE SÉANCE" Foreground="#25322C" FontSize="30"  VerticalAlignment="Center" HorizontalAlignment="Center" />
         </Grid>
-        <ScrollViewer VerticalScrollBarVisibility="Auto" Name="exercises" Grid.Row="2">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Name="exercises" Grid.Row="1">
             <Border>
                 <ItemsControl ItemsSource="{Binding Exercises}">
                     <ItemsControl.ItemsPanel>
@@ -49,7 +36,7 @@
                 </ItemsControl>
             </Border>
         </ScrollViewer>
-        <Grid Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/> <!-- Column for the first button -->
@@ -78,4 +65,4 @@
             </Grid>
         </Grid>
     </Grid>
-</Window>
+</Page>

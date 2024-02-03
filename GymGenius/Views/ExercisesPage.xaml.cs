@@ -1,36 +1,36 @@
 ﻿using GymGenius.Models;
 using GymGenius.ModelView;
+using GymGenius.Utilities;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 
 namespace GymGenius.Views
 {
-    public partial class ExercisesWindow : Window
+    public partial class ExercisesPage : Page
     {
-        // Property to store the list of exercises
+        private readonly MainWindow mainWindow;
+
         public List<AExercise> Exercises { get; set; }
-        public List<AExercise> selectedExercises { get; set; } = new List<AExercise>();
-        public Session Session { get; set; }
 
         // ===== CONSTRUCT FUNCTIONS ===== //
 
-        public ExercisesWindow(Session session)
+        public ExercisesPage(MainWindow _mainWindow)
         {
+            mainWindow = _mainWindow;
             InitializeComponent();
             ExercisesLogic exercisesLogic = new();
             Exercises = exercisesLogic.GetAllExercises();
-            this.Session = session;
 
             // Set the DataContext to this window so that bindings work
             DataContext = this;
         }
 
-        public ExercisesWindow(Session session, List<AExercise> filteredExercises)
+        public ExercisesPage(MainWindow _mainWindow, List<AExercise> filteredExercises)
         {
+            mainWindow = _mainWindow;
             InitializeComponent();
             Exercises = filteredExercises;
-            this.Session = session;
 
             // Set the DataContext to this window so that bindings work
             DataContext = this;
@@ -41,15 +41,13 @@ namespace GymGenius.Views
 
         private void CreateSessionButton(object sender, RoutedEventArgs e)
         {
-            if (this.selectedExercises.Count != 0)
+            if (this.mainWindow.session.exercises.Count != 0)
             {
-                this.Session.exercises = this.selectedExercises;
-                RecapSessionWindow seance = new(this.Session);
-                seance.Show();
+                mainWindow.NavigateToPage(new RecapSessionPage(mainWindow));
             }
             else
             {
-                MessageBox.Show("Sélectionnez au moins un exercice !");
+                MessagesBox.InfosBox("Veuillez sélectionner au moins un exercice");
             }
         }
 
@@ -75,9 +73,7 @@ namespace GymGenius.Views
                 tmp = exercisesLogic.GetAllExercises();
             }
 
-            Close();
-            ExercisesWindow exerciceWindow = new(this.Session, tmp);
-            exerciceWindow.Show();
+            mainWindow.NavigateToPage(new ExercisesPage(mainWindow, tmp));
         }
 
         // ===== INPUT FUNCTIONS ===== //
@@ -104,12 +100,10 @@ namespace GymGenius.Views
         {
             CheckBox clickedCheckBox = sender as CheckBox;
 
-            // If the first checkbox is checked, uncheck the second checkbox
             if (clickedCheckBox == cardio && cardio.IsChecked == true)
             {
                 musculaire.IsChecked = false;
             }
-            // If the second checkbox is checked, uncheck the first checkbox
             else if (clickedCheckBox == musculaire && musculaire.IsChecked == true)
             {
                 cardio.IsChecked = false;
@@ -145,7 +139,7 @@ namespace GymGenius.Views
                 if (exerciseComponent.DataContext is AExercise clickedExercise)
                 {
                     // Add the clicked exercise to selectedExercises
-                    selectedExercises.Add(clickedExercise);
+                    this.mainWindow.session.exercises.Add(clickedExercise);
                 }
             }
         }

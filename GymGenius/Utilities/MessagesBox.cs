@@ -14,5 +14,11 @@ namespace GymGenius.Utilities
         {
             MessageBox.Show(text);
         }
+
+        public static bool ShowYesNoMessageBox(string message, string caption)
+        {
+            MessageBoxResult result = MessageBox.Show(message, caption, MessageBoxButton.YesNo, MessageBoxImage.Question);
+            return result == MessageBoxResult.Yes;
+        }
     }
 }

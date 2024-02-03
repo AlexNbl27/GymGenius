@@ -1,20 +1,21 @@
 ﻿using GymGenius.Models;
 using GymGenius.Utilities;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace GymGenius.Views
 {
-    public partial class RecapSessionWindow : Window
+    public partial class RecapSessionPage : Page
     {
-        public Session Session { get; set; }
+        private readonly MainWindow mainWindow;
+
         public List<AExercise> Exercises { get; set; } // Binnded variable
 
-        public RecapSessionWindow(Session session)
+        public RecapSessionPage(MainWindow _mainWindow)
         {
+            mainWindow = _mainWindow;
             InitializeComponent();
-
-            this.Session = session;
-            Exercises = session.exercises;
+            Exercises = this.mainWindow.session.exercises;
 
             // Set the DataContext to this window so that bindings work
             DataContext = this;
@@ -24,13 +25,12 @@ namespace GymGenius.Views
 
         public void SessionButtonClick(object sender, RoutedEventArgs e)
         {
-            SessionWindow sessionWindow = new SessionWindow(this.Session);
-            sessionWindow.Show();
+            this.mainWindow.NavigateToPage(new SessionPage(mainWindow));
         }
 
         private void ExportButtonClick(object sender, RoutedEventArgs e)
         {
-            ICSUtils ics = new ICSUtils(this.Session);
+            ICSUtils ics = new ICSUtils(this.mainWindow.session);
             ics.ExportICS();
         }
     }

@@ -7,12 +7,13 @@ using System.Windows.Controls;
 
 namespace GymGenius
 {
-    public partial class HomeWindow : Window
+    public partial class HomePage : Page
     {
-        Session session = new Session();
+        private readonly MainWindow mainWindow;
 
-        public HomeWindow()
+        public HomePage(MainWindow _mainWindow)
         {
+            mainWindow = _mainWindow;
             InitializeComponent();
         }
 
@@ -24,8 +25,7 @@ namespace GymGenius
             {
                 GetSessionDate();
                 GetSessionReccurence();
-                ExercisesWindow exerciceWindow = new ExercisesWindow(session);
-                exerciceWindow.Show();
+                mainWindow.NavigateToPage(new ExercisesPage(mainWindow));
             }
         }
 
@@ -37,9 +37,9 @@ namespace GymGenius
                 do
                 {
                     ICSUtils ics = new();
-                    this.session = ics.ImportICS();
+                    this.mainWindow.session = ics.ImportICS();
 
-                    if (session != null)
+                    if (this.mainWindow.session != null)
                     {
                         importSuccess = true;
                     }
@@ -49,8 +49,7 @@ namespace GymGenius
                     }
                 } while (!importSuccess);
 
-                RecapSessionWindow seance = new(this.session);
-                seance.Show();
+                mainWindow.NavigateToPage(new RecapSessionPage(mainWindow));
             }
         }
 
@@ -77,7 +76,7 @@ namespace GymGenius
 
             if (int.TryParse(timexo.Text, out timeBetweenExercises))
             {
-                this.session.restTime = new TimeController(0, 0, timeBetweenExercises);
+                this.mainWindow.session.restTime = new TimeController(0, 0, timeBetweenExercises);
                 return true;
             }
             else
@@ -92,7 +91,7 @@ namespace GymGenius
 
             if (datePickerExercise != null)
             {
-                session.date = datePickerExercise.SelectedDate;
+                this.mainWindow.session.date = datePickerExercise.SelectedDate;
             }
         }
 
@@ -110,7 +109,7 @@ namespace GymGenius
 
             if (checkedTags.Count > 0)
             {
-                session.recurrenceId = checkedTags[0];
+                this.mainWindow.session.recurrenceId = checkedTags[0];
             }
         }
 
