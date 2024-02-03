@@ -41,7 +41,7 @@ namespace GymGenius.Views
 
         private void CreateSessionButton(object sender, RoutedEventArgs e)
         {
-            if (this.mainWindow.session.exercises.Count != 0)
+            if (mainWindow.session.exercises.Count != 0)
             {
                 mainWindow.NavigateToPage(new RecapSessionPage(mainWindow));
             }
@@ -51,27 +51,17 @@ namespace GymGenius.Views
             }
         }
 
-        private void OnSearch_click(object sender, RoutedEventArgs e)
+        private void OnSearchClick(object sender, RoutedEventArgs e)
         {
-            this.Exercises.Clear();
-            List<AExercise> tmp = new List<AExercise>();
+            Exercises.Clear();
+            List<AExercise> tmp = [];
             ExercisesLogic exercisesLogic = new();
 
-            if (dos.IsChecked.GetValueOrDefault() || jambe.IsChecked.GetValueOrDefault() || bras.IsChecked.GetValueOrDefault() || epaule.IsChecked.GetValueOrDefault() || tronc.IsChecked.GetValueOrDefault() || numericTextBox.Text != "" || cardio.IsChecked.GetValueOrDefault() || musculaire.IsChecked.GetValueOrDefault())
-            {
-                if (numericTextBox.Text != "")
-                {
-                    tmp = exercisesLogic.GetFilteredExercises(jambe.IsChecked.GetValueOrDefault(), bras.IsChecked.GetValueOrDefault(), dos.IsChecked.GetValueOrDefault(), epaule.IsChecked.GetValueOrDefault(), tronc.IsChecked.GetValueOrDefault(), cardio.IsChecked.GetValueOrDefault(), musculaire.IsChecked.GetValueOrDefault(), int.Parse(numericTextBox.Text));
-                }
-                else
-                {
-                    tmp = exercisesLogic.GetFilteredExercises(jambe.IsChecked.GetValueOrDefault(), bras.IsChecked.GetValueOrDefault(), dos.IsChecked.GetValueOrDefault(), epaule.IsChecked.GetValueOrDefault(), tronc.IsChecked.GetValueOrDefault(), cardio.IsChecked.GetValueOrDefault(), musculaire.IsChecked.GetValueOrDefault());
-                }
-            }
-            else
-            {
-                tmp = exercisesLogic.GetAllExercises();
-            }
+            tmp = dos.IsChecked.GetValueOrDefault() || jambe.IsChecked.GetValueOrDefault() || bras.IsChecked.GetValueOrDefault() || epaule.IsChecked.GetValueOrDefault() || tronc.IsChecked.GetValueOrDefault() || numericTextBox.Text != "" || cardio.IsChecked.GetValueOrDefault() || musculaire.IsChecked.GetValueOrDefault()
+                ? numericTextBox.Text != ""
+                    ? exercisesLogic.GetFilteredExercises(jambe.IsChecked.GetValueOrDefault(), bras.IsChecked.GetValueOrDefault(), dos.IsChecked.GetValueOrDefault(), epaule.IsChecked.GetValueOrDefault(), tronc.IsChecked.GetValueOrDefault(), cardio.IsChecked.GetValueOrDefault(), musculaire.IsChecked.GetValueOrDefault(), int.Parse(numericTextBox.Text))
+                    : exercisesLogic.GetFilteredExercises(jambe.IsChecked.GetValueOrDefault(), bras.IsChecked.GetValueOrDefault(), dos.IsChecked.GetValueOrDefault(), epaule.IsChecked.GetValueOrDefault(), tronc.IsChecked.GetValueOrDefault(), cardio.IsChecked.GetValueOrDefault(), musculaire.IsChecked.GetValueOrDefault())
+                : exercisesLogic.GetAllExercises();
 
             mainWindow.NavigateToPage(new ExercisesPage(mainWindow, tmp));
         }
@@ -110,19 +100,13 @@ namespace GymGenius.Views
             }
         }
 
-        // ===== ACTIONS FUNCTIONS ===== //
-
-        public event EventHandler<AExercise> ExerciseClicked;
+        // ===== MOUSE FUNCTIONS ===== //
 
         private void ExerciseComponent_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             if (sender is Components.ExerciseComponent exerciseComponent)
             {
-                // Change border color to blue when mouse button is pressed
-                if (exerciseComponent.FindName("ExerciseBorder") is Border border)
-                {
-                    exerciseComponent.BorderBrush = System.Windows.Media.Brushes.Blue;
-                }
+                exerciseComponent.Border.BorderBrush = System.Windows.Media.Brushes.Blue;
             }
         }
 
@@ -130,19 +114,13 @@ namespace GymGenius.Views
         {
             if (sender is Components.ExerciseComponent exerciseComponent)
             {
-                // Change border color back to black when mouse button is released
-                if (exerciseComponent.FindName("ExerciseBorder") is Border border)
-                {
-                    exerciseComponent.BorderBrush = System.Windows.Media.Brushes.Black;
-                }
+                exerciseComponent.Border.BorderBrush = System.Windows.Media.Brushes.Black;
 
                 if (exerciseComponent.DataContext is AExercise clickedExercise)
                 {
-                    // Add the clicked exercise to selectedExercises
-                    this.mainWindow.session.exercises.Add(clickedExercise);
+                    mainWindow.session.exercises.Add(clickedExercise);
                 }
             }
         }
-
     }
 }

@@ -15,7 +15,7 @@ namespace GymGenius.Views
         {
             mainWindow = _mainWindow;
             InitializeComponent();
-            Exercises = this.mainWindow.session.exercises;
+            Exercises = mainWindow.session.exercises;
 
             // Set the DataContext to this window so that bindings work
             DataContext = this;
@@ -25,12 +25,12 @@ namespace GymGenius.Views
 
         public void SessionButtonClick(object sender, RoutedEventArgs e)
         {
-            this.mainWindow.NavigateToPage(new SessionPage(mainWindow));
+            mainWindow.NavigateToPage(new SessionPage(mainWindow));
         }
 
         private void ExportButtonClick(object sender, RoutedEventArgs e)
         {
-            ICSUtils ics = new ICSUtils(this.mainWindow.session);
+            ICSUtils ics = new(mainWindow.session);
             ics.ExportICS();
         }
     }

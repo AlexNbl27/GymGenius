@@ -22,9 +22,11 @@
         </Grid>
         <Grid Grid.Row="1" x:Name="rectangle" Margin="0,0,0,20">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
                 <ColumnDefinition Width="10" />
-                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="2*" />
                 <ColumnDefinition Width="10" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
@@ -73,7 +75,7 @@
                                VerticalAlignment="Top"
                                FontSize="22" />
                 </Grid>
-                    <Grid Grid.Row="2" HorizontalAlignment="Center">
+                <Grid Grid.Row="2" HorizontalAlignment="Center">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition />
                         <ColumnDefinition />
@@ -107,13 +109,12 @@
                                  Height="23" 
                                  PreviewTextInput="NumericTextBox_PreviewTextInput"
                                  Background="White" TextChanged="numericTextBox_TextChanged"/>
-                    <Grid x:Name="buttonsearch" Grid.Column="1" HorizontalAlignment="Left" >
-                        <Button x:Name="BUTTON" Background="#567666" Width="30" Height="30" Cursor="Hand" Click="OnSearch_click">
-                            <Image Source="{DynamicResource search}" Height="20" Width="20" />
-                        </Button>
                 </Grid>
-                    </Grid>
             </Grid>
+            <Button x:Name="buttonsearch" Grid.Column="6" HorizontalAlignment="Stretch" Background="#567666" Click="OnSearchClick">
+                <!-- Larger version of the image -->
+                <Image Source="{DynamicResource search}" Height="50" Width="50" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Button>
         </Grid>
         <Grid Grid.Row="2">
             <ScrollViewer  x:Name="exercice" VerticalScrollBarVisibility="Auto">
@@ -126,7 +127,6 @@
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
                             <components:ExerciseComponent
-                                BorderColor="black"
                                 Margin="5 5 5 5"
                                 ExerciseName="{Binding ExerciseName}"
                                 ExerciseDescription="{Binding ExerciseDescription}"
@@ -138,13 +138,23 @@
             </ScrollViewer>
         </Grid>
         <Grid Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Grid>
-                <Border Grid.Column="0" Background="#33443C" CornerRadius="5" Width="400" Height="80" Margin="0, 0, 10, 20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Border Background="#33443C" CornerRadius="5" Width="400" Height="80" Margin="0, 0, 10, 20">
                     <Button x:Name="buttonswitch" Background="Transparent" Click="CreateSessionButton" Cursor="Hand">
                         <!-- Add content for the button here -->
                         <TextBlock Text="Créer la séance" Foreground="White" Margin="5" FontSize="32"/>
                     </Button>
                 </Border>
+            </Grid>
+            <Grid Grid.Column="2">
+                <TextBlock x:Name="error" Foreground="Black" FontSize="14" TextWrapping="Wrap"
+                           Text="ℹ️ Pour ajouter un exercice, il faut simplement cliquer sur la case de l'exercice souhaité une fois. Vous pouvez ajouter plusieurs fois le même exercice. Si vous souhaitez filtrer les exercices, utilisez le cadre au dessus, selectionnez vos préférences et cliquez sur le bouton rechercher. Pour réinitialiser les filtres, cliquez deux fois sur le bouton rechercher."
+                />
             </Grid>
         </Grid>
     </Grid>

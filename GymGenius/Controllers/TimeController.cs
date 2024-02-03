@@ -2,15 +2,15 @@
 {
     public class TimeController
     {
-        float hour;
-        float minute;
-        float second;
+        private float hour;
+        private float minute;
+        private float second;
 
         public TimeController(DateTime time)
         {
-            this.hour = time.Hour;
-            this.minute = time.Minute;
-            this.second = time.Second;
+            hour = time.Hour;
+            minute = time.Minute;
+            second = time.Second;
         }
 
         public TimeController(float hour, float minute, float second)
@@ -59,21 +59,19 @@
         public void setTime(string time)
         {
             string[] timeArray = time.Split(':');
-            this.hour = float.Parse(timeArray[0]);
-            this.minute = float.Parse(timeArray[1]);
-            this.second = float.Parse(timeArray[2]);
+            hour = float.Parse(timeArray[0]);
+            minute = float.Parse(timeArray[1]);
+            second = float.Parse(timeArray[2]);
         }
 
         public double getDurationInSecond()
         {
-            return (this.hour * 3600) + (this.minute * 60) + this.second;
+            return (hour * 3600) + (minute * 60) + second;
         }
 
         public List<double> getDurationInMinutesAndSeconds()
         {
-            List<double> result = new List<double>();
-            result.Add(this.second);
-            result.Add(this.minute);
+            List<double> result = [second, minute];
             return result;
         }
     }

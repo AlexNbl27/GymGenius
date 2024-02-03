@@ -1,18 +1,7 @@
 ﻿using GymGenius.Models;
 using GymGenius.Utilities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace GymGenius.Views
 {
@@ -21,19 +10,19 @@ namespace GymGenius.Views
     /// </summary>
     public partial class MainWindow : Window
     {
-        public Session session = new Session();
+        public Session session = new();
         public Page CurrentPage { get; set; }
 
         public MainWindow()
         {
             InitializeComponent();
-            this.CurrentPage = new HomePage(this);
+            CurrentPage = new HomePage(this);
             NavigateToPage(CurrentPage);
         }
 
         public void NavigateToPage(Page page)
         {
-            this.CurrentPage = page;
+            CurrentPage = page;
             MainContent.Navigate(page);
         }
 
@@ -43,7 +32,7 @@ namespace GymGenius.Views
 
             if (continueToHome)
             {
-                MainWindow mainWindow = new MainWindow();
+                MainWindow mainWindow = new();
                 mainWindow.Show();
                 Close();
             }

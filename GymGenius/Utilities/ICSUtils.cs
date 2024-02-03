@@ -1,4 +1,5 @@
 ﻿using GymGenius.Controller;
+using GymGenius.Controllers;
 using GymGenius.Models;
 using Microsoft.Win32;
 using System.IO;
@@ -10,55 +11,54 @@ namespace GymGenius.Utilities
     public class ICSUtils
     {
         private string summary;
-        private string date;
-        private string endDate;
+        private readonly string date;
+        private readonly string endDate;
         private string description;
-        private string? reccurence;
-        private List<AExercise> allExercises;
+        private readonly string? reccurence;
+        private readonly List<AExercise> allExercises;
 
         public ICSUtils() { }
 
         public ICSUtils(Session session)
         {
-            this.summary = "Ma séance de sport GymGenius";
+            summary = "Ma séance de sport GymGenius";
             if (session.date != null)
             {
                 DateTime _date = (DateTime)session.date;
                 DateTime _endDate = (DateTime)session.date;
                 _endDate = _endDate.AddDays(1);
-                this.date = _date.ToString("yyyyMMdd");
-                this.endDate = _endDate.ToString("yyyyMMdd");
+                date = _date.ToString("yyyyMMdd");
+                endDate = _endDate.ToString("yyyyMMdd");
             }
             else
             {
                 DateTime now = DateTime.Now;
-                this.date = now.ToString("yyyyMMdd");
-                this.endDate = now.ToString("yyyyMMdd");
+                date = now.ToString("yyyyMMdd");
+                endDate = now.ToString("yyyyMMdd");
             }
             if (session.recurrenceId > 0)
             {
-                this.reccurence = session.GetRecurrenceString();
+                reccurence = session.GetRecurrenceString();
             }
-            this.allExercises = session.exercises;
+            allExercises = session.exercises;
         }
 
 
-        // Public function to export session to ICS File
-
+        // Fonctions pour exporter un fichier .ics
         public void ExportICS()
         {
-            this.description = "Séance de sport\\n\n";
+            description = "Séance de sport\\n\n";
             int index = 0;
 
             foreach (AExercise exercise in allExercises)
             {
                 index++;
-                this.description += " " + index + ") " + exercise.Name + "\\" + "n";
+                description += " " + index + ") " + exercise.Name + "\\" + "n";
 
                 // Check if it's not the last exercise
                 if (index < allExercises.Count)
                 {
-                    this.description += "\n";
+                    description += "\n";
                 }
             }
 
@@ -68,19 +68,19 @@ namespace GymGenius.Utilities
 
         private string CreateICSFile()
         {
-            StringBuilder icsContent = new StringBuilder();
+            StringBuilder icsContent = new();
 
             icsContent.AppendLine("BEGIN:VCALENDAR");
             icsContent.AppendLine("VERSION:2.0");
             icsContent.AppendLine("BEGIN:VEVENT");
 
-            icsContent.AppendLine($"SUMMARY:{this.summary}");
-            icsContent.AppendLine($"DTSTART;VALUE=DATE:{this.date}");
-            icsContent.AppendLine($"DTEND;VALUE=DATE:{this.endDate}");
-            icsContent.AppendLine($"DESCRIPTION:{this.description}");
-            if (this.reccurence != null)
+            icsContent.AppendLine($"SUMMARY:{summary}");
+            icsContent.AppendLine($"DTSTART;VALUE=DATE:{date}");
+            icsContent.AppendLine($"DTEND;VALUE=DATE:{endDate}");
+            icsContent.AppendLine($"DESCRIPTION:{description}");
+            if (reccurence != null)
             {
-                icsContent.AppendLine($"RRULE:{this.reccurence};INTERVAL=1;COUNT=25");
+                icsContent.AppendLine($"RRULE:{reccurence};INTERVAL=1;COUNT=25");
             }
             icsContent.AppendLine("BEGIN:VALARM");
             icsContent.AppendLine("TRIGGER:-PT15M");
@@ -94,39 +94,57 @@ namespace GymGenius.Utilities
             return icsContent.ToString();
         }
 
+
         private void DownloadICSFile(string icscontent)
         {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Title = "Save the .ics file";
-            saveFileDialog.Filter = "iCalendar files (*.ics)|*.ics|All files (*.*)|*.*";
-            saveFileDialog.DefaultExt = "ics";
-            saveFileDialog.AddExtension = true;
+            // Create an instance of SaveFileDialog
+            SaveFileDialog saveFileDialog = new()
+            {
+                // Configure the properties of the SaveFileDialog
+                Title = "Save the .ics file",
+                Filter = "iCalendar files (*.ics)|*.ics|All files (*.*)|*.*",
+                DefaultExt = "ics",
+                AddExtension = true
+            };
+
+            // Show the dialog and check if the user clicked "Save"
             bool? result = saveFileDialog.ShowDialog();
 
             if (result.HasValue && result.Value)
             {
+                // Get the full path of the selected file
                 string selectedFilePath = saveFileDialog.FileName;
 
+                // Write the content to the file
                 File.WriteAllText(selectedFilePath, icscontent);
+
+                Console.WriteLine($"File saved as .ics: {selectedFilePath}");
             }
         }
 
 
-        // Public function to import session from ICS File
-
+        // Fonctions pour importer un fichier .ics
         public Session? ImportICS()
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Title = "Open the .ics file";
-            openFileDialog.Filter = "iCalendar files (*.ics)|*.ics|All files (*.*)|*.*";
-            openFileDialog.DefaultExt = "ics";
-            openFileDialog.AddExtension = true;
+            // Create an instance of OpenFileDialog
+            OpenFileDialog openFileDialog = new()
+            {
+                // Configure the properties of the OpenFileDialog
+                Title = "Open the .ics file",
+                Filter = "iCalendar files (*.ics)|*.ics|All files (*.*)|*.*",
+                DefaultExt = "ics",
+                AddExtension = true
+            };
+
+            // Show the dialog and check if the user clicked "Open"
             bool? result = openFileDialog.ShowDialog();
 
             if (result.HasValue && result.Value)
             {
+                // Get the full path of the selected file
                 string selectedFilePath = openFileDialog.FileName;
 
+                // Read the content of the file
                 string icsContent = File.ReadAllText(selectedFilePath);
 
                 string allExercises = ParseICSFile(icsContent);
@@ -138,23 +156,30 @@ namespace GymGenius.Utilities
 
         private string ParseICSFile(string icsContent)
         {
+            // Split the content into lines
             string[] lines = icsContent.Split('\n');
 
             bool insideDESCRIPTION = false;
             string allExercises = "";
+            // Loop through the lines
             foreach (string line in lines)
             {
+                // Split the line into key/value pair
                 string[] pair = line.Split(':');
 
+                // Check if the line is valid
                 if (pair.Length >= 2)
                 {
+                    // Get the key and value
                     string key = pair[0];
                     string value = pair[1];
 
+                    // Check if the key is "DESCRIPTION"
                     if (key == "DESCRIPTION")
                     {
                         insideDESCRIPTION = true;
                     }
+                    // Check if the key is "SUMMARY"
                     else if (key == "SUMMARY")
                     {
                         summary = value;
@@ -171,29 +196,37 @@ namespace GymGenius.Utilities
 
         private Session CreateSession(string _allExercises)
         {
+            // Split the input string by newline character ("\n")
             string[] exercisesArray = _allExercises.Split('\n', StringSplitOptions.RemoveEmptyEntries);
 
-            List<string> exerciseNames = new List<string>();
+            // Extract only the exercise names
+            List<string> exerciseNames = [];
             foreach (string exercise in exercisesArray)
             {
+                // Remove leading and trailing whitespaces
                 string cleanedExercise = exercise.Trim();
+
+                // Remove leading numbers and whitespace
                 cleanedExercise = Regex.Replace(cleanedExercise, @"^\s*\d+\)\s*", "");
+
+                // Remove "\\n" from the exercise names
                 cleanedExercise = cleanedExercise.Replace("\\n", "");
 
+                // Add the cleaned exercise name to the list (if not empty)
                 if (!string.IsNullOrEmpty(cleanedExercise))
                 {
                     exerciseNames.Add(cleanedExercise);
                 }
             }
 
-            List<AExercise> allExercises = new List<AExercise>();
+            List<AExercise> allExercises = [];
             foreach (string exerciseName in exerciseNames)
             {
                 string exerciseClass = TranslateUtils.GetRessourceName(exerciseName);
                 allExercises.Add(CreateExercise(exerciseClass));
             }
 
-            Session session = new Session(allExercises);
+            Session session = new(allExercises);
 
             return session;
         }

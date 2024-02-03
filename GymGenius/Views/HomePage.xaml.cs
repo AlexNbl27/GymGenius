@@ -1,5 +1,4 @@
 using GymGenius.Controllers;
-using GymGenius.Models;
 using GymGenius.Utilities;
 using GymGenius.Views;
 using System.Windows;
@@ -37,9 +36,9 @@ namespace GymGenius
                 do
                 {
                     ICSUtils ics = new();
-                    this.mainWindow.session = ics.ImportICS();
+                    mainWindow.session = ics.ImportICS();
 
-                    if (this.mainWindow.session != null)
+                    if (mainWindow.session != null)
                     {
                         importSuccess = true;
                     }
@@ -76,7 +75,7 @@ namespace GymGenius
 
             if (int.TryParse(timexo.Text, out timeBetweenExercises))
             {
-                this.mainWindow.session.restTime = new TimeController(0, 0, timeBetweenExercises);
+                mainWindow.session.restTime = new TimeController(0, 0, timeBetweenExercises);
                 return true;
             }
             else
@@ -91,13 +90,13 @@ namespace GymGenius
 
             if (datePickerExercise != null)
             {
-                this.mainWindow.session.date = datePickerExercise.SelectedDate;
+                mainWindow.session.date = datePickerExercise.SelectedDate;
             }
         }
 
         private void GetSessionReccurence()
         {
-            List<int> checkedTags = new List<int>();
+            List<int> checkedTags = [];
 
             foreach (var child in recurrence.Children)
             {
@@ -109,7 +108,7 @@ namespace GymGenius
 
             if (checkedTags.Count > 0)
             {
-                this.mainWindow.session.recurrenceId = checkedTags[0];
+                mainWindow.session.recurrenceId = checkedTags[0];
             }
         }
 

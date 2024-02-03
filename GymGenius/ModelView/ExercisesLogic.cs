@@ -5,8 +5,8 @@ namespace GymGenius.ModelView
     public class ExercisesLogic
     {
 
-        private List<AExercise> allExercises = new List<AExercise>
-        {
+        private readonly List<AExercise> allExercises =
+        [
             new PushUps(),
             new PullUps(),
             new Dips(),
@@ -37,39 +37,40 @@ namespace GymGenius.ModelView
             new Rowing(),
             new Stairs(),
             new Elliptical()
-        };
+        ];
         public List<AExercise> GetAllExercises()
         {
-            return this.allExercises;
+            return allExercises;
         }
 
         public List<AExercise> GetFilteredExercises(bool legs, bool arms, bool back, bool shoulders, bool trunk, bool cardio, bool muscular, int difficulty = 99)
         {
-            List<AExercise> filteredExercises = new List<AExercise>();
+            List<AExercise> filteredExercises = [];
             if (legs)
             {
-                filteredExercises.AddRange(this.GetLegsExercises());
+                filteredExercises.AddRange(GetLegsExercises());
             }
             if (arms)
             {
-                filteredExercises.AddRange(this.GetArmsExercises());
+                filteredExercises.AddRange(GetArmsExercises());
             }
             if (back)
             {
-                filteredExercises.AddRange(this.GetBackExercises());
+                filteredExercises.AddRange(GetBackExercises());
             }
             if (shoulders)
             {
-                filteredExercises.AddRange(this.GetShouldersExercises());
+                filteredExercises.AddRange(GetShouldersExercises());
             }
             if (trunk)
             {
-                filteredExercises.AddRange(this.GetTrunkExercises());
+                filteredExercises.AddRange(GetTrunkExercises());
             }
 
             // Remove duplicates
             filteredExercises = filteredExercises.Distinct().ToList();
-
+            // If no muscles are selected, we return all exercises
+            filteredExercises = filteredExercises.Count == 0 ? allExercises : filteredExercises;
 
             if (cardio)
             {
@@ -84,13 +85,16 @@ namespace GymGenius.ModelView
                 filteredExercises = FilterExercisesByDifficulty(filteredExercises, difficulty);
             }
 
+            // Remove duplicates
+            filteredExercises = filteredExercises.Distinct().ToList();
+
             return filteredExercises;
         }
 
         private List<AExercise> GetLegsExercises()
         {
-            List<AExercise> legsExercises = new List<AExercise>();
-            foreach (AExercise exercise in this.allExercises)
+            List<AExercise> legsExercises = [];
+            foreach (AExercise exercise in allExercises)
             {
                 foreach (AMuscles muscle in exercise.Tags.Muscles)
                 {
@@ -106,8 +110,8 @@ namespace GymGenius.ModelView
 
         private List<AExercise> GetArmsExercises()
         {
-            List<AExercise> armsExercises = new List<AExercise>();
-            foreach (AExercise exercise in this.allExercises)
+            List<AExercise> armsExercises = [];
+            foreach (AExercise exercise in allExercises)
             {
                 foreach (AMuscles muscle in exercise.Tags.Muscles)
                 {
@@ -123,8 +127,8 @@ namespace GymGenius.ModelView
 
         private List<AExercise> GetBackExercises()
         {
-            List<AExercise> chestExercises = new List<AExercise>();
-            foreach (AExercise exercise in this.allExercises)
+            List<AExercise> chestExercises = [];
+            foreach (AExercise exercise in allExercises)
             {
                 foreach (AMuscles muscle in exercise.Tags.Muscles)
                 {
@@ -140,8 +144,8 @@ namespace GymGenius.ModelView
 
         private List<AExercise> GetShouldersExercises()
         {
-            List<AExercise> shouldersExercises = new List<AExercise>();
-            foreach (AExercise exercise in this.allExercises)
+            List<AExercise> shouldersExercises = [];
+            foreach (AExercise exercise in allExercises)
             {
                 foreach (AMuscles muscle in exercise.Tags.Muscles)
                 {
@@ -157,8 +161,8 @@ namespace GymGenius.ModelView
 
         private List<AExercise> GetTrunkExercises()
         {
-            List<AExercise> trunkExercises = new List<AExercise>();
-            foreach (AExercise exercise in this.allExercises)
+            List<AExercise> trunkExercises = [];
+            foreach (AExercise exercise in allExercises)
             {
                 foreach (AMuscles muscle in exercise.Tags.Muscles)
                 {
@@ -174,7 +178,7 @@ namespace GymGenius.ModelView
 
         private List<AExercise> FilterCardioExercises(List<AExercise> filteredExercises)
         {
-            List<AExercise> cardioExercises = new List<AExercise>();
+            List<AExercise> cardioExercises = [];
 
             foreach (AExercise exercise in filteredExercises)
             {
@@ -190,7 +194,7 @@ namespace GymGenius.ModelView
 
         private List<AExercise> FilterMuscularExercises(List<AExercise> filteredExercises)
         {
-            List<AExercise> muscularExercises = new List<AExercise>();
+            List<AExercise> muscularExercises = [];
 
             foreach (AExercise exercise in filteredExercises)
             {
@@ -205,7 +209,7 @@ namespace GymGenius.ModelView
 
         private List<AExercise> FilterExercisesByDifficulty(List<AExercise> filteredExercises, int difficulty)
         {
-            List<AExercise> filteredByDifficultyExercises = new List<AExercise>();
+            List<AExercise> filteredByDifficultyExercises = [];
 
             foreach (AExercise exercise in filteredExercises)
             {
