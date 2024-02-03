@@ -28,54 +28,91 @@
                 <ColumnDefinition Width="10" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Grid Background="#6D887B">
+            <Grid Grid.Column="0" Background="#6D887B">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
                 <Grid x:Name="muscle" 
-                      Margin="80, 30, 0, 0" 
-                      HorizontalAlignment="Left">
+                      Grid.Row="1"
+                      HorizontalAlignment="Center">
                     <TextBlock Text="Muscles sollicités"
                                VerticalAlignment="Top"
                                FontSize="22" />
-                    <CheckBox x:Name="jambe" Margin="0,40 0, 0" Content="Jambe" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" />
-                    <CheckBox x:Name="epaule" Margin="0, 65, 0, 0" Content="Epaule" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" />
-                    <CheckBox x:Name="tronc" Margin="70, 40, 0, 0" Content="Tronc" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" />
-                    <CheckBox x:Name="dos" Margin="130, 40, 0, 0" Content="Dos" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" />
-                    <CheckBox x:Name="bras" Margin="70, 65, 0, 0" Content="Bras" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" />
+                </Grid>
+                <Grid Grid.Row="2" HorizontalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <CheckBox x:Name="jambe" Content="Jambe" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Grid.Row="0" Grid.Column="0"/>
+                    <CheckBox x:Name="epaule"  Content="Epaule" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Grid.Row="0" Grid.Column="1" />
+                    <CheckBox x:Name="tronc"  Content="Tronc" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Grid.Row="1" Grid.Column="0"/>
+                    <CheckBox x:Name="dos"  Content="Dos" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Grid.Row="1" Grid.Column="1"/>
+                    <CheckBox x:Name="bras"  Content="Bras" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Grid.Row="0" Grid.Column="2" />
                 </Grid>
             </Grid>
             <Grid Grid.Column="2" Background="#6D887B">
-                <Grid x:Name="ouinon" 
-                      Margin="80, 40, 100, 0" 
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid x:Name="ouinon" Grid.Row="1"
                       HorizontalAlignment="Center">
                     <TextBlock Text="Type d'exercise"
                                TextWrapping="Wrap"
                                VerticalAlignment="Top"
                                FontSize="22" />
-                    <CheckBox x:Name="cardio" Margin="0,80 0, 0" Content="cardio" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
-                    <CheckBox x:Name="musculaire" Margin="70, 80, 0, 0" Content="musculaire" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
+                </Grid>
+                    <Grid Grid.Row="2" HorizontalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <CheckBox  Grid.Column="0" x:Name="cardio"  Content="cardio" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
+                    <CheckBox Grid.Column="1" x:Name="musculaire"  Content="musculaire" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
                 </Grid>
             </Grid>
             <Grid Grid.Column="4" Background="#6D887B">
-                <Grid x:Name="difficulte"
-                      HorizontalAlignment="Right">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid x:Name="difficulte" Grid.Row="1"
+                      HorizontalAlignment="Center">
                     <TextBlock Text="Difficulté max souhaitée"
-               
-                               Margin="0, 40, 100, 0" 
-                               HorizontalAlignment="Right"
+                               HorizontalAlignment="Center"
                                FontSize="22" />
-                    <Grid>
-                        <TextBox x:Name="numericTextBox" 
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="numericTextBox" 
+                             HorizontalAlignment="Right"
+                             Grid.Column="0"
                                  Width="50" 
-                                 Margin="0, 25, 270, 0" 
                                  Height="23" 
                                  PreviewTextInput="NumericTextBox_PreviewTextInput"
                                  Background="White" TextChanged="numericTextBox_TextChanged"/>
-                    </Grid>
-                    <Grid x:Name="buttonsearch" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0, 0, 20, 10">
+                    <Grid x:Name="buttonsearch" Grid.Column="1" HorizontalAlignment="Left" >
                         <Button x:Name="BUTTON" Background="#567666" Width="30" Height="30" Cursor="Hand" Click="OnSearch_click">
                             <Image Source="{DynamicResource search}" Height="20" Width="20" />
                         </Button>
-                    </Grid>
                 </Grid>
+                    </Grid>
             </Grid>
         </Grid>
         <Grid Grid.Row="2">
