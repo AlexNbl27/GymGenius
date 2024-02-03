@@ -12,7 +12,7 @@ namespace GymGenius.Models
         public TimeController Duration { get; protected set; } = new TimeController(new DateTime());
 
         public AExerciseType Type = new Muscular();
-        public List<AEquipment> Equipments { get; protected set; } = new List<AEquipment>();
+        public List<AEquipment> Equipments { get; protected set; } = [];
 
         public struct TagsStruct
         {
@@ -21,7 +21,7 @@ namespace GymGenius.Models
         }
 
 
-        public TagsStruct Tags = new TagsStruct();
+        public TagsStruct Tags = new();
     }
 
     public interface ISerie
@@ -45,14 +45,16 @@ namespace GymGenius.Models
             Equipments.Add(new DoubleBars());
             Equipments.Add(new MachineDips());
             Type = new Muscular();
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Triceps());
-            Tags.Muscles.Add(new Deltoids());
-            Tags.Muscles.Add(new RotatorCuff());
-            Tags.Muscles.Add(new Pectorals());
-            Tags.Muscles.Add(new Trapezius());
-            Tags.Muscles.Add(new Rhomboids());
-            Tags.Muscles.Add(new Abdominals());
+            Tags.Muscles =
+            [
+                new Triceps(),
+                new Deltoids(),
+                new RotatorCuff(),
+                new Pectorals(),
+                new Trapezius(),
+                new Rhomboids(),
+                new Abdominals(),
+            ];
             Tags.isAtHome = true;
         }
     }
@@ -73,9 +75,7 @@ namespace GymGenius.Models
             Equipments.Add(new Dumbbells());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Pectorals());
-            Tags.Muscles.Add(new Biceps());
+            Tags.Muscles = [new Pectorals(), new Biceps()];
             Tags.isAtHome = false;
         }
     }
@@ -96,11 +96,13 @@ namespace GymGenius.Models
             Equipments.Add(new Dumbbells());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Pectorals());
-            Tags.Muscles.Add(new Biceps());
-            Tags.Muscles.Add(new Triceps());
-            Tags.Muscles.Add(new Deltoids());
+            Tags.Muscles =
+            [
+                new Pectorals(),
+                new Biceps(),
+                new Triceps(),
+                new Deltoids(),
+            ];
             Tags.isAtHome = false;
         }
     }
@@ -120,10 +122,7 @@ namespace GymGenius.Models
             Equipments.Add(new CurlBar());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Triceps());
-            Tags.Muscles.Add(new Deltoids());
-            Tags.Muscles.Add(new Pectorals());
+            Tags.Muscles = [new Triceps(), new Deltoids(), new Pectorals()];
             Tags.isAtHome = false;
         }
     }
@@ -143,9 +142,7 @@ namespace GymGenius.Models
             Equipments.Add(new HighPulley());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Triceps());
-            Tags.Muscles.Add(new Deltoids());
+            Tags.Muscles = [new Triceps(), new Deltoids()];
             Tags.isAtHome = false;
         }
     }
@@ -165,9 +162,7 @@ namespace GymGenius.Models
             Equipments.Add(new HighPulley());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Pectorals());
-            Tags.Muscles.Add(new Deltoids());
+            Tags.Muscles = [new Pectorals(), new Deltoids()];
             Tags.isAtHome = false;
         }
     }
@@ -187,8 +182,7 @@ namespace GymGenius.Models
             Equipments.Add(new FitnessMat());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Abdominals());
+            Tags.Muscles = [new Abdominals()];
             Tags.isAtHome = true;
         }
     }
@@ -208,10 +202,7 @@ namespace GymGenius.Models
             Equipments.Add(new FitnessMat());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Obliques());
-            Tags.Muscles.Add(new Deltoids());
-            Tags.Muscles.Add(new Trapezius());
+            Tags.Muscles = [new Obliques(), new Deltoids(), new Trapezius()];
             Tags.isAtHome = true;
         }
     }
@@ -231,10 +222,7 @@ namespace GymGenius.Models
             Equipments.Add(new Dumbbells());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Deltoids());
-            Tags.Muscles.Add(new Trapezius());
-            Tags.Muscles.Add(new Biceps());
+            Tags.Muscles = [new Deltoids(), new Trapezius(), new Biceps()];
             Tags.isAtHome = false;
         }
     }
@@ -254,10 +242,7 @@ namespace GymGenius.Models
             Equipments.Add(new Dumbbells());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Deltoids());
-            Tags.Muscles.Add(new Trapezius());
-            Tags.Muscles.Add(new Rhomboids());
+            Tags.Muscles = [new Deltoids(), new Trapezius(), new Rhomboids()];
             Tags.isAtHome = false;
         }
     }
@@ -277,10 +262,7 @@ namespace GymGenius.Models
             Equipments.Add(new Dumbbells());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Deltoids());
-            Tags.Muscles.Add(new Trapezius());
-            Tags.Muscles.Add(new Triceps());
+            Tags.Muscles = [new Deltoids(), new Trapezius(), new Triceps()];
             Tags.isAtHome = false;
         }
     }
@@ -300,11 +282,13 @@ namespace GymGenius.Models
             Equipments.Add(new MachinePecDeck());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Deltoids());
-            Tags.Muscles.Add(new Rhomboids());
-            Tags.Muscles.Add(new Trapezius());
-            Tags.Muscles.Add(new Triceps());
+            Tags.Muscles =
+            [
+                new Deltoids(),
+                new Rhomboids(),
+                new Trapezius(),
+                new Triceps(),
+            ];
             Tags.isAtHome = false;
         }
     }
@@ -324,10 +308,7 @@ namespace GymGenius.Models
             Equipments.Add(new Pulley());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Deltoids());
-            Tags.Muscles.Add(new Trapezius());
-            Tags.Muscles.Add(new Triceps());
+            Tags.Muscles = [new Deltoids(), new Trapezius(), new Triceps()];
             Tags.isAtHome = false;
         }
     }
@@ -347,10 +328,7 @@ namespace GymGenius.Models
             Equipments.Add(new LowPulley());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new LargeDorsals());
-            Tags.Muscles.Add(new Deltoids());
-            Tags.Muscles.Add(new Biceps());
+            Tags.Muscles = [new LargeDorsals(), new Deltoids(), new Biceps()];
             Tags.isAtHome = true;
         }
     }
@@ -371,12 +349,14 @@ namespace GymGenius.Models
             Equipments.Add(new WeightDiscus());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new LargeDorsals());
-            Tags.Muscles.Add(new Quadriceps());
-            Tags.Muscles.Add(new Biceps());
-            Tags.Muscles.Add(new Hamstrings());
-            Tags.Muscles.Add(new Glutes());
+            Tags.Muscles =
+            [
+                new LargeDorsals(),
+                new Quadriceps(),
+                new Biceps(),
+                new Hamstrings(),
+                new Glutes(),
+            ];
             Tags.isAtHome = false;
         }
     }
@@ -396,8 +376,7 @@ namespace GymGenius.Models
             Equipments.Add(new CurlBar());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Biceps());
+            Tags.Muscles = [new Biceps()];
             Tags.isAtHome = false;
         }
     }
@@ -417,8 +396,7 @@ namespace GymGenius.Models
             Equipments.Add(new Dumbbells());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Biceps());
+            Tags.Muscles = [new Biceps()];
             Tags.isAtHome = false;
         }
     }
@@ -438,8 +416,7 @@ namespace GymGenius.Models
             Equipments.Add(new LowPulley());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Biceps());
+            Tags.Muscles = [new Biceps()];
             Tags.isAtHome = false;
         }
     }
@@ -459,10 +436,7 @@ namespace GymGenius.Models
             Equipments.Add(new Weights());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Quadriceps());
-            Tags.Muscles.Add(new Hamstrings());
-            Tags.Muscles.Add(new Glutes());
+            Tags.Muscles = [new Quadriceps(), new Hamstrings(), new Glutes()];
             Tags.isAtHome = true;
         }
     }
@@ -482,10 +456,7 @@ namespace GymGenius.Models
             Equipments.Add(new Press());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Quadriceps());
-            Tags.Muscles.Add(new Hamstrings());
-            Tags.Muscles.Add(new Glutes());
+            Tags.Muscles = [new Quadriceps(), new Hamstrings(), new Glutes()];
             Tags.isAtHome = false;
         }
     }
@@ -505,10 +476,7 @@ namespace GymGenius.Models
             Equipments.Add(new Weights());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Quadriceps());
-            Tags.Muscles.Add(new Glutes());
-            Tags.Muscles.Add(new Hamstrings());
+            Tags.Muscles = [new Quadriceps(), new Glutes(), new Hamstrings()];
             Tags.isAtHome = true;
         }
     }
@@ -528,8 +496,7 @@ namespace GymGenius.Models
             Equipments.Add(new MachineLegExtension());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Quadriceps());
+            Tags.Muscles = [new Quadriceps()];
             Tags.isAtHome = false;
         }
     }
@@ -549,8 +516,7 @@ namespace GymGenius.Models
             Equipments.Add(new MachineLegCurl());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Hamstrings());
+            Tags.Muscles = [new Hamstrings()];
             Tags.isAtHome = false;
         }
     }
@@ -570,8 +536,7 @@ namespace GymGenius.Models
             Duration.setTime("00:00:03");
             Equipments.Add(new CalfPressMachine());
             Type = new Muscular();
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Calves());
+            Tags.Muscles = [new Calves()];
             Tags.isAtHome = false;
         }
     }
@@ -591,16 +556,18 @@ namespace GymGenius.Models
             Duration.setTime("00:00:03");
             Equipments.Add(new FitnessMat());
             Type = new Muscular();
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Abdominals());
-            Tags.Muscles.Add(new Pectorals());
-            Tags.Muscles.Add(new Deltoids());
-            Tags.Muscles.Add(new Trapezius());
-            Tags.Muscles.Add(new Biceps());
-            Tags.Muscles.Add(new Triceps());
-            Tags.Muscles.Add(new Quadriceps());
-            Tags.Muscles.Add(new LargeDorsals());
-            Tags.Muscles.Add(new SmallDorsals());
+            Tags.Muscles =
+            [
+                new Abdominals(),
+                new Pectorals(),
+                new Deltoids(),
+                new Trapezius(),
+                new Biceps(),
+                new Triceps(),
+                new Quadriceps(),
+                new LargeDorsals(),
+                new SmallDorsals(),
+            ];
             Tags.isAtHome = true;
         }
     }
@@ -620,16 +587,18 @@ namespace GymGenius.Models
             Equipments.Add(new PullUpBar());
             Type = new Muscular();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Abdominals());
-            Tags.Muscles.Add(new Pectorals());
-            Tags.Muscles.Add(new Deltoids());
-            Tags.Muscles.Add(new Trapezius());
-            Tags.Muscles.Add(new Biceps());
-            Tags.Muscles.Add(new Triceps());
-            Tags.Muscles.Add(new Quadriceps());
-            Tags.Muscles.Add(new LargeDorsals());
-            Tags.Muscles.Add(new SmallDorsals());
+            Tags.Muscles =
+            [
+                new Abdominals(),
+                new Pectorals(),
+                new Deltoids(),
+                new Trapezius(),
+                new Biceps(),
+                new Triceps(),
+                new Quadriceps(),
+                new LargeDorsals(),
+                new SmallDorsals(),
+            ];
             Tags.isAtHome = false;
         }
     }
@@ -646,11 +615,13 @@ namespace GymGenius.Models
             Equipments.Add(new TreadmillMachine());
             Type = new Cardio();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Quadriceps());
-            Tags.Muscles.Add(new Glutes());
-            Tags.Muscles.Add(new Hamstrings());
-            Tags.Muscles.Add(new LargeDorsals());
+            Tags.Muscles =
+            [
+                new Quadriceps(),
+                new Glutes(),
+                new Hamstrings(),
+                new LargeDorsals(),
+            ];
             Tags.isAtHome = false;
         }
     }
@@ -667,10 +638,7 @@ namespace GymGenius.Models
             Equipments.Add(new RowingMachine());
             Type = new Cardio();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Quadriceps());
-            Tags.Muscles.Add(new Glutes());
-            Tags.Muscles.Add(new Hamstrings());
+            Tags.Muscles = [new Quadriceps(), new Glutes(), new Hamstrings()];
             Tags.isAtHome = false;
         }
     }
@@ -687,10 +655,7 @@ namespace GymGenius.Models
             Equipments.Add(new StairsMachine());
             Type = new Cardio();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Quadriceps());
-            Tags.Muscles.Add(new Glutes());
-            Tags.Muscles.Add(new Hamstrings());
+            Tags.Muscles = [new Quadriceps(), new Glutes(), new Hamstrings()];
             Tags.isAtHome = true;
         }
     }
@@ -707,9 +672,7 @@ namespace GymGenius.Models
             Equipments.Add(new EllipticalMachine());
             Type = new Cardio();
 
-            Tags.Muscles = new List<AMuscles>();
-            Tags.Muscles.Add(new Quadriceps());
-            Tags.Muscles.Add(new Hamstrings());
+            Tags.Muscles = [new Quadriceps(), new Hamstrings()];
             Tags.isAtHome = false;
         }
     }

@@ -18,13 +18,13 @@ namespace GymGenius.ModelView
 
     public class ExerciseState : ASessionState
     {
-        AExercise currentExercise;
-        int currentExerciseIndex;
+        private readonly AExercise currentExercise;
+        private readonly int currentExerciseIndex;
 
         public ExerciseState(AExercise _currentExercise, int _currentExerciseIndex)
         {
-            this.currentExercise = _currentExercise;
-            this.currentExerciseIndex = _currentExerciseIndex;
+            currentExercise = _currentExercise;
+            currentExerciseIndex = _currentExerciseIndex;
         }
 
         public override void OnEnter()
@@ -33,12 +33,12 @@ namespace GymGenius.ModelView
 
         public override void OnExit()
         {
-            RaiseCurrentExerciseIndexChanged(this.currentExerciseIndex + 1);
+            RaiseCurrentExerciseIndexChanged(currentExerciseIndex + 1);
         }
 
     }
 
-    class RestState : ASessionState
+    internal class RestState : ASessionState
     {
 
         public override void OnEnter()

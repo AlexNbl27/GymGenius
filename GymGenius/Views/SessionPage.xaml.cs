@@ -1,26 +1,26 @@
 ﻿using GymGenius.Controllers;
-using GymGenius.Models;
 using GymGenius.ModelView;
 using GymGenius.Utilities;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace GymGenius.Views
 {
-    public partial class SessionWindow : Window, ITimerHandler
+    public partial class SessionPage : Page, ITimerHandler
     {
+        private readonly MainWindow mainWindow;
 
         private ASessionState currentState;
-        private TimerController timer;
-        private Session Session;
+        private readonly TimerController timer;
         private int currentExerciseIndex = 0;
 
         // ===== CONSTRUCT FUNCTIONS ===== //
 
-        public SessionWindow(Session session)
+        public SessionPage(MainWindow _mainWindow)
         {
+            mainWindow = _mainWindow;
             InitializeComponent();
-            this.Session = session;
-            currentState = new ExerciseState(Session.exercises[currentExerciseIndex], currentExerciseIndex);
+            currentState = new ExerciseState(mainWindow.session.exercises[currentExerciseIndex], currentExerciseIndex);
             currentState.CurrentExerciseIndexChanged += NextExerciseHandler;
             timer = new TimerController(this);
             InitializeFields();
@@ -28,9 +28,9 @@ namespace GymGenius.Views
 
         public void InitializeFields()
         {
-            ExerciseName.Text = Session.exercises[currentExerciseIndex].Name;
-            ExerciseDesc.Text = Session.exercises[currentExerciseIndex].Description;
-            Timer.Text = timer.currentTimeElapsed.TotalSeconds.ToString();
+            ExerciseName.Text = mainWindow.session.exercises[currentExerciseIndex].Name;
+            ExerciseDesc.Text = mainWindow.session.exercises[currentExerciseIndex].Description;
+            Timer.Text = "00:00";
         }
 
         // ===== ACTION FUNCTIONS ===== //
@@ -41,14 +41,16 @@ namespace GymGenius.Views
             {
                 Timer.Text = "00:00";
                 exerciseOverButtonText.Text = "Exercice terminé !";
-                ExerciseName.Text = Session.exercises[currentExerciseIndex].Name;
-                ExerciseDesc.Text = Session.exercises[currentExerciseIndex].Description;
+                ExerciseName.Text = mainWindow.session.exercises[currentExerciseIndex].Name;
+                ExerciseDesc.Text = mainWindow.session.exercises[currentExerciseIndex].Description;
             }
             else if (currentState is RestState)
             {
-                List<double> secondsAndMinutes = Session.restTime.getDurationInMinutesAndSeconds();
-                Timer.Text = secondsAndMinutes[1].ToString() + ":" + secondsAndMinutes[0].ToString();
-                if (currentExerciseIndex < Session.exercises.Count)
+                List<double> secondsAndMinutes = mainWindow.session.restTime.getDurationInMinutesAndSeconds();
+                string seconds = $"{(secondsAndMinutes[0] < 10 ? "0" : "")}{secondsAndMinutes[0]}";
+                string minutes = $"{(secondsAndMinutes[1] < 10 ? "0" : "")}{secondsAndMinutes[1]}";
+                Timer.Text = minutes + ":" + seconds;
+                if (currentExerciseIndex < mainWindow.session.exercises.Count)
                 {
                     exerciseOverButtonText.Text = "Passer au prochain exercice";
                     ExerciseName.Text = "Repos";
@@ -71,14 +73,14 @@ namespace GymGenius.Views
             }
             else if (currentState is RestState)
             {
-                var restDuration = TimeSpan.FromSeconds(Session.restTime.getDurationInSecond());
+                var restDuration = TimeSpan.FromSeconds(mainWindow.session.restTime.getDurationInSecond());
                 var remainingRestTime = restDuration - timer.currentTimeElapsed;
                 Timer.Text = remainingRestTime.ToString(@"mm\:ss");
                 if (timer.currentTimeElapsed >= restDuration)
                 {
-                    if (currentExerciseIndex < Session.exercises.Count)
+                    if (currentExerciseIndex < mainWindow.session.exercises.Count)
                     {
-                        ChangeState(new ExerciseState(Session.exercises[currentExerciseIndex], currentExerciseIndex));
+                        ChangeState(new ExerciseState(mainWindow.session.exercises[currentExerciseIndex], currentExerciseIndex));
                     }
                     else
                     {
@@ -111,7 +113,7 @@ namespace GymGenius.Views
 
         private void NextExerciseHandler(int newIndex)
         {
-            this.currentExerciseIndex = newIndex;
+            currentExerciseIndex = newIndex;
         }
 
         // ==== CLICK FUNCTIONS ===== //
@@ -120,7 +122,7 @@ namespace GymGenius.Views
         {
             timer.Stop();
             MessagesBox.InfosBox("Séance terminée !");
-            Close();
+            mainWindow.Close();
         }
 
         private void StopButton(object sender, RoutedEventArgs e)
@@ -132,7 +134,7 @@ namespace GymGenius.Views
         {
             if (currentState is ExerciseState)
             {
-                if (currentExerciseIndex < Session.exercises.Count)
+                if (currentExerciseIndex < mainWindow.session.exercises.Count)
                 {
                     ChangeState(new RestState());
                 }
@@ -143,9 +145,9 @@ namespace GymGenius.Views
             }
             else if (currentState is RestState)
             {
-                if (currentExerciseIndex < Session.exercises.Count)
+                if (currentExerciseIndex < mainWindow.session.exercises.Count)
                 {
-                    ChangeState(new ExerciseState(Session.exercises[currentExerciseIndex], currentExerciseIndex));
+                    ChangeState(new ExerciseState(mainWindow.session.exercises[currentExerciseIndex], currentExerciseIndex));
                 }
                 else
                 {

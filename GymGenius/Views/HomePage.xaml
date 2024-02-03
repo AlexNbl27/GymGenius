@@ -1,41 +1,24 @@
-﻿<Window x:Class="GymGenius.HomeWindow"
+﻿<Page x:Class="GymGenius.HomePage"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="GymGenius" Height="700" Width="1300">
-    <Window.Resources>
+        Title="GymGenius" MinHeight="700" MinWidth="1300" MaxHeight="700" MaxWidth="1300">
+    <Page.Resources>
         <Style TargetType="DatePicker">
             <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         </Style>
-    </Window.Resources>
+    </Page.Resources>
 
     <Grid x:Name="All" Background="#99B0A5">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
             <RowDefinition Height="120" />
             <RowDefinition Height="3*" />
             <RowDefinition Height="2*" />
         </Grid.RowDefinitions>
 
-        <Grid x:Name="Header" VerticalAlignment="Top">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <!-- Première colonne pour le TextBox -->
-                <ColumnDefinition Width="Auto" />
-                <!-- Deuxième colonne pour le Button -->
-            </Grid.ColumnDefinitions>
-            <Grid x:Name="Logo" HorizontalAlignment="Left">
-                <Image Source="{DynamicResource LogoHeader}" Height="90" Width="120" Margin="15, 0, 0, 0"/>
-            </Grid>
-            <Grid x:Name="Line" Margin="0, 80, 0, 0">
-                <Rectangle Height="1" HorizontalAlignment="Stretch" Stroke="Black" VerticalAlignment="Top" />
-            </Grid>
-        </Grid>
-
-        <Grid Grid.Row="1" x:Name="Title">
+        <Grid Grid.Row="0" x:Name="Title">
             <TextBlock Text="ORGANISER VOS SEANCES" Foreground="#25322C" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center" />
         </Grid>
-
-        <Grid Grid.Row="2">
+        <Grid Grid.Row="1">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="2*" />
@@ -142,8 +125,7 @@
                 </Grid>
             </Grid>
         </Grid>
-
-        <Grid Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
@@ -175,4 +157,4 @@
             </Grid>
         </Grid>
     </Grid>
-</Window>
+</Page>

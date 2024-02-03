@@ -6,8 +6,8 @@ namespace GymGenius.Controllers
 {
     public class TimerController
     {
-        private Window window;
-        private ITimerHandler timerHandler;
+        private readonly Window window;
+        private readonly ITimerHandler timerHandler;
         private DispatcherTimer timer;
         public TimeSpan currentTimeElapsed;
 
@@ -19,21 +19,23 @@ namespace GymGenius.Controllers
 
         private void InitializeTimer()
         {
-            this.timer = new DispatcherTimer();
-            this.timer.Interval = TimeSpan.FromSeconds(1);
-            this.timer.Tick += Timer_Tick;
-            this.timer.Start();
+            timer = new DispatcherTimer
+            {
+                Interval = TimeSpan.FromSeconds(1)
+            };
+            timer.Tick += Timer_Tick;
+            timer.Start();
         }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            this.currentTimeElapsed = this.currentTimeElapsed.Add(TimeSpan.FromSeconds(1));
+            currentTimeElapsed = currentTimeElapsed.Add(TimeSpan.FromSeconds(1));
             timerHandler.Timer_Tick(sender, e);
         }
 
         public void Start()
         {
-            this.timer.Start();
+            timer.Start();
         }
 
         public void Stop()
@@ -44,7 +46,7 @@ namespace GymGenius.Controllers
         public void Reset()
         {
             timer.Stop();
-            this.currentTimeElapsed = TimeSpan.Zero;
+            currentTimeElapsed = TimeSpan.Zero;
         }
     }
 }
