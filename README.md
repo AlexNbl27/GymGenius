@@ -35,6 +35,30 @@ Bienvenue sur GymGenius, votre compagnon ultime pour la création de séances de
 6. Pour désinstaller l'application, faites comme vous le faites pour toute les autres application.
 <br> Menu Windows --> GymGenius --> Clic droit --> Désinstaller
 
+### 🟣 Méthode avec Visual Studio Community (si vous souhaitez regarder le code)
+**Prérequis supplémentaire : git**
+
+1. **Cloner le dossier GitHub**
+Ouvrez un terminal à l'emplacement où vous voulez placer le dossier GymGenius
+```bash
+  git clone https://github.com/AlexNbl27/GymGenius.git
+```
+
+2. **Ouvrir le dossier GymGenius créé à l'instant**
+Vous devriez voir dans ce dossier les fichiers/dossiers suivants :
+(Dossier) GymGenius
+<br>(Fichier) .gitattributes
+<br>(Fichier) .gitignore
+<br>(Fichier) GymGenius.sln
+<br>(Fichier) readme.md
+
+3. **Double-cliquer sur GymGenius.sln pour ouvrir le projet entier**
+4. **Lancer l'application grâce à un des deux boutons triangle avec écrit GymGenius à  côté**
+<br> Nous vous recommandons de lancer l'application sans debogage pour ne pas altérer les performances de votre ordinateur.
+
+**Et voilà ! GymGenius est à vous ! 🥳**
+
+
 ## ✨ Fonctionnalités
 Découvrez les fonctionnalités puissantes de GymGenius, conçues pour simplifier la création de vos séances d'entraînement. Explorez un ensemble complet d'outils qui vous permettront de personnaliser, planifier et suivre vos séances de sport de manière efficace et motivante :
 
