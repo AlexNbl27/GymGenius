@@ -122,7 +122,6 @@ namespace GymGenius.Utilities
         }
 
 
-        // Fonctions pour importer un fichier .ics
         public Session? ImportICS()
         {
             // Create an instance of OpenFileDialog

@@ -2,7 +2,7 @@
 
 namespace GymGenius.Models
 {
-    public abstract class AMuscles
+    public abstract class AMuscle
     {
         protected string idname;
         public string Name { get; protected set; }
@@ -10,7 +10,7 @@ namespace GymGenius.Models
         public ABodyPart bodyPart;
     }
 
-    public class Biceps : AMuscles
+    public class Biceps : AMuscle
     {
         public Biceps()
         {
@@ -20,7 +20,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class Triceps : AMuscles
+    public class Triceps : AMuscle
     {
         public Triceps()
         {
@@ -30,7 +30,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class Quadriceps : AMuscles
+    public class Quadriceps : AMuscle
     {
         public Quadriceps()
         {
@@ -40,7 +40,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class Hamstrings : AMuscles
+    public class Hamstrings : AMuscle
     {
         public Hamstrings()
         {
@@ -50,7 +50,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class Glutes : AMuscles
+    public class Glutes : AMuscle
     {
         public Glutes()
         {
@@ -60,7 +60,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class Trapezius : AMuscles
+    public class Trapezius : AMuscle
     {
         public Trapezius()
         {
@@ -70,7 +70,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class Deltoids : AMuscles
+    public class Deltoids : AMuscle
     {
         public Deltoids()
         {
@@ -80,7 +80,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class Pectorals : AMuscles
+    public class Pectorals : AMuscle
     {
         public Pectorals()
         {
@@ -90,7 +90,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class Abdominals : AMuscles
+    public class Abdominals : AMuscle
     {
         public Abdominals()
         {
@@ -100,7 +100,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class Obliques : AMuscles
+    public class Obliques : AMuscle
     {
         public Obliques()
         {
@@ -110,7 +110,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class Calves : AMuscles
+    public class Calves : AMuscle
     {
         public Calves()
         {
@@ -120,7 +120,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class Abductors : AMuscles
+    public class Abductors : AMuscle
     {
         public Abductors()
         {
@@ -130,7 +130,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class LargeDorsals : AMuscles
+    public class LargeDorsals : AMuscle
     {
         public LargeDorsals()
         {
@@ -140,7 +140,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class SmallDorsals : AMuscles
+    public class SmallDorsals : AMuscle
     {
         public SmallDorsals()
         {
@@ -150,7 +150,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class Forearms : AMuscles
+    public class Forearms : AMuscle
     {
         public Forearms()
         {
@@ -160,7 +160,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class Neck : AMuscles
+    public class Neck : AMuscle
     {
         public Neck()
         {
@@ -170,7 +170,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class Transerves : AMuscles
+    public class Transerves : AMuscle
     {
         public Transerves()
         {
@@ -180,7 +180,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class RotatorCuff : AMuscles
+    public class RotatorCuff : AMuscle
     {
         public RotatorCuff()
         {
@@ -190,7 +190,7 @@ namespace GymGenius.Models
         }
     }
 
-    public class Rhomboids : AMuscles
+    public class Rhomboids : AMuscle
     {
         public Rhomboids()
         {

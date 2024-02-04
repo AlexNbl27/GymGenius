@@ -1,4 +1,4 @@
-﻿namespace GymGenius.ModelView
+﻿namespace GymGenius.Controllers
 {
     public interface ITimerHandler
     {

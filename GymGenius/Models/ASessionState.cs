@@ -1,6 +1,4 @@
-﻿using GymGenius.Models;
-
-namespace GymGenius.ModelView
+﻿namespace GymGenius.Models
 {
     public abstract class ASessionState
     {

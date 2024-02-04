@@ -1,5 +1,7 @@
 using GymGenius.Controllers;
+using GymGenius.Models;
 using GymGenius.Utilities;
+using GymGenius.ViewModels;
 using GymGenius.Views;
 using System.Windows;
 using System.Windows.Controls;
@@ -8,117 +10,68 @@ namespace GymGenius
 {
     public partial class HomePage : Page
     {
+        // ===== PROPERTIES ===== /
+
         private readonly MainWindow mainWindow;
+        private readonly HomePageViewModel viewModel;
+
+        // ===== CONSTRUCTOR ===== /
 
         public HomePage(MainWindow _mainWindow)
         {
             mainWindow = _mainWindow;
             InitializeComponent();
+            viewModel = new HomePageViewModel(_mainWindow);
         }
 
-        // ===== CLICK FUNCTIONS ===== /
+        // ===== CLICK FUNCTIONS ===== //
+        // These functions calls are triggered when the user clicks on a button and call the global navigation function to change the page
 
         private void ExerciseButtonClick(object sender, RoutedEventArgs e)
         {
-            if (VerifyRestTime())
+            if (viewModel.VerifyRestTime(timexo.Text))
             {
-                GetSessionDate();
-                GetSessionReccurence();
+                viewModel.GetSessionDate(DatePickerExercise);
+                viewModel.GetSessionReccurence(recurrence);
                 mainWindow.NavigateToPage(new ExercisesPage(mainWindow));
+            }
+            else
+            {
+                MessagesBox.InfosBox("Veuillez entrer un temps de repos valide");
             }
         }
 
         private void ImportButtonClick(object sender, RoutedEventArgs e)
         {
-            if (VerifyRestTime())
+            if (viewModel.VerifyRestTime(timexo.Text))
             {
-                bool importSuccess = false;
-                do
+                ICSUtils ics = new();
+                Session _session = ics.ImportICS();
+                if (_session != null)
                 {
-                    ICSUtils ics = new();
-                    mainWindow.session = ics.ImportICS();
-
-                    if (mainWindow.session != null)
-                    {
-                        importSuccess = true;
-                    }
-                    else
-                    {
-                        MessagesBox.InfosBox("Echec de l'import");
-                    }
-                } while (!importSuccess);
-
-                mainWindow.NavigateToPage(new RecapSessionPage(mainWindow));
-            }
-        }
-
-        // ===== HANDLE FUNCTIONS ===== /
-
-        private bool VerifyRestTime()
-        {
-            bool restTimeAcquired = false;
-            do
-            {
-                restTimeAcquired = GetRestTime();
-                if (restTimeAcquired || !MessagesBox.WarnUser("Vous devez entrez une valeur valide dans le champs de la durée de repos entre les exercices !"))
-                {
-                    break;
+                    mainWindow.session = _session;
+                    mainWindow.session.restTime = new TimeController(int.Parse(timexo.Text));
+                    mainWindow.NavigateToPage(new RecapSessionPage(mainWindow));
                 }
-            } while (true);
-
-            return restTimeAcquired;
-        }
-
-        private bool GetRestTime()
-        {
-            int timeBetweenExercises = 0;
-
-            if (int.TryParse(timexo.Text, out timeBetweenExercises))
-            {
-                mainWindow.session.restTime = new TimeController(0, 0, timeBetweenExercises);
-                return true;
+                else
+                {
+                    MessageBox.Show("Echec de l'import");
+                }
             }
             else
             {
-                return false;
+                MessageBox.Show("Veuillez entrer un temps de repos valide");
             }
         }
 
-        private void GetSessionDate()
-        {
-            DatePicker datePickerExercise = FindName("DatePickerExercise") as DatePicker;
-
-            if (datePickerExercise != null)
-            {
-                mainWindow.session.date = datePickerExercise.SelectedDate;
-            }
-        }
-
-        private void GetSessionReccurence()
-        {
-            List<int> checkedTags = [];
-
-            foreach (var child in recurrence.Children)
-            {
-                if (child is CheckBox checkBox && checkBox.IsChecked == true)
-                {
-                    checkedTags.Add(int.Parse(checkBox.Tag.ToString()));
-                }
-            }
-
-            if (checkedTags.Count > 0)
-            {
-                mainWindow.session.recurrenceId = checkedTags[0];
-            }
-        }
-
-        // ===== WINDOW FUNCTIONS =====/
+        // ===== INPUT FUNCTIONS ===== //
+        // These functions are only used in this file to handle the user inputs
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
-            var checkBox = sender as CheckBox;
+            CheckBox? checkBox = sender as CheckBox;
 
-            foreach (var child in recurrence.Children)
+            foreach (object? child in recurrence.Children)
             {
                 if (child is CheckBox otherCheckBox && otherCheckBox != checkBox)
                 {

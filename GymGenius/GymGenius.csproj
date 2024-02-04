@@ -11,7 +11,6 @@
 
   <ItemGroup>
     <None Remove="Assets\flecheadroite.png" />
-    <None Remove="Assets\imagesport.png" />
     <None Remove="Assets\Logo.jpg" />
     <None Remove="Assets\Logo.png" />
     <None Remove="Assets\search.jpg" />
@@ -32,7 +31,6 @@
 
   <ItemGroup>
     <Resource Include="Assets\flecheadroite.png" />
-    <Resource Include="Assets\imagesport.png" />
     <Resource Include="Assets\Logo.jpg" />
     <Resource Include="Assets\Logo.png" />
     <Resource Include="Assets\search.png" />

@@ -3,6 +3,9 @@ using GymGenius.Controllers;
 
 namespace GymGenius.Models
 {
+    /// <summary>
+    /// Abstract class for an exercise
+    /// </summary>
     public abstract class AExercise
     {
         protected string idname;
@@ -16,7 +19,7 @@ namespace GymGenius.Models
 
         public struct TagsStruct
         {
-            public List<AMuscles> Muscles;
+            public List<AMuscle> Muscles;
             public bool isAtHome;
         }
 
@@ -24,6 +27,9 @@ namespace GymGenius.Models
         public TagsStruct Tags = new();
     }
 
+    /// <summary>
+    /// Interface for exercises which are series
+    /// </summary>
     public interface ISerie
     {
         public int NbRepetitions { get; set; }
@@ -521,7 +527,6 @@ namespace GymGenius.Models
         }
     }
 
-
     public class CalfPress : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
@@ -540,7 +545,6 @@ namespace GymGenius.Models
             Tags.isAtHome = false;
         }
     }
-
 
     public class PushUps : AExercise, ISerie
     {

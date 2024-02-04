@@ -1,12 +1,9 @@
-﻿using GymGenius.ModelView;
-using System.Windows;
-using System.Windows.Threading;
+﻿using System.Windows.Threading;
 
 namespace GymGenius.Controllers
 {
     public class TimerController
     {
-        private readonly Window window;
         private readonly ITimerHandler timerHandler;
         private DispatcherTimer timer;
         public TimeSpan currentTimeElapsed;

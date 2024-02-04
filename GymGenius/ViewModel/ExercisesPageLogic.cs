@@ -2,7 +2,7 @@
 
 namespace GymGenius.ModelView
 {
-    public class ExercisesLogic
+    public class ExercisesPageLogic
     {
 
         private readonly List<AExercise> allExercises =
@@ -96,7 +96,7 @@ namespace GymGenius.ModelView
             List<AExercise> legsExercises = [];
             foreach (AExercise exercise in allExercises)
             {
-                foreach (AMuscles muscle in exercise.Tags.Muscles)
+                foreach (AMuscle muscle in exercise.Tags.Muscles)
                 {
                     if (muscle.bodyPart is Legs)
                     {
@@ -113,7 +113,7 @@ namespace GymGenius.ModelView
             List<AExercise> armsExercises = [];
             foreach (AExercise exercise in allExercises)
             {
-                foreach (AMuscles muscle in exercise.Tags.Muscles)
+                foreach (AMuscle muscle in exercise.Tags.Muscles)
                 {
                     if (muscle.bodyPart is Arms)
                     {
@@ -130,7 +130,7 @@ namespace GymGenius.ModelView
             List<AExercise> chestExercises = [];
             foreach (AExercise exercise in allExercises)
             {
-                foreach (AMuscles muscle in exercise.Tags.Muscles)
+                foreach (AMuscle muscle in exercise.Tags.Muscles)
                 {
                     if (muscle.bodyPart is Back)
                     {
@@ -147,7 +147,7 @@ namespace GymGenius.ModelView
             List<AExercise> shouldersExercises = [];
             foreach (AExercise exercise in allExercises)
             {
-                foreach (AMuscles muscle in exercise.Tags.Muscles)
+                foreach (AMuscle muscle in exercise.Tags.Muscles)
                 {
                     if (muscle.bodyPart is Shoulders)
                     {
@@ -164,7 +164,7 @@ namespace GymGenius.ModelView
             List<AExercise> trunkExercises = [];
             foreach (AExercise exercise in allExercises)
             {
-                foreach (AMuscles muscle in exercise.Tags.Muscles)
+                foreach (AMuscle muscle in exercise.Tags.Muscles)
                 {
                     if (muscle.bodyPart is Trunk)
                     {
@@ -221,8 +221,5 @@ namespace GymGenius.ModelView
 
             return filteredByDifficultyExercises;
         }
-
-
-
     }
 }

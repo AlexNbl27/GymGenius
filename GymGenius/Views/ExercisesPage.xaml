@@ -17,7 +17,7 @@
             <RowDefinition Height="20" />
             <RowDefinition Height="100" />
         </Grid.RowDefinitions>
-        <Grid  Grid.Row="0" x:Name="Title">
+        <Grid  Grid.Row="0" x:Name="PageTitle">
             <TextBlock Text="RECHERCHER VOS EXERCICES" Foreground="#6D887B" FontSize="30"  VerticalAlignment="Center" HorizontalAlignment="Center" />
         </Grid>
         <Grid Grid.Row="1" x:Name="rectangle" Margin="0,0,0,20">
@@ -54,11 +54,11 @@
                         <ColumnDefinition />
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
-                    <CheckBox x:Name="jambe" Content="Jambe" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Grid.Row="0" Grid.Column="0"/>
-                    <CheckBox x:Name="epaule"  Content="Epaule" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Grid.Row="0" Grid.Column="1" />
-                    <CheckBox x:Name="tronc"  Content="Tronc" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Grid.Row="1" Grid.Column="0"/>
-                    <CheckBox x:Name="dos"  Content="Dos" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Grid.Row="1" Grid.Column="1"/>
-                    <CheckBox x:Name="bras"  Content="Bras" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Grid.Row="0" Grid.Column="2" />
+                    <CheckBox x:Name="jambe" IsChecked="{Binding IsLegChecked, Mode=TwoWay}" Content="Jambe" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Grid.Row="0" Grid.Column="0"/>
+                    <CheckBox x:Name="epaule" IsChecked="{Binding IsShoulderChecked}"  Content="Epaule" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Grid.Row="0" Grid.Column="1" />
+                    <CheckBox x:Name="tronc" IsChecked="{Binding IsTrunkChecked}" Content="Tronc" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Grid.Row="1" Grid.Column="0"/>
+                    <CheckBox x:Name="dos" IsChecked="{Binding IsBackChecked, Mode=TwoWay}"  Content="Dos" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Grid.Row="1" Grid.Column="1"/>
+                    <CheckBox x:Name="bras" IsChecked="{Binding IsArmChecked}" Content="Bras" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Grid.Row="0" Grid.Column="2" />
                 </Grid>
             </Grid>
             <Grid Grid.Column="2" Background="#6D887B">
@@ -80,8 +80,8 @@
                         <ColumnDefinition />
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
-                    <CheckBox  Grid.Column="0" x:Name="cardio"  Content="cardio" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
-                    <CheckBox Grid.Column="1" x:Name="musculaire"  Content="musculaire" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
+                    <CheckBox IsChecked="{Binding IsCardioChecked}" Grid.Column="0" x:Name="cardio"  Content="cardio" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
+                    <CheckBox IsChecked="{Binding IsMuscularChecked}" Grid.Column="1" x:Name="musculaire"  Content="musculaire" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
                 </Grid>
             </Grid>
             <Grid Grid.Column="4" Background="#6D887B">
@@ -106,12 +106,13 @@
                              HorizontalAlignment="Right"
                              Grid.Column="0"
                                  Width="50" 
-                                 Height="23" 
+                                 Height="23"
+                                 Text="{Binding NumericTextBox, Mode=TwoWay}"
                                  PreviewTextInput="NumericTextBox_PreviewTextInput"
-                                 Background="White" TextChanged="numericTextBox_TextChanged"/>
+                                 Background="White"/>
                 </Grid>
             </Grid>
-            <Button x:Name="buttonsearch" Grid.Column="6" HorizontalAlignment="Stretch" Background="#567666" Click="OnSearchClick">
+            <Button x:Name="buttonsearch" Grid.Column="6" HorizontalAlignment="Stretch" Background="#567666" Command="{Binding SearchCommand}">
                 <!-- Larger version of the image -->
                 <Image Source="{DynamicResource search}" Height="50" Width="50" HorizontalAlignment="Center" VerticalAlignment="Center" />
             </Button>
@@ -145,8 +146,7 @@
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0">
                 <Border Background="#33443C" CornerRadius="5" Width="400" Height="80" Margin="0, 0, 10, 20">
-                    <Button x:Name="buttonswitch" Background="Transparent" Click="CreateSessionButton" Cursor="Hand">
-                        <!-- Add content for the button here -->
+                    <Button x:Name="buttonswitch" Background="Transparent" Command="{Binding CreateSessionCommand}" Cursor="Hand">
                         <TextBlock Text="Créer la séance" Foreground="White" Margin="5" FontSize="32"/>
                     </Button>
                 </Border>

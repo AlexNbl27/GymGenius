@@ -9,7 +9,11 @@ namespace GymGenius.Views
     {
         private readonly MainWindow mainWindow;
 
+        // ===== PROPERTIES ===== //
+
         public List<AExercise> Exercises { get; set; }
+
+        // ===== CONSTRUCTOR ===== //
 
         public RecapSessionPage(MainWindow _mainWindow)
         {
@@ -26,10 +30,7 @@ namespace GymGenius.Views
 
         // ===== CLICK FUNCTIONS ===== //
 
-        public void SessionButtonClick(object sender, RoutedEventArgs e)
-        {
-            mainWindow.NavigateToPage(new SessionPage(mainWindow));
-        }
+        public void SessionButtonClick(object sender, RoutedEventArgs e) { mainWindow.NavigateToPage(new SessionPage(mainWindow)); }
 
         private void ExportButtonClick(object sender, RoutedEventArgs e)
         {

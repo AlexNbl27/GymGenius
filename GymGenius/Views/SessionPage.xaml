@@ -21,7 +21,7 @@
             <StackPanel Margin="0 0 10 10">
                 <!-- Afficher le nom de l'exercice -->
                 <Grid HorizontalAlignment="Center" Margin="150 0">
-                    <TextBlock Name="ExerciseName" Text="000" FontSize="36" FontWeight="Bold" />
+                    <TextBlock Name="ExerciseName" Text="{Binding ExerciseName}" FontSize="36" FontWeight="Bold" />
                 </Grid>
 
                 <!-- Espace entre les TextBlocks -->
@@ -29,7 +29,7 @@
 
                 <!-- Afficher la description de l'exercice -->
                 <Grid HorizontalAlignment="Center" Margin="150 0">
-                    <TextBlock Name="ExerciseDesc" Text="000" FontSize="32" TextWrapping="Wrap"/>
+                    <TextBlock Name="ExerciseDesc" Text="{Binding ExerciseDesc}" FontSize="32" TextWrapping="Wrap"/>
                 </Grid>
 
                 <!-- Espace entre les TextBlocks -->
@@ -37,7 +37,7 @@
 
                 <!-- Afficher le timer (ajoutez la propriété Timer à votre modèle Exercise) -->
                 <Grid HorizontalAlignment="Center" Margin="150 0">
-                    <TextBlock Name="Timer" Text="000" FontSize="36" FontWeight="Bold" />
+                    <TextBlock Name="Timer" Text="{Binding Timer}" FontSize="36" FontWeight="Bold" />
                 </Grid>
             </StackPanel>
         </Grid>
@@ -66,7 +66,7 @@
             <Border Name="exerciseOverButton"  Grid.Column="2" Background="#33443C" CornerRadius="5" Width="600" Height="100" Margin="0, 0, 10, 20">
                 <Button Background="Transparent" Click="NextButton" Cursor="Hand">
                     <!-- Add content for the button here -->
-                    <TextBlock Text="Exercice terminé !" Name="exerciseOverButtonText" Foreground="White" Margin="5" FontSize="32"/>
+                    <TextBlock Text="{Binding exerciseOverButtonText}" Name="exerciseOverButtonText" Foreground="White" Margin="5" FontSize="32"/>
                 </Button>
             </Border>
         </Grid>

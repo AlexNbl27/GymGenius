@@ -5,13 +5,14 @@ using System.Windows.Controls;
 
 namespace GymGenius.Views
 {
-    /// <summary>
-    /// Logique d'interaction pour Window1.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        // ===== PROPERTIES ===== //
+
         public Session session = new();
         public Page CurrentPage { get; set; }
+
+        // ===== CONSTRUCTOR ===== //
 
         public MainWindow()
         {
@@ -19,6 +20,8 @@ namespace GymGenius.Views
             CurrentPage = new HomePage(this);
             NavigateToPage(CurrentPage);
         }
+
+        // ===== NAVIGATION FUNCTIONS ===== //
 
         public void NavigateToPage(Page page)
         {

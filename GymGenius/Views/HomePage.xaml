@@ -15,7 +15,7 @@
             <RowDefinition Height="2*" />
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0" x:Name="Title">
+        <Grid Grid.Row="0" x:Name="PageTitle">
             <TextBlock Text="ORGANISER VOS SEANCES" Foreground="#25322C" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center" />
         </Grid>
         <Grid Grid.Row="1">
