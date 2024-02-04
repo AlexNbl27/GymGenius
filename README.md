@@ -9,13 +9,13 @@ Bienvenue sur GymGenius, votre compagnon ultime pour la création de séances de
 - **Windows**
 ### Méthode sans installation
 1. **Cloner le dossier GitHub**
-Ouvrez un terminal à l'emplacement où vous voulez placer le dossier GymGenius :
+<br>Ouvrez un terminal à l'emplacement où vous voulez placer le dossier GymGenius :
 ```bash
   git clone https://github.com/AlexNbl27/GymGenius.git
 ```
 
 2. **Ouvrir le dossier GymGenius créé à l'instant**
-Vous devriez voir dans ce dossier les fichiers/dossiers suivants :
+<br>Vous devriez voir dans ce dossier les fichiers/dossiers suivants :
 <br>(Dossier) GymGenius
 <br>(Fichier) .gitattributes
 <br>(Fichier) .gitignore
@@ -25,13 +25,13 @@ Vous devriez voir dans ce dossier les fichiers/dossiers suivants :
 3. **Ouvrir un terminal**
 
 4. **Se déplacer vers le dossier contenant le .exe**
-L'exécutable se situe dans le dossier GymGenius/bin/Release/net8.0-windows.
+<br>L'exécutable se situe dans le dossier GymGenius/bin/Release/net8.0-windows.
 <br> Vous pouvez taper cette commande dans le terminal pour le trouver :
 ```bash
   cd GymGenius/bin/Release/net8.0-windows
 ```
 5. **Lancer l'exécutable**
-Une fenêtre va se lancer en tapant cette commande dans le terminal :
+<br>Une fenêtre va se lancer en tapant cette commande dans le terminal :
 ```bash
   .\GymGenius.exe
 ```
