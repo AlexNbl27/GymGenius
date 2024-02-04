@@ -7,7 +7,7 @@ Bienvenue sur GymGenius, votre compagnon ultime pour la création de séances de
 ### Prérequis
 - **Windows**
 ### 🟢 Méthode sans installation (recommandé)
-1. **Rendez vous sur la page suivante :
+1. **Rendez vous sur la page suivante :**
 <br> https://github.com/AlexNbl27/GymGenius/releases/tag/NOinstall
 
 2. **Cliquer sur le dossier ZIP NoInstallWindows.zip pour le télécharger**
@@ -27,7 +27,7 @@ Bienvenue sur GymGenius, votre compagnon ultime pour la création de séances de
 3. **Rendez-vous dans téléchargements de votre ordinateur et dézipper le dossier (extraire tout)**
 4. **Une fois le dossier extrait, ouvrez le**
 <br> Vous devriez y voir deux fichiers et un dossier à l'intérieur
-5. **Cliquez deux fois sur GymGenius pour installer l'application (le fichier avec l'icône)**
+5. **Cliquez deux fois sur GymGenius pour installer l'application**
 <br> Une popup va apparaître et vous signaler que l'éditeur ne peut pas être vérifié. Confirmez en cliquant sur installer.
 
 **Et voilà ! GymGenius est à vous ! 🥳**
