@@ -1,0 +1,161 @@
+﻿<Page x:Class="GymGenius.Views.ExercisesPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:local="clr-namespace:GymGenius.Views"
+        xmlns:components="clr-namespace:GymGenius.Views.Components" 
+        xmlns:utilities="clr-namespace:GymGenius.Utilities"
+        mc:Ignorable="d" 
+        Title="Exercices" MaxHeight="700" MaxWidth="1300" MinHeight="700" Width="1300">
+
+    <Grid x:Name="All" Background="#99B0A5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="160"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <Grid  Grid.Row="0" x:Name="PageTitle">
+            <TextBlock Text="RECHERCHER VOS EXERCICES" Foreground="#6D887B" FontSize="30"  VerticalAlignment="Center" HorizontalAlignment="Center" />
+        </Grid>
+        <Grid Grid.Row="1" x:Name="rectangle" Margin="0,0,0,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Background="#6D887B">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid x:Name="muscle" 
+                      Grid.Row="1"
+                      HorizontalAlignment="Center">
+                    <TextBlock Text="Muscles sollicités"
+                               VerticalAlignment="Top"
+                               FontSize="22" />
+                </Grid>
+                <Grid Grid.Row="2" HorizontalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <CheckBox x:Name="jambe" IsChecked="{Binding IsLegChecked, Mode=TwoWay}" Content="Jambe" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Grid.Row="0" Grid.Column="0"/>
+                    <CheckBox x:Name="epaule" IsChecked="{Binding IsShoulderChecked}"  Content="Epaule" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Grid.Row="0" Grid.Column="1" />
+                    <CheckBox x:Name="tronc" IsChecked="{Binding IsTrunkChecked}" Content="Tronc" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Grid.Row="1" Grid.Column="0"/>
+                    <CheckBox x:Name="dos" IsChecked="{Binding IsBackChecked, Mode=TwoWay}"  Content="Dos" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Grid.Row="1" Grid.Column="1"/>
+                    <CheckBox x:Name="bras" IsChecked="{Binding IsArmChecked}" Content="Bras" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Grid.Row="0" Grid.Column="2" />
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="2" Background="#6D887B">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid x:Name="ouinon" Grid.Row="1"
+                      HorizontalAlignment="Center">
+                    <TextBlock Text="Type d'exercise"
+                               TextWrapping="Wrap"
+                               VerticalAlignment="Top"
+                               FontSize="22" />
+                </Grid>
+                <Grid Grid.Row="2" HorizontalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <CheckBox IsChecked="{Binding IsCardioChecked}" Grid.Column="0" x:Name="cardio"  Content="cardio" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
+                    <CheckBox IsChecked="{Binding IsMuscularChecked}" Grid.Column="1" x:Name="musculaire"  Content="musculaire" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="False" Checked="CheckBox_Checked" />
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="4" Background="#6D887B">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid x:Name="difficulte" Grid.Row="1"
+                      HorizontalAlignment="Center">
+                    <TextBlock Text="Difficulté max souhaitée"
+                               HorizontalAlignment="Center"
+                               FontSize="22" />
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="numericTextBox" 
+                             HorizontalAlignment="Right"
+                             Grid.Column="0"
+                                 Width="50" 
+                                 Height="23"
+                                 Text="{Binding NumericTextBox, Mode=TwoWay}"
+                                 PreviewTextInput="NumericTextBox_PreviewTextInput"
+                                 Background="White"/>
+                </Grid>
+            </Grid>
+            <Button x:Name="buttonsearch" Grid.Column="6" HorizontalAlignment="Stretch" Background="#567666" Command="{Binding SearchCommand}">
+                <!-- Larger version of the image -->
+                <Image Source="{DynamicResource search}" Height="50" Width="50" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Button>
+        </Grid>
+        <Grid Grid.Row="2">
+            <ScrollViewer  x:Name="exercice" VerticalScrollBarVisibility="Auto">
+                <ItemsControl ItemsSource="{Binding Exercises}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel Orientation="Horizontal" Width="{Binding ActualWidth, ElementName=exercice}" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <components:ExerciseComponent
+                                Margin="5 5 5 5"
+                                ExerciseName="{Binding ExerciseName}"
+                                ExerciseDescription="{Binding ExerciseDescription}"
+                                MouseLeftButtonDown="ExerciseComponent_MouseLeftButtonDown"
+                                MouseLeftButtonUp="ExerciseComponent_MouseLeftButtonUp" />
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </Grid>
+        <Grid Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Border Background="#33443C" CornerRadius="5" Width="400" Height="80" Margin="0, 0, 10, 20">
+                    <Button x:Name="buttonswitch" Background="Transparent" Command="{Binding CreateSessionCommand}" Cursor="Hand">
+                        <TextBlock Text="Créer la séance" Foreground="White" Margin="5" FontSize="32"/>
+                    </Button>
+                </Border>
+            </Grid>
+            <Grid Grid.Column="2">
+                <TextBlock x:Name="error" Foreground="Black" FontSize="14" TextWrapping="Wrap"
+                           Text="ℹ️ Pour ajouter un exercice, il faut simplement cliquer sur la case de l'exercice souhaité une fois. Vous pouvez ajouter plusieurs fois le même exercice. Si vous souhaitez filtrer les exercices, utilisez le cadre au dessus, selectionnez vos préférences et cliquez sur le bouton rechercher. Pour réinitialiser les filtres, cliquez deux fois sur le bouton rechercher."
+                />
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

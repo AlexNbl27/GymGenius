@@ -59,5 +59,1967 @@ namespace GymGenius.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Abductors.
+        /// </summary>
+        internal static string AbductorsName_EN {
+            get {
+                return ResourceManager.GetString("AbductorsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Abducteurs.
+        /// </summary>
+        internal static string AbductorsName_FR {
+            get {
+                return ResourceManager.GetString("AbductorsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Arms.
+        /// </summary>
+        internal static string ArmsName_EN {
+            get {
+                return ResourceManager.GetString("ArmsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Bras.
+        /// </summary>
+        internal static string ArmsName_FR {
+            get {
+                return ResourceManager.GetString("ArmsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Back.
+        /// </summary>
+        internal static string BackName_EN {
+            get {
+                return ResourceManager.GetString("BackName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Dos.
+        /// </summary>
+        internal static string BackName_FR {
+            get {
+                return ResourceManager.GetString("BackName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The bench press is a poly-articular strength and muscle-building exercise performed on a weight bench in the supine position..
+        /// </summary>
+        internal static string BenchPressDescription_EN {
+            get {
+                return ResourceManager.GetString("BenchPressDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le développé couché est un exercice poly-articulaire de force et de musculation réalisé sur un banc de musculation en position allongée..
+        /// </summary>
+        internal static string BenchPressDescription_FR {
+            get {
+                return ResourceManager.GetString("BenchPressDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Bench press.
+        /// </summary>
+        internal static string BenchPressName_EN {
+            get {
+                return ResourceManager.GetString("BenchPressName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Développé couché.
+        /// </summary>
+        internal static string BenchPressName_FR {
+            get {
+                return ResourceManager.GetString("BenchPressName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The biceps flexion is a classic bodybuilding exercise targeting the biceps brachii muscle. It&apos;s an isolation movement..
+        /// </summary>
+        internal static string BicepsCurlDescription_EN {
+            get {
+                return ResourceManager.GetString("BicepsCurlDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à La flexion du biceps est un exercice classique de musculation ayant pour cible le muscle biceps brachial. C&apos;est un mouvement d&apos;isolation..
+        /// </summary>
+        internal static string BicepsCurlDescription_FR {
+            get {
+                return ResourceManager.GetString("BicepsCurlDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Curl biceps.
+        /// </summary>
+        internal static string BicepsCurlName_EN {
+            get {
+                return ResourceManager.GetString("BicepsCurlName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Flexions biceps.
+        /// </summary>
+        internal static string BicepsCurlName_FR {
+            get {
+                return ResourceManager.GetString("BicepsCurlName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Biceps.
+        /// </summary>
+        internal static string BicepsName_EN {
+            get {
+                return ResourceManager.GetString("BicepsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Biceps.
+        /// </summary>
+        internal static string BicepsName_FR {
+            get {
+                return ResourceManager.GetString("BicepsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Known as the bird, the movement that imitates the flapping of wings, or posterior raises, this variation of lateral raises is ideal for developing the back of the shoulders. This exercise targets the posterior and middle deltoids..
+        /// </summary>
+        internal static string BirdElevationDescription_EN {
+            get {
+                return ResourceManager.GetString("BirdElevationDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Appelée oiseau, le mouvement imitant les battements d’ailes, ou encore élévations postérieures, cette variante des élévations latérales est idéale pour développer l’arrière des épaules. Cet exercice cible les deltoïdes postérieur et moyen..
+        /// </summary>
+        internal static string BirdElevationDescription_FR {
+            get {
+                return ResourceManager.GetString("BirdElevationDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Bird elevation.
+        /// </summary>
+        internal static string BirdElevationName_EN {
+            get {
+                return ResourceManager.GetString("BirdElevationName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Élévation oiseau.
+        /// </summary>
+        internal static string BirdElevationName_FR {
+            get {
+                return ResourceManager.GetString("BirdElevationName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pulley splits are a variation on the Pec Deck or Butterfly machine, an exercise to strengthen the pectoral and front shoulder muscles..
+        /// </summary>
+        internal static string CableMiddleFlyDescription_EN {
+            get {
+                return ResourceManager.GetString("CableMiddleFlyDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Les écartés à la poulie sont une variante du Pec Deck ou Butterfly à la machine, un exercice pour renforcer les muscles pectoraux, et de l’avant des épaules..
+        /// </summary>
+        internal static string CableMiddleFlyDescription_FR {
+            get {
+                return ResourceManager.GetString("CableMiddleFlyDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Cable middle fly.
+        /// </summary>
+        internal static string CableMiddleFlyName_EN {
+            get {
+                return ResourceManager.GetString("CableMiddleFlyName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Écarté à la poulie.
+        /// </summary>
+        internal static string CableMiddleFlyName_FR {
+            get {
+                return ResourceManager.GetString("CableMiddleFlyName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The professional calf press is designed for people who want to work out their calf muscles in an isolated way. Thanks to the seated position and slightly inclined feet, you can work the calves with maximum contraction..
+        /// </summary>
+        internal static string CalfPressDescription_EN {
+            get {
+                return ResourceManager.GetString("CalfPressDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à La presse à mollets professionnelle est conçue pour les personnes désireuses de s&apos;entrainer en isolant bien les muscles des mollets. En effet, grâce à la position assise et avec une position des pieds légèrement inclinée, vous pouvez travailler les mollets avec une contraction maximale..
+        /// </summary>
+        internal static string CalfPressDescription_FR {
+            get {
+                return ResourceManager.GetString("CalfPressDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Calf press machine.
+        /// </summary>
+        internal static string CalfPressMachineName_EN {
+            get {
+                return ResourceManager.GetString("CalfPressMachineName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Machine presse mollet.
+        /// </summary>
+        internal static string CalfPressMachineName_FR {
+            get {
+                return ResourceManager.GetString("CalfPressMachineName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Calf press.
+        /// </summary>
+        internal static string CalfPressName_EN {
+            get {
+                return ResourceManager.GetString("CalfPressName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Presse à mollet.
+        /// </summary>
+        internal static string CalfPressName_FR {
+            get {
+                return ResourceManager.GetString("CalfPressName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Calves.
+        /// </summary>
+        internal static string CalvesName_EN {
+            get {
+                return ResourceManager.GetString("CalvesName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Mollets.
+        /// </summary>
+        internal static string CalvesName_FR {
+            get {
+                return ResourceManager.GetString("CalvesName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Cardio.
+        /// </summary>
+        internal static string CardioName_EN {
+            get {
+                return ResourceManager.GetString("CardioName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Cardio.
+        /// </summary>
+        internal static string CardioName_FR {
+            get {
+                return ResourceManager.GetString("CardioName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The crunch or spinal curl is one of the most popular abdominal exercises. It mainly works the rectus abdominis muscle..
+        /// </summary>
+        internal static string CrunchDescription_EN {
+            get {
+                return ResourceManager.GetString("CrunchDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le crunch ou enroulement vertébral est l&apos;un des exercices de musculation des abdominaux les plus pratiqués. Il fait surtout travailler le muscle droit de l&apos;abdomen..
+        /// </summary>
+        internal static string CrunchDescription_FR {
+            get {
+                return ResourceManager.GetString("CrunchDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Crunch.
+        /// </summary>
+        internal static string CrunchName_EN {
+            get {
+                return ResourceManager.GetString("CrunchName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Crunch.
+        /// </summary>
+        internal static string CrunchName_FR {
+            get {
+                return ResourceManager.GetString("CrunchName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Curl bar.
+        /// </summary>
+        internal static string CurlBarName_EN {
+            get {
+                return ResourceManager.GetString("CurlBarName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Barre de flexion.
+        /// </summary>
+        internal static string CurlBarName_FR {
+            get {
+                return ResourceManager.GetString("CurlBarName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The standing rotation curl is one of the most effective movements for building biceps muscle. It targets the biceps in their entirety: biceps brachii, brachialis anterior and brachioradialis..
+        /// </summary>
+        internal static string CurlRotationDescription_EN {
+            get {
+                return ResourceManager.GetString("CurlRotationDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le curl rotation debout est un des mouvements les plus efficaces pour la musculation des biceps. Il cible en effet les biceps dans leur intégralité : biceps brachial, brachial antérieur et brachio-radial..
+        /// </summary>
+        internal static string CurlRotationDescription_FR {
+            get {
+                return ResourceManager.GetString("CurlRotationDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Alternating dumbbell curl.
+        /// </summary>
+        internal static string CurlRotationName_EN {
+            get {
+                return ResourceManager.GetString("CurlRotationName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Flexion rotation.
+        /// </summary>
+        internal static string CurlRotationName_FR {
+            get {
+                return ResourceManager.GetString("CurlRotationName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The deadlift is a complete bodybuilding exercise designed to strengthen both upper and lower body muscle groups. This multi-joint exercise involves flexing/extending the hip while lifting a load from the ground..
+        /// </summary>
+        internal static string DeadliftDescription_EN {
+            get {
+                return ResourceManager.GetString("DeadliftDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le soulevé de terre est un exercice de musculation complet dont le but est de renforcer à la fois des groupes musculaires du haut du corps et du bas du corps. Cet exercice polyarticulaire consiste en la réalisation d’une flexion/extension de hanche en soulevant une charge depuis le sol..
+        /// </summary>
+        internal static string DeadliftDescription_FR {
+            get {
+                return ResourceManager.GetString("DeadliftDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Deadlift.
+        /// </summary>
+        internal static string DeadliftName_EN {
+            get {
+                return ResourceManager.GetString("DeadliftName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Soulevé de terre.
+        /// </summary>
+        internal static string DeadliftName_FR {
+            get {
+                return ResourceManager.GetString("DeadliftName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Deltoids.
+        /// </summary>
+        internal static string DeltoidsName_EN {
+            get {
+                return ResourceManager.GetString("DeltoidsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Deltoids.
+        /// </summary>
+        internal static string DeltoidsName_FR {
+            get {
+                return ResourceManager.GetString("DeltoidsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Dips, are a polyarticular muscle-building exercise designed primarily to develop strength and volume in the triceps, pectorals and shoulders (anterior deltoid)..
+        /// </summary>
+        internal static string DipsDescription_EN {
+            get {
+                return ResourceManager.GetString("DipsDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Les doubles barres, sont un exercice polyarticulaire de musculation destiné à développer principalement la force et le volume des triceps, des pectoraux et des épaules (deltoïde antérieur)..
+        /// </summary>
+        internal static string DipsDescription_FR {
+            get {
+                return ResourceManager.GetString("DipsDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Dips.
+        /// </summary>
+        internal static string DipsName_EN {
+            get {
+                return ResourceManager.GetString("DipsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Doubles barres.
+        /// </summary>
+        internal static string DipsName_FR {
+            get {
+                return ResourceManager.GetString("DipsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Double bars.
+        /// </summary>
+        internal static string DoubleBarsName_EN {
+            get {
+                return ResourceManager.GetString("DoubleBarsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Double bars.
+        /// </summary>
+        internal static string DoubleBarsName_FR {
+            get {
+                return ResourceManager.GetString("DoubleBarsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Double poulie.
+        /// </summary>
+        internal static string DoublePulleyName_EN {
+            get {
+                return ResourceManager.GetString("DoublePulleyName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Poulie double.
+        /// </summary>
+        internal static string DoublePulleyName_FR {
+            get {
+                return ResourceManager.GetString("DoublePulleyName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Dumbbells.
+        /// </summary>
+        internal static string DumbbellsName_EN {
+            get {
+                return ResourceManager.GetString("DumbbellsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Haltère.
+        /// </summary>
+        internal static string DumbbellsName_FR {
+            get {
+                return ResourceManager.GetString("DumbbellsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à An elliptical is a static exercise machine used to simulate running, climbing and walking without exposing joints to excessive pressure. Elliptical bikes offer a non-impact cardiovascular workout whose intensity can vary according to user-defined preferences..
+        /// </summary>
+        internal static string ElipticalBikeDescription_EN {
+            get {
+                return ResourceManager.GetString("ElipticalBikeDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Un vélo elliptique est une machine d&apos;exercice statique qui est utilisée pour simuler la course, l&apos;escalade et la marche sans exposer les articulations à une pression excessive. Les vélos elliptiques offrent un entraînement cardiovasculaire sans impact dont l&apos;intensité peut varier en fonction des préférences définies par l&apos;utilisateur..
+        /// </summary>
+        internal static string ElipticalBikeDescription_FR {
+            get {
+                return ResourceManager.GetString("ElipticalBikeDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Eliptical bike.
+        /// </summary>
+        internal static string ElipticalBikeName_EN {
+            get {
+                return ResourceManager.GetString("ElipticalBikeName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Vélo elliptique.
+        /// </summary>
+        internal static string ElipticalBikeName_FR {
+            get {
+                return ResourceManager.GetString("ElipticalBikeName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Elliptical machine.
+        /// </summary>
+        internal static string EllipticalMachineName_EN {
+            get {
+                return ResourceManager.GetString("EllipticalMachineName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Machine elliptique.
+        /// </summary>
+        internal static string EllipticalMachineName_FR {
+            get {
+                return ResourceManager.GetString("EllipticalMachineName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The face pull is an excellent way of strengthening rotator cuff muscles such as the infraspinatus. This helps build stability and strength in the shoulder blades, making your shoulders more resistant to injury..
+        /// </summary>
+        internal static string FacePullDescription_EN {
+            get {
+                return ResourceManager.GetString("FacePullDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le face pull est un excellent moyen de renforcer les muscles de la coiffe des rotateurs comme le sous-épineux. Ceci permet de renforcer la stabilité et la force des omoplates et de rendre vos épaules plus résistantes aux blessures..
+        /// </summary>
+        internal static string FacePullDescription_FR {
+            get {
+                return ResourceManager.GetString("FacePullDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Face pull.
+        /// </summary>
+        internal static string FacePullName_EN {
+            get {
+                return ResourceManager.GetString("FacePullName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Face pull.
+        /// </summary>
+        internal static string FacePullName_FR {
+            get {
+                return ResourceManager.GetString("FacePullName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Fitness Mat.
+        /// </summary>
+        internal static string FitnessMatName_EN {
+            get {
+                return ResourceManager.GetString("FitnessMatName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Tapis de fitness.
+        /// </summary>
+        internal static string FitnessMatName_FR {
+            get {
+                return ResourceManager.GetString("FitnessMatName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Forearms.
+        /// </summary>
+        internal static string ForearmsName_EN {
+            get {
+                return ResourceManager.GetString("ForearmsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Avant-bras.
+        /// </summary>
+        internal static string ForearmsName_FR {
+            get {
+                return ResourceManager.GetString("ForearmsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The forehead bar is a muscle-building movement that targets the triceps (back of the arm) and uses the forearms to a lesser extent..
+        /// </summary>
+        internal static string ForeheadBarDescription_EN {
+            get {
+                return ResourceManager.GetString("ForeheadBarDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à La barre au front est un mouvement de musculation qui cible les triceps (arrière du bras) et a recours dans une moindre mesure aux avant-bras..
+        /// </summary>
+        internal static string ForeheadBarDescription_FR {
+            get {
+                return ResourceManager.GetString("ForeheadBarDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Forehead bar.
+        /// </summary>
+        internal static string ForeheadBarName_EN {
+            get {
+                return ResourceManager.GetString("ForeheadBarName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Barre au front.
+        /// </summary>
+        internal static string ForeheadBarName_FR {
+            get {
+                return ResourceManager.GetString("ForeheadBarName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The front raise is an exercise that develops the shoulders. It mainly involves the front fascicles of the deltoids. Combined with other exercises, it will give you shapely shoulders..
+        /// </summary>
+        internal static string FrontalElevationDescription_EN {
+            get {
+                return ResourceManager.GetString("FrontalElevationDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à L&apos;élévation frontale est un exercice développant les épaules. Il sollicite principalement les faisceaux antérieurs des deltoïdes, c&apos;est à dire la face avant. Combiné à d&apos;autres exercices, il vous permettra d&apos;avoir des épaules galbées.
+        /// </summary>
+        internal static string FrontalElevationDescription_FR {
+            get {
+                return ResourceManager.GetString("FrontalElevationDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Frontal elevation.
+        /// </summary>
+        internal static string FrontalElevationName_EN {
+            get {
+                return ResourceManager.GetString("FrontalElevationName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Élévation frontale.
+        /// </summary>
+        internal static string FrontalElevationName_FR {
+            get {
+                return ResourceManager.GetString("FrontalElevationName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Glutes.
+        /// </summary>
+        internal static string GlutesName_EN {
+            get {
+                return ResourceManager.GetString("GlutesName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Fessier.
+        /// </summary>
+        internal static string GlutesName_FR {
+            get {
+                return ResourceManager.GetString("GlutesName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Hamstrings.
+        /// </summary>
+        internal static string HamstringsName_EN {
+            get {
+                return ResourceManager.GetString("HamstringsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ischio-jambiers.
+        /// </summary>
+        internal static string HamstringsName_FR {
+            get {
+                return ResourceManager.GetString("HamstringsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à High pulley.
+        /// </summary>
+        internal static string HighPulleyName_EN {
+            get {
+                return ResourceManager.GetString("HighPulleyName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Poulie haute.
+        /// </summary>
+        internal static string HighPulleyName_FR {
+            get {
+                return ResourceManager.GetString("HighPulleyName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The horizontal pull, or seated rowing on the low pulley, is a strength-building exercise for the back. It works the back in thickness, and is appreciated by many weight-lifters, from beginners to advanced..
+        /// </summary>
+        internal static string HorizontalDraftDescription_EN {
+            get {
+                return ResourceManager.GetString("HorizontalDraftDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le tirage horizontal, ou rowing assis à la poulie basse, est un exercice de musculation pour le dos. Travaillant le dos en épaisseur, il est apprécié par bon nombre de pratiquants de musculation, du débutant au confirmé..
+        /// </summary>
+        internal static string HorizontalDraftDescription_FR {
+            get {
+                return ResourceManager.GetString("HorizontalDraftDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Horizontal draft.
+        /// </summary>
+        internal static string HorizontalDraftName_EN {
+            get {
+                return ResourceManager.GetString("HorizontalDraftName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Tirage horizontal.
+        /// </summary>
+        internal static string HorizontalDraftName_FR {
+            get {
+                return ResourceManager.GetString("HorizontalDraftName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The incline bench press is a variation of the bench press where the bench is inclined (head higher than torso) to emphasize the upper chest (pectorals) and shoulders (deltoids)..
+        /// </summary>
+        internal static string InclinedBenchPressDescription_EN {
+            get {
+                return ResourceManager.GetString("InclinedBenchPressDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le développé incliné est une variante du développé couché où le banc est incliné (tête plus haute que le torse) pour mettre l&apos;accent sur le haut de la poitrine (pectoraux) et les épaules (deltoïdes)..
+        /// </summary>
+        internal static string InclinedBenchPressDescription_FR {
+            get {
+                return ResourceManager.GetString("InclinedBenchPressDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Inclined bench press.
+        /// </summary>
+        internal static string InclinedBenchPressName_EN {
+            get {
+                return ResourceManager.GetString("InclinedBenchPressName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Développé incliné.
+        /// </summary>
+        internal static string InclinedBenchPressName_FR {
+            get {
+                return ResourceManager.GetString("InclinedBenchPressName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The reverse pec deck is a machine-based variant of the bent-over lateral raises (commonly known as &quot;the bird&quot;), an exercise used to target the posterior deltoid muscles of the shoulder..
+        /// </summary>
+        internal static string InvertedPecDeckDescription_EN {
+            get {
+                return ResourceManager.GetString("InvertedPecDeckDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le pec deck inverse est une variante sur machine des élévations latérales buste penché (exercice communément appelé “l’oiseau”), un exercice utilisé pour cibler les muscles deltoïdes postérieurs de l’épaule..
+        /// </summary>
+        internal static string InvertedPecDeckDescription_FR {
+            get {
+                return ResourceManager.GetString("InvertedPecDeckDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Inverted pec deck.
+        /// </summary>
+        internal static string InvertedPecDeckName_EN {
+            get {
+                return ResourceManager.GetString("InvertedPecDeckName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pec deck inversé.
+        /// </summary>
+        internal static string InvertedPecDeckName_FR {
+            get {
+                return ResourceManager.GetString("InvertedPecDeckName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Large dorsals.
+        /// </summary>
+        internal static string LargeDorsalsName_EN {
+            get {
+                return ResourceManager.GetString("LargeDorsalsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Grand dorsaux.
+        /// </summary>
+        internal static string LargeDorsalsName_FR {
+            get {
+                return ResourceManager.GetString("LargeDorsalsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The thigh press improves strength (with heavy loads), which is essential for deadlifts and squats. It&apos;s the perfect guided-load machine for building muscle in real comfort..
+        /// </summary>
+        internal static string LegPressDescription_EN {
+            get {
+                return ResourceManager.GetString("LegPressDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à La presse cuisse permet d’améliorer sa force (avec une prise de charges lourdes) ce qui est indispensable pour le soulevé de terre ou les squats. C’est un appareil à charge guidée parfait pour une prise de muscle dans un véritable confort..
+        /// </summary>
+        internal static string LegPressDescription_FR {
+            get {
+                return ResourceManager.GetString("LegPressDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Leg press.
+        /// </summary>
+        internal static string LegPressName_EN {
+            get {
+                return ResourceManager.GetString("LegPressName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Presse à cuisse.
+        /// </summary>
+        internal static string LegPressName_FR {
+            get {
+                return ResourceManager.GetString("LegPressName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Leg extension is an exercise performed on a body-building machine to extend the legs. The movement is performed in a seated position, and involves stretching both legs against resistance. The main aim of leg extension is to strengthen the thighs in isolation..
+        /// </summary>
+        internal static string LegsExtensionsDescription_EN {
+            get {
+                return ResourceManager.GetString("LegsExtensionsDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le leg extension est un exercice pratiqué sur machine de musculation pour réaliser une extension des jambes. Le mouvement s’effectue en position assise et consiste à tendre les deux jambes contre des résistances. Cette extension des jambes a pour objectif principal de renforcer de manière isolée les cuisses..
+        /// </summary>
+        internal static string LegsExtensionsDescription_FR {
+            get {
+                return ResourceManager.GetString("LegsExtensionsDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Legs extensions.
+        /// </summary>
+        internal static string LegsExtensionsName_EN {
+            get {
+                return ResourceManager.GetString("LegsExtensionsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Legs extensions.
+        /// </summary>
+        internal static string LegsExtensionsName_FR {
+            get {
+                return ResourceManager.GetString("LegsExtensionsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The leg flexion is a hamstring-isolation exercise that enables significant development of the back of the thighs. Thanks to high-performance isolation work, this movement is excellent for building muscle mass and toning the thighs..
+        /// </summary>
+        internal static string LegsFlexionsDescription_EN {
+            get {
+                return ResourceManager.GetString("LegsFlexionsDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le leg flexion est un exercice d’isolation des ischio-jambiers permettant un développement important de la partie arrière des cuisses. Grâce à un travail en isolation performant, le mouvement réalisé est excellent pour gagner en masse musculaire et pour tonifier les cuisses..
+        /// </summary>
+        internal static string LegsFlexionsDescription_FR {
+            get {
+                return ResourceManager.GetString("LegsFlexionsDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Legs flexions.
+        /// </summary>
+        internal static string LegsFlexionsName_EN {
+            get {
+                return ResourceManager.GetString("LegsFlexionsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Legs flexions.
+        /// </summary>
+        internal static string LegsFlexionsName_FR {
+            get {
+                return ResourceManager.GetString("LegsFlexionsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Legs.
+        /// </summary>
+        internal static string LegsName_EN {
+            get {
+                return ResourceManager.GetString("LegsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Jambes.
+        /// </summary>
+        internal static string LegsName_FR {
+            get {
+                return ResourceManager.GetString("LegsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Low pulley.
+        /// </summary>
+        internal static string LowPulleyName_EN {
+            get {
+                return ResourceManager.GetString("LowPulleyName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Poulie basse.
+        /// </summary>
+        internal static string LowPulleyName_FR {
+            get {
+                return ResourceManager.GetString("LowPulleyName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Dips machine.
+        /// </summary>
+        internal static string MachineDipsName_EN {
+            get {
+                return ResourceManager.GetString("MachineDipsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Machine dips.
+        /// </summary>
+        internal static string MachineDipsName_FR {
+            get {
+                return ResourceManager.GetString("MachineDipsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Leg curl machine.
+        /// </summary>
+        internal static string MachineLegCurlName_EN {
+            get {
+                return ResourceManager.GetString("MachineLegCurlName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Machine leg flexion.
+        /// </summary>
+        internal static string MachineLegCurlName_FR {
+            get {
+                return ResourceManager.GetString("MachineLegCurlName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Leg extension machine.
+        /// </summary>
+        internal static string MachineLegExtensionName_EN {
+            get {
+                return ResourceManager.GetString("MachineLegExtensionName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Machine leg extension.
+        /// </summary>
+        internal static string MachineLegExtensionName_FR {
+            get {
+                return ResourceManager.GetString("MachineLegExtensionName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pec deck machine.
+        /// </summary>
+        internal static string MachinePecDeckName_EN {
+            get {
+                return ResourceManager.GetString("MachinePecDeckName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Machine pec deck.
+        /// </summary>
+        internal static string MachinePecDeckName_FR {
+            get {
+                return ResourceManager.GetString("MachinePecDeckName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The &quot;military&quot; bench press, also known as the front press, is an exercise designed to strengthen the shoulders. The shoulder is a complex joint made up of three main fascicles. These are the anterior deltoid, the lateral or middle deltoid and the posterior deltoid..
+        /// </summary>
+        internal static string MilitaryPressDescription_EN {
+            get {
+                return ResourceManager.GetString("MilitaryPressDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le développé « militaire » appelé aussi développé devant est un exercice destiné à muscler les épaules. L’épaule est une articulation complexe composée de trois faisceaux principaux. Ce sont le deltoïde antérieur, le latéral ou moyen et le postérieur..
+        /// </summary>
+        internal static string MilitaryPressDescription_FR {
+            get {
+                return ResourceManager.GetString("MilitaryPressDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Military bench press.
+        /// </summary>
+        internal static string MilitaryPressName_EN {
+            get {
+                return ResourceManager.GetString("MilitaryPressName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Développé militaire.
+        /// </summary>
+        internal static string MilitaryPressName_FR {
+            get {
+                return ResourceManager.GetString("MilitaryPressName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Muscular.
+        /// </summary>
+        internal static string MuscularName_EN {
+            get {
+                return ResourceManager.GetString("MuscularName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Musculaire.
+        /// </summary>
+        internal static string MuscularName_FR {
+            get {
+                return ResourceManager.GetString("MuscularName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Neck.
+        /// </summary>
+        internal static string NeckName_EN {
+            get {
+                return ResourceManager.GetString("NeckName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Cou.
+        /// </summary>
+        internal static string NeckName_FR {
+            get {
+                return ResourceManager.GetString("NeckName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Obliques.
+        /// </summary>
+        internal static string ObliquesName_EN {
+            get {
+                return ResourceManager.GetString("ObliquesName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Obliques.
+        /// </summary>
+        internal static string ObliquesName_FR {
+            get {
+                return ResourceManager.GetString("ObliquesName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pectorals.
+        /// </summary>
+        internal static string PectoralsName_EN {
+            get {
+                return ResourceManager.GetString("PectoralsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pectoraux.
+        /// </summary>
+        internal static string PectoralsName_FR {
+            get {
+                return ResourceManager.GetString("PectoralsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Press.
+        /// </summary>
+        internal static string PressName_EN {
+            get {
+                return ResourceManager.GetString("PressName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Presse.
+        /// </summary>
+        internal static string PressName_FR {
+            get {
+                return ResourceManager.GetString("PressName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Standing in front of a low pulley, hands in supinated grip about shoulder-width apart, in a stable position (back straight, feet shoulder-width apart), bend the elbows, keeping them close to the body..
+        /// </summary>
+        internal static string PulleyCurlDescription_EN {
+            get {
+                return ResourceManager.GetString("PulleyCurlDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Debout face à une poulie basse, les mains en prise supination espacées d’environ la largeur des épaules, dans une position stable (dos droit, pieds de la largeur des épaules), il s’agit d’effectuer une flexion des coudes, en les gardant serrés près du corps..
+        /// </summary>
+        internal static string PulleyCurlDescription_FR {
+            get {
+                return ResourceManager.GetString("PulleyCurlDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pulley curl.
+        /// </summary>
+        internal static string PulleyCurlName_EN {
+            get {
+                return ResourceManager.GetString("PulleyCurlName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Flexion à la poulie.
+        /// </summary>
+        internal static string PulleyCurlName_FR {
+            get {
+                return ResourceManager.GetString("PulleyCurlName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pulley.
+        /// </summary>
+        internal static string PulleyName_EN {
+            get {
+                return ResourceManager.GetString("PulleyName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Poulie.
+        /// </summary>
+        internal static string PulleyName_FR {
+            get {
+                return ResourceManager.GetString("PulleyName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The high pulley triceps extension is a muscle-building exercise for developing the triceps. Although it is primarily an isolation exercise, it is no less effective than basic polyarticular exercises such as dips or bench presses..
+        /// </summary>
+        internal static string PulleyTricepsExtensionsDescription_EN {
+            get {
+                return ResourceManager.GetString("PulleyTricepsExtensionsDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à L’extension triceps poulie haute est un exercice de musculation qui permet de développer les triceps. Même s’il s’agit principalement d’un exercice d’isolation, il n’en est pas moins efficace que des exercices polyarticulaires de base comme comme les dips ou les développés couchés serrés..
+        /// </summary>
+        internal static string PulleyTricepsExtensionsDescription_FR {
+            get {
+                return ResourceManager.GetString("PulleyTricepsExtensionsDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pulley tricep extensions.
+        /// </summary>
+        internal static string PulleyTricepsExtensionsName_EN {
+            get {
+                return ResourceManager.GetString("PulleyTricepsExtensionsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Extensions triceps à la poulie.
+        /// </summary>
+        internal static string PulleyTricepsExtensionsName_FR {
+            get {
+                return ResourceManager.GetString("PulleyTricepsExtensionsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pull up bar.
+        /// </summary>
+        internal static string PullUpBarName_EN {
+            get {
+                return ResourceManager.GetString("PullUpBarName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Bar de traction.
+        /// </summary>
+        internal static string PullUpBarName_FR {
+            get {
+                return ResourceManager.GetString("PullUpBarName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The pull-up is a physical exercise consisting in raising your shoulders to the level of a barbell by holding it with your hands. The main aim of pull-ups is to develop back and arm muscles..
+        /// </summary>
+        internal static string PullUpsDescription_EN {
+            get {
+                return ResourceManager.GetString("PullUpsDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à La traction est un exercice physique consistant à hisser ses épaules au niveau d&apos;une barre en la tenant par les mains. Les tractions ont pour objectif principal le développement des muscles du dos et des bras..
+        /// </summary>
+        internal static string PullUpsDescription_FR {
+            get {
+                return ResourceManager.GetString("PullUpsDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à PullUps.
+        /// </summary>
+        internal static string PullUpsName_EN {
+            get {
+                return ResourceManager.GetString("PullUpsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Tractions.
+        /// </summary>
+        internal static string PullUpsName_FR {
+            get {
+                return ResourceManager.GetString("PullUpsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The pump is a muscle-building exercise that mainly involves the pectoralis major, deltoid and triceps. This exercise is popular because it can be performed anywhere, without the need for any equipment..
+        /// </summary>
+        internal static string PushUpsDescription_EN {
+            get {
+                return ResourceManager.GetString("PushUpsDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à La pompe est un exercice physique de musculation qui sollicite principalement le grand pectoral, le deltoïde et les triceps. Cet exercice est populaire car il peut être pratiqué n&apos;importe où, ne nécessitant pas de matériel..
+        /// </summary>
+        internal static string PushUpsDescription_FR {
+            get {
+                return ResourceManager.GetString("PushUpsDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à PushUps.
+        /// </summary>
+        internal static string PushUpsName_EN {
+            get {
+                return ResourceManager.GetString("PushUpsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pompes.
+        /// </summary>
+        internal static string PushUpsName_FR {
+            get {
+                return ResourceManager.GetString("PushUpsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Quadriceps.
+        /// </summary>
+        internal static string QuadricepsName_EN {
+            get {
+                return ResourceManager.GetString("QuadricepsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Quadriceps.
+        /// </summary>
+        internal static string QuadricepsName_FR {
+            get {
+                return ResourceManager.GetString("QuadricepsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Rhomboids.
+        /// </summary>
+        internal static string RhomboidsName_EN {
+            get {
+                return ResourceManager.GetString("RhomboidsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Rhomboids.
+        /// </summary>
+        internal static string RhomboidsName_FR {
+            get {
+                return ResourceManager.GetString("RhomboidsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Rotator cuff.
+        /// </summary>
+        internal static string RotatorCuffName_EN {
+            get {
+                return ResourceManager.GetString("RotatorCuffName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Coiffe des rotateurs.
+        /// </summary>
+        internal static string RotatorCuffName_FR {
+            get {
+                return ResourceManager.GetString("RotatorCuffName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à A rowing machine is a physical exercise machine that makes the user reproduce a movement that would make him move if he wasn&apos;t on the machine..
+        /// </summary>
+        internal static string RowingDescription_EN {
+            get {
+                return ResourceManager.GetString("RowingDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Un rameur est une machine d&apos;exercice physique qui consiste à faire reproduire à l&apos;utilisateur un mouvement qui le ferait se déplacer s&apos;il n&apos;était pas sur la machine..
+        /// </summary>
+        internal static string RowingDescription_FR {
+            get {
+                return ResourceManager.GetString("RowingDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Rowing machine.
+        /// </summary>
+        internal static string RowingMachineName__EN {
+            get {
+                return ResourceManager.GetString("RowingMachineName_ EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Machine à ramer.
+        /// </summary>
+        internal static string RowingMachineName__FR {
+            get {
+                return ResourceManager.GetString("RowingMachineName_ FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Rowing machine.
+        /// </summary>
+        internal static string RowingName_EN {
+            get {
+                return ResourceManager.GetString("RowingName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Rameur.
+        /// </summary>
+        internal static string RowingName_FR {
+            get {
+                return ResourceManager.GetString("RowingName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Shoulders.
+        /// </summary>
+        internal static string ShouldersName_EN {
+            get {
+                return ResourceManager.GetString("ShouldersName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Épaules.
+        /// </summary>
+        internal static string ShouldersName_FR {
+            get {
+                return ResourceManager.GetString("ShouldersName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The lateral raise is a muscle-building exercise that develops and broadens the shoulders, especially the middle fascicles of the deltoids, and to a lesser degree the other shoulder muscles..
+        /// </summary>
+        internal static string SideElevationDescription_EN {
+            get {
+                return ResourceManager.GetString("SideElevationDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à L&apos;élévation latérale est un exercice de musculation qui développe et élargit les épaules, surtout les faisceaux moyens des deltoïdes, et dans un moindre degré les autres muscles des épaules..
+        /// </summary>
+        internal static string SideElevationDescription_FR {
+            get {
+                return ResourceManager.GetString("SideElevationDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Side elevation.
+        /// </summary>
+        internal static string SideElevationName_EN {
+            get {
+                return ResourceManager.GetString("SideElevationName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Élévation latérale.
+        /// </summary>
+        internal static string SideElevationName_FR {
+            get {
+                return ResourceManager.GetString("SideElevationName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The front lunge is a muscle-building movement which, like the squat, builds up the thighs and glutes. Performed simply with bodyweight or with weights, this exercise strengthens the quadriceps, gluteus maximus and hamstrings..
+        /// </summary>
+        internal static string SlotsDescription_EN {
+            get {
+                return ResourceManager.GetString("SlotsDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à La fente avant est un mouvement de musculation qui, à l’image du squat, permet de muscler les cuisses et les fessiers. Réalisé simplement au poids du corps ou avec charges, cet exercice propose un renforcement ciblé des quadriceps, des grands fessiers, ainsi que des ischio-jambiers..
+        /// </summary>
+        internal static string SlotsDescription_FR {
+            get {
+                return ResourceManager.GetString("SlotsDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Slots.
+        /// </summary>
+        internal static string SlotsName_EN {
+            get {
+                return ResourceManager.GetString("SlotsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Fentes.
+        /// </summary>
+        internal static string SlotsName_FR {
+            get {
+                return ResourceManager.GetString("SlotsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Small dorsals.
+        /// </summary>
+        internal static string SmallDorsalsName_EN {
+            get {
+                return ResourceManager.GetString("SmallDorsalsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Petit dorsaux.
+        /// </summary>
+        internal static string SmallDorsalsName_FR {
+            get {
+                return ResourceManager.GetString("SmallDorsalsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The squat is a poly-articular strength and muscle-building exercise targeting the thigh muscles (mainly quadriceps, adductors and hamstrings) and glutes..
+        /// </summary>
+        internal static string SquatDescription_EN {
+            get {
+                return ResourceManager.GetString("SquatDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à La flexion sur jambes est un mouvement d&apos;accroupi qui constitue un exercice poly-articulaire de force et de musculation ciblant les muscles de la cuisse (principalement quadriceps, adducteurs et ischio-jambiers) et les fessiers..
+        /// </summary>
+        internal static string SquatDescription_FR {
+            get {
+                return ResourceManager.GetString("SquatDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Squat.
+        /// </summary>
+        internal static string SquatName_EN {
+            get {
+                return ResourceManager.GetString("SquatName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Squat.
+        /// </summary>
+        internal static string SquatName_FR {
+            get {
+                return ResourceManager.GetString("SquatName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à This type of machine allows the user to perform movements similar to those used when climbing stairs, thus exercising several muscle groups and adding variety to the workout..
+        /// </summary>
+        internal static string StairsDescription_EN {
+            get {
+                return ResourceManager.GetString("StairsDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ce type d&apos;appareil permet à l&apos;utilisateur d&apos;effectuer des mouvements semblables à ceux utilisés lors d&apos;une montée d&apos;escalier, ce qui exerce plusieurs groupes musculaires et ajoute de la variété à l&apos;entrainement..
+        /// </summary>
+        internal static string StairsDescription_FR {
+            get {
+                return ResourceManager.GetString("StairsDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Stairs machine.
+        /// </summary>
+        internal static string StairsMachineName_EN {
+            get {
+                return ResourceManager.GetString("StairsMachineName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Machine escalier.
+        /// </summary>
+        internal static string StairsMachineName_FR {
+            get {
+                return ResourceManager.GetString("StairsMachineName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Stairs.
+        /// </summary>
+        internal static string StairsName_EN {
+            get {
+                return ResourceManager.GetString("StairsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Escaliers.
+        /// </summary>
+        internal static string StairsName_FR {
+            get {
+                return ResourceManager.GetString("StairsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Stretching.
+        /// </summary>
+        internal static string StretchingName_EN {
+            get {
+                return ResourceManager.GetString("StretchingName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Étirement.
+        /// </summary>
+        internal static string StretchingName_FR {
+            get {
+                return ResourceManager.GetString("StretchingName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Transverses.
+        /// </summary>
+        internal static string TransversesName_EN {
+            get {
+                return ResourceManager.GetString("TransversesName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Transverses.
+        /// </summary>
+        internal static string TransversesName_FR {
+            get {
+                return ResourceManager.GetString("TransversesName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Trapezius.
+        /// </summary>
+        internal static string TrapeziusName_EN {
+            get {
+                return ResourceManager.GetString("TrapeziusName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Trapèze.
+        /// </summary>
+        internal static string TrapeziusName_FR {
+            get {
+                return ResourceManager.GetString("TrapeziusName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Running on a treadmill is a great way to get exercise all year round. The treadmill can be used to work different muscles in the body: legs, thighs, buttocks, lumbar and abdominal muscles..
+        /// </summary>
+        internal static string TreadmillDescription_EN {
+            get {
+                return ResourceManager.GetString("TreadmillDescription_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Courir sur un tapis de course est un excellent moyen de faire de l’exercice toute l’année. Le tapis de course permet de travailler différents muscles du corps: jambes, cuisses, fessiers, lombaires, abdominaux..
+        /// </summary>
+        internal static string TreadmillDescription_FR {
+            get {
+                return ResourceManager.GetString("TreadmillDescription_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Treadmill machine.
+        /// </summary>
+        internal static string TreadmillMachineName_EN {
+            get {
+                return ResourceManager.GetString("TreadmillMachineName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Machine tapis de course.
+        /// </summary>
+        internal static string TreadmillMachineName_FR {
+            get {
+                return ResourceManager.GetString("TreadmillMachineName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Treadmill.
+        /// </summary>
+        internal static string TreadmillName_EN {
+            get {
+                return ResourceManager.GetString("TreadmillName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Tapis de course.
+        /// </summary>
+        internal static string TreadmillName_FR {
+            get {
+                return ResourceManager.GetString("TreadmillName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Triceps.
+        /// </summary>
+        internal static string TricepsName_EN {
+            get {
+                return ResourceManager.GetString("TricepsName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Triceps.
+        /// </summary>
+        internal static string TricepsName_FR {
+            get {
+                return ResourceManager.GetString("TricepsName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Trunc.
+        /// </summary>
+        internal static string TruncName_EN {
+            get {
+                return ResourceManager.GetString("TruncName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Tronc.
+        /// </summary>
+        internal static string TruncName_FR {
+            get {
+                return ResourceManager.GetString("TruncName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Weight bar.
+        /// </summary>
+        internal static string WeightBarName_EN {
+            get {
+                return ResourceManager.GetString("WeightBarName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Barre de musculation.
+        /// </summary>
+        internal static string WeightBarName_FR {
+            get {
+                return ResourceManager.GetString("WeightBarName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Weight bench.
+        /// </summary>
+        internal static string WeightBenchName_EN {
+            get {
+                return ResourceManager.GetString("WeightBenchName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Banc de musculation.
+        /// </summary>
+        internal static string WeightBenchName_FR {
+            get {
+                return ResourceManager.GetString("WeightBenchName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Weight discus.
+        /// </summary>
+        internal static string WeightDiscusName_EN {
+            get {
+                return ResourceManager.GetString("WeightDiscusName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Disque de poids.
+        /// </summary>
+        internal static string WeightDiscusName_FR {
+            get {
+                return ResourceManager.GetString("WeightDiscusName_FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Weight.
+        /// </summary>
+        internal static string WeightName_EN {
+            get {
+                return ResourceManager.GetString("WeightName_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Poids.
+        /// </summary>
+        internal static string WeightName_FR {
+            get {
+                return ResourceManager.GetString("WeightName_FR", resourceCulture);
+            }
+        }
     }
 }

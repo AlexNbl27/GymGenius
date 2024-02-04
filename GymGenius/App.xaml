@@ -1,8 +1,11 @@
 ﻿<Application x:Class="GymGenius.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             StartupUri="Librairy/Home.xaml">
+             StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
         <BitmapImage x:Key="Logo" UriSource="Assets/Logo.jpg" />
+        <BitmapImage x:Key="search" UriSource="Assets/search.png" />
+        <BitmapImage x:Key="LogoHeader" UriSource="Assets/Logo.png" />
+        <BitmapImage x:Key="fleche" UriSource="Assets/flecheadroite.png" />
     </Application.Resources>
 </Application>
