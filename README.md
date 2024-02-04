@@ -5,37 +5,35 @@ Bienvenue sur GymGenius, votre compagnon ultime pour la création de séances de
 
 ## 🎯 Tester GymGenius
 ### Prérequis
-- **GIT**
 - **Windows**
-### Méthode sans installation
-1. **Cloner le dossier GitHub**
-<br>Ouvrez un terminal à l'emplacement où vous voulez placer le dossier GymGenius :
-```bash
-  git clone https://github.com/AlexNbl27/GymGenius.git
-```
+### 🟢 Méthode sans installation (recommandé)
+1. **Rendez vous sur la page suivante :
+<br> https://github.com/AlexNbl27/GymGenius/releases/tag/NOinstall
 
-2. **Ouvrir le dossier GymGenius créé à l'instant**
-<br>Vous devriez voir dans ce dossier les fichiers/dossiers suivants :
-<br>(Dossier) GymGenius
-<br>(Fichier) .gitattributes
-<br>(Fichier) .gitignore
-<br>(Fichier) GymGenius.sln
-<br>(Fichier) readme.md
+2. **Cliquer sur le dossier ZIP NoInstallWindows.zip pour le télécharger**
+3. **Rendez-vous dans téléchargements de votre ordinateur et dézipper le dossier (extraire tout)**
+4. **Une fois le dossier extrait, ouvrez le**
+<br> Vous devriez y voir cinq fichiers à l'intérieur
+5. **Cliquez deux fois sur GymGenius pour lancer l'application (le fichier avec l'icône)**
+<br> Si jamais une popup windows apparaît pour vous dire que ce fichier peut-être dangereux, confirmez en cliquant sur "Exécuter quand même"
 
-3. **Ouvrir un terminal**
-
-4. **Se déplacer vers le dossier contenant le .exe**
-<br>L'exécutable se situe dans le dossier GymGenius/bin/Release/net8.0-windows.
-<br> Vous pouvez taper cette commande dans le terminal pour le trouver :
-```bash
-  cd GymGenius/bin/Release/net8.0-windows
-```
-5. **Lancer l'exécutable**
-<br>Une fenêtre va se lancer en tapant cette commande dans le terminal :
-```bash
-  .\GymGenius.exe
-```
 **Et voilà ! GymGenius est à vous ! 🥳**
+
+### 🟠 Méthode avec installation
+1. **Rendez vous sur la page suivante :
+<br> https://github.com/AlexNbl27/GymGenius/releases/tag/install
+
+2. **Cliquer sur le dossier ZIP InstallWindows.zip pour le télécharger**
+3. **Rendez-vous dans téléchargements de votre ordinateur et dézipper le dossier (extraire tout)**
+4. **Une fois le dossier extrait, ouvrez le**
+<br> Vous devriez y voir deux fichiers et un dossier à l'intérieur
+5. **Cliquez deux fois sur GymGenius pour installer l'application (le fichier avec l'icône)**
+<br> Une popup va apparaître et vous signaler que l'éditeur ne peut pas être vérifié. Confirmez en cliquant sur installer.
+
+**Et voilà ! GymGenius est à vous ! 🥳**
+
+6. Pour désinstaller l'application, faites comme vous le faites pour toute les autres application.
+<br> Menu Windows --> GymGenius --> Clic droit --> Désinstaller
 
 ## ✨ Fonctionnalités
 Découvrez les fonctionnalités puissantes de GymGenius, conçues pour simplifier la création de vos séances d'entraînement. Explorez un ensemble complet d'outils qui vous permettront de personnaliser, planifier et suivre vos séances de sport de manière efficace et motivante :
