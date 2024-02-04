@@ -33,7 +33,7 @@ namespace GymGenius.Models
     public class Dips : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public Dips()
         {
@@ -62,7 +62,7 @@ namespace GymGenius.Models
     public class BenchPress : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public BenchPress()
         {
@@ -83,7 +83,7 @@ namespace GymGenius.Models
     public class InclinedBenchPress : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public InclinedBenchPress()
         {
@@ -110,7 +110,7 @@ namespace GymGenius.Models
     public class ForeheadBar : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public ForeheadBar()
         {
@@ -130,7 +130,7 @@ namespace GymGenius.Models
     public class PulleyTricepsExtensions : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public PulleyTricepsExtensions()
         {
@@ -150,7 +150,7 @@ namespace GymGenius.Models
     public class CableMiddleFly : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public CableMiddleFly()
         {
@@ -170,7 +170,7 @@ namespace GymGenius.Models
     public class Crunch : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public Crunch()
         {
@@ -190,7 +190,7 @@ namespace GymGenius.Models
     public class SideElevation : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public SideElevation()
         {
@@ -210,7 +210,7 @@ namespace GymGenius.Models
     public class FrontalElevation : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public FrontalElevation()
         {
@@ -230,7 +230,7 @@ namespace GymGenius.Models
     public class BirdElevation : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public BirdElevation()
         {
@@ -250,7 +250,7 @@ namespace GymGenius.Models
     public class MilitaryPress : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public MilitaryPress()
         {
@@ -270,7 +270,7 @@ namespace GymGenius.Models
     public class InvertedPecDeck : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public InvertedPecDeck()
         {
@@ -296,7 +296,7 @@ namespace GymGenius.Models
     public class FacePull : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public FacePull()
         {
@@ -316,7 +316,7 @@ namespace GymGenius.Models
     public class HorizontalDraft : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public HorizontalDraft()
         {
@@ -336,7 +336,7 @@ namespace GymGenius.Models
     public class Deadlift : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public Deadlift()
         {
@@ -364,7 +364,7 @@ namespace GymGenius.Models
     public class BicepsCurl : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public BicepsCurl()
         {
@@ -384,7 +384,7 @@ namespace GymGenius.Models
     public class CurlRotation : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public CurlRotation()
         {
@@ -404,7 +404,7 @@ namespace GymGenius.Models
     public class PulleyCurl : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public PulleyCurl()
         {
@@ -424,7 +424,7 @@ namespace GymGenius.Models
     public class Squat : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public Squat()
         {
@@ -444,7 +444,7 @@ namespace GymGenius.Models
     public class LegPress : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public LegPress()
         {
@@ -464,7 +464,7 @@ namespace GymGenius.Models
     public class Slots : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public Slots()
         {
@@ -484,7 +484,7 @@ namespace GymGenius.Models
     public class LegsExtensions : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public LegsExtensions()
         {
@@ -504,7 +504,7 @@ namespace GymGenius.Models
     public class LegsFlexions : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public LegsFlexions()
         {
@@ -525,7 +525,7 @@ namespace GymGenius.Models
     public class CalfPress : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public CalfPress()
         {
@@ -545,7 +545,7 @@ namespace GymGenius.Models
     public class PushUps : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public PushUps()
         {
@@ -575,7 +575,7 @@ namespace GymGenius.Models
     public class PullUps : AExercise, ISerie
     {
         public int NbRepetitions { get; set; } = 15;
-        public TimeController DodoTime { get; set; } = new TimeController(0,0,10);
+        public TimeController DodoTime { get; set; } = new TimeController(0, 0, 10);
 
         public PullUps()
         {

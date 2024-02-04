@@ -1,5 +1,4 @@
 ﻿using GymGenius.Controller;
-using GymGenius.Controllers;
 using GymGenius.Models;
 using Microsoft.Win32;
 using System.IO;

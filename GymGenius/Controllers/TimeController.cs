@@ -37,7 +37,7 @@
         public TimeController(double seconds)
         {
             hour = (int)seconds / 3600;
-            minute = ((int)seconds % 3600) / 60;
+            minute = (int)seconds % 3600 / 60;
             second = (float)(seconds % 60);
         }
 

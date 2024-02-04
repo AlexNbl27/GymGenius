@@ -56,7 +56,7 @@ namespace GymGenius.Models
                 }
                 _totalDuration += restTime.getDurationInSecond();
             }
-            this.totalDuration = new TimeController(_totalDuration);
+            totalDuration = new TimeController(_totalDuration);
         }
 
     }
